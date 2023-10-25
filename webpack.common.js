@@ -84,6 +84,14 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/arcticles.html',
+      filename: './arcticles.html',
+      chunks: ['arcticles']
+    }),
+
     // Internal pages
     new HtmlWebpackPlugin({
       hash: true,
