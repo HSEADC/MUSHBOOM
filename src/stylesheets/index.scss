@@ -1,4 +1,10 @@
-body.index {
+$mushy: 'MushyScript-Cream';
+$black: black;
+$white: white;
+$orange: #F87239;
+
+body {
+  background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
