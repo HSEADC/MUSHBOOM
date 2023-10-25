@@ -83,6 +83,13 @@ module.exports = {
       filename: './index.html',
       chunks: ['index']
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/about.html',
+      filename: './about.html',
+      chunks: ['about']
+    }),
 
     // Internal pages
     new HtmlWebpackPlugin({
