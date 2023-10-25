@@ -1,9 +1,4 @@
-$mushy: 'MushyScript-Cream';
-$black: black;
-$white: white;
-
-body {
-  background-color: $black;
+body.index {
   display: flex;
   flex-direction: column;
   justify-content: center;
