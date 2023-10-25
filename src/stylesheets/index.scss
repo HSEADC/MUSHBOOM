@@ -1,4 +1,9 @@
-body.index {
+$mushy: 'MushyScript-Cream';
+$black: black;
+$white: white;
+
+body {
+  background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,3 +14,8 @@ body.index {
     margin: 10px 0;
   }
 }
+
+.logo {
+  font-family: $mushy;
+}
+
