@@ -99,6 +99,14 @@ module.exports = {
       chunks: ['arcticles']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/recipes.html',
+      filename: './recipes.html',
+      chunks: ['recipes']
+    }),
+
     // Internal pages
     new HtmlWebpackPlugin({
       hash: true,
