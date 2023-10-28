@@ -1,25 +1,23 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.jsx'
+    index: './src/index.js'
   },
   output: {
-    filename: '[name].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'docs')
-    // clean: true
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/i,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -30,10 +28,25 @@ module.exports = {
         }
       },
       {
-        test: /\.(sa|sc|c)ss$/i,
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true
+          }
+        }
+      },
+      {
+        test: /\.scss$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'sass-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -41,8 +54,7 @@ module.exports = {
                 plugins: [['postcss-preset-env']]
               }
             }
-          },
-          'sass-loader'
+          }
         ]
       },
       {
@@ -54,7 +66,14 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.png/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
+      },
+      {
+        test: /\.svg/,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
@@ -71,33 +90,54 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css'
     }),
 
-    // Landing page
+    // Index
     new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/about.html',
-      filename: './about.html',
-      chunks: ['about']
+      filename: './index.html'
     }),
 
-    // Internal pages
+    // Section
     new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
+      template: './src/articles.html',
+      filename: './articles.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos.html',
+      filename: './memos.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes.html',
+      filename: './recipes.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests.html',
+      filename: './tests.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html'
+    }),
+
+    // Pages
+    new HtmlWebpackPlugin({
+      template: './src/articles/article1.html',
+      filename: './articles/article1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/memo1.html',
+      filename: './memos/memo1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/recipe1.html',
+      filename: './recipes/recipe1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/test1.html',
+      filename: './tests/test1.html'
     }),
 
     // Partials
