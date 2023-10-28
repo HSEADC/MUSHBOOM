@@ -9,11 +9,15 @@
 }
 
 @font-face {
-  font-family: 'SoyuzGroteskBold';
-  src: url('../fonts/SoyuzGroteskBold.eot');
-  src: url('../fonts/SoyuzGroteskBold?#iefix') format('embedded-opentype'),
-    url('../fonts/SoyuzGroteskBold.woff') format('woff'),
-    url('../fonts/SoyuzGroteskBold.ttf') format('truetype');
+  font-family: 'Soyuz Grotesk';
+  src: url('Soyuz Grotesk Bold.eot');
+  src: url('Soyuz Grotesk Bold.eot?#iefix') format('embedded-opentype'),
+    url('Soyuz Grotesk Bold.woff2') format('woff2'),
+    url('Soyuz Grotesk Bold.woff') format('woff'),
+    url('Soyuz Grotesk Bold.ttf') format('truetype'),
+    url('Soyuz Grotesk Bold.svg#Soyuz Grotesk Bold') format('svg');
   font-weight: 700;
   font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
 }
