@@ -1,4 +1,4 @@
-/* @import 'stylesheets/reset.scss';
+@import 'stylesheets/reset.scss';
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/basics.scss';
@@ -6,14 +6,4 @@
 @import 'stylesheets/about.scss';
 @import 'stylesheets/prescription.scss';
 @import 'stylesheets/arcticles.scss';
-@import 'stylesheets/page.scss'; */
-
-@import url('stylesheets/reset.scss');
-@import url('stylesheets/vars.scss');
-@import url('stylesheets/fonts.scss');
-@import url('stylesheets/basics.scss');
-@import url('stylesheets/index.scss');
-@import url('stylesheets/about.scss');
-@import url('stylesheets/prescription.scss');
-@import url('stylesheets/arcticles.scss');
-@import url('stylesheets/page.scss');
+@import 'stylesheets/page.scss';
