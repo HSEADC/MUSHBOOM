@@ -116,6 +116,14 @@ module.exports = {
       chunks: ['page']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/arcticles/arcticlesone.html',
+      filename: './arcticles/arcticlesone.html',
+      chunks: ['arcticlesone']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
