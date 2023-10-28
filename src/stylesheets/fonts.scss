@@ -1,15 +1,15 @@
-@font-face {
-  font-family: 'MushyScript-Cream';
-  src: url('fonts/MushyScript-Cream.woff2') format('woff2'),
-    url('fonts/MushyScript-Cream.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'MushyScript-Cream';
+//   src: url('fonts/MushyScript-Cream.woff2') format('woff2'),
+//     url('fonts/MushyScript-Cream.woff') format('woff');
+//   font-weight: 400;
+//   font-style: normal;
+// }
 
 @font-face {
   font-family: 'SoyuzGroteskBold';
-  src: url('fonts/SoyuzGroteskBold.woff2') format('woff2'),
-    url('fonts/SoyuzGroteskBold.woff') format('woff');
+  src: url('../fonts/SoyuzGroteskBold.woff') format('woff'),
+    url('../fonts/SoyuzGroteskBold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
