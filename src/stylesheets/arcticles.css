@@ -1,12 +1,10 @@
-$font-family_1: 'Soyuz Grotesk';
-
 .mainpart {
   display: flex;
   margin-left: 140px;
 }
 h1 {
   font-size: 69px;
-  font-family: $font-family_1;
+  font-family: '';
 }
 .mainh2 {
   font-size: 48px;
