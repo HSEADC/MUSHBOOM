@@ -41,9 +41,7 @@
 }
 .logo {
   position: relative;
-  font-family: 'MUSHBOOM';
-  font-size: 20%;
-  color: white;
+  height: 120%;
   left: 13%;
   top: 20%;
 }
