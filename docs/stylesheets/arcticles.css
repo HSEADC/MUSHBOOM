@@ -101,6 +101,11 @@ button {
   position: relative;
 }
 
+.blockup {
+  background: linear-gradient(to right, #9961612f, #ffa87564, #7d565641);
+  position: absolute;
+}
+
 .one,
 .oneup {
   width: 82vw;
