@@ -51,7 +51,7 @@
   font-family: 'MUSHBOOM';
   font-weight: 700;
   opacity: 100%;
-  animation: clock 6s ease;
+  animation: clock 3s ease;
 }
 @keyframes clock {
   0% {
