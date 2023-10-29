@@ -1,18 +1,6 @@
+/* общее */
 * {
   box-sizing: border-box;
-}
-p,
-li {
-  color: white;
-  margin-top: 2vw;
-  font-size: 1.25vw;
-  font-weight: 100;
-  line-height: 120%;
-}
-h3 {
-  color: #fff;
-  font-size: 3.75vw;
-  line-height: 91.157%;
 }
 .about {
   font-family: 'MUSHBOOM';
@@ -23,6 +11,29 @@ h3 {
   height: auto;
   padding: 0 5.625vw 0 5.625vw;
 }
+h1 {
+  font-size: 7.5vw;
+  color: white;
+  line-height: 93.5%;
+}
+h3 {
+  color: #fff;
+  font-size: 3.75vw;
+  line-height: 91.157%;
+}
+h4 {
+  color: white;
+  font-size: 2.4vw;
+}
+p,
+li {
+  color: white;
+  margin-top: 2vw;
+  font-size: 1.25vw;
+  font-weight: 100;
+  line-height: 120%;
+}
+/* первая секция */
 #first_block {
   width: 100%;
   height: 28vw;
@@ -36,11 +47,7 @@ h3 {
 #first_img {
   width: 40%;
 }
-h1 {
-  font-size: 7.5vw;
-  color: white;
-  line-height: 93.5%;
-}
+/* вторая секция */
 #second_block {
   padding: 4.2vw 6vw 4.2vw 6vw;
   background: url('../images/background_about1.png');
@@ -52,12 +59,14 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+/* лого */
 #second_logo {
   height: 120%;
 }
 #second_text {
   width: 55%;
 }
+/* блок с нашей командой */
 #team {
   display: flex;
   justify-content: space-between;
@@ -68,10 +77,12 @@ h1 {
 #team img {
   margin-top: 0.5vw;
   height: 4vw;
+  animation: shaking 1s infinite linear;
 }
 #second_text p {
   margin-top: 0vw;
 }
+/* третья секция */
 #third_block {
   display: flex;
   justify-content: space-between;
@@ -81,6 +92,7 @@ h1 {
 #third_block h3 {
   width: 30vw;
 }
+/* плашки с полезностями */
 #plashki div {
   border-radius: 3.3vw;
   display: flex;
@@ -113,10 +125,6 @@ h1 {
 #biblioteka img {
   position: absolute;
 }
-h4 {
-  color: white;
-  font-size: 2.4vw;
-}
 #biblioteka img:first-of-type {
   height: 10vw;
   left: 1vw;
@@ -147,6 +155,7 @@ h4 {
   display: flex;
   align-items: center;
 }
+/* грибочки */
 #fourth_mush img:nth-of-type(1) {
   margin-left: -2vw;
   width: 30vw;
@@ -173,6 +182,7 @@ h4 {
 li {
   margin-top: 0.7vw;
 }
+/* подвал */
 footer {
   display: flex;
   flex-direction: column;
@@ -187,6 +197,7 @@ footer div {
   display: flex;
   margin-top: 1vw;
 }
+/* кнопочки на соц сети */
 footer a {
   margin: 0 0.5vw 0 0;
   border-radius: 3.3vw;
@@ -213,9 +224,7 @@ footer img {
   width: 2vw;
   height: 2vw;
 }
-#team img {
-  animation: shaking 1s infinite linear;
-}
+/* анимация трясучки грибов */
 @keyframes shaking {
   0% {
     transform: rotate(-10deg);
