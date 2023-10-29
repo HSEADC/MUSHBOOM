@@ -67,6 +67,10 @@ li > button:hover {
   background: linear-gradient(to right, #9961612f, #ffa87564, #7d565641);
 }
 
+.mainchoice {
+  background: linear-gradient(to right, #9961612f, #ffa87564, #7d565641);
+}
+
 button {
   width: 11.1vw;
   height: 2.3vw;
