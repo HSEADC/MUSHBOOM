@@ -51,7 +51,7 @@
   font-family: 'MUSHBOOM';
   font-weight: 700;
   opacity: 100%;
-  animation: clock 9s ease;
+  animation: clock 6s ease;
 }
 @keyframes clock {
   0% {
@@ -180,7 +180,7 @@
   width: 100%;
   height: 40%;
   margin: -5% 0 0 0;
-  animation: about 8s ease;
+  animation: about 6s ease;
 }
 @keyframes about {
   0% {
