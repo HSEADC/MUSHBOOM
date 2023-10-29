@@ -102,8 +102,8 @@ module.exports = {
 
     // Section
     new HtmlWebpackPlugin({
-      template: './src/articles.html',
-      filename: './articles.html'
+      template: './src/arcticles.html',
+      filename: './arcticles.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/memos.html',
@@ -124,8 +124,8 @@ module.exports = {
 
     // Pages
     new HtmlWebpackPlugin({
-      template: './src/articles/article1.html',
-      filename: './articles/article1.html'
+      template: './src/arcticles/arcticle1.html',
+      filename: './arcticles/article1.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/memos/memo1.html',
