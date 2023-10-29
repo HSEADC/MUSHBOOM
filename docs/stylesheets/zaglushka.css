@@ -214,8 +214,11 @@
   color: white;
   border-radius: 3.3vw;
   transition: all 0.2s ease-in-out;
+}
 
-  text-decoration: none;
+.know_more2 a {
+    text-decoration: none;
+    color: white;
 }
 .know_more2:hover {
   transform: scale(1.1);
