@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/zaglushka.css" type="text/css" />
+    <script src="javascript/jquery-3.7.0.min.js"></script>
+    <title>MUSHBOOM</title>
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Спасибо!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Ой! Не получилось"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Ой! Не получилось"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+
+
+
+        // часы
+
+        (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+    </script>
+  </head>
+  <body class="index">
+    <section class="inside">
+    <!-- левый блок -->
+    <section class="left_block">
+        <div class="left_mushroom">
+            <div class="logo">Mush <br> Boom</div>
+        </div>
+        <div class="clock">
+          <div id="demo">
+            <h2 class="days">286</h2>
+            <p class="days1">дней</p>
+            <h2 class="hours">10</h2>
+            <p class="hours1">часов</p>
+            <h2 class="minutes">34</h2>
+            <p class="minutes1">минут</p>
+          </div>
+            <!-- <div id="countdown">
+              <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+              </ul>
+          </div> -->
+        </div>
+    </section>
+    <!-- средний блок -->
+    <section class="middle_block">
+        <div class="get_verified">
+            <h2 class="follow_us">следите за всеми новостями медиасервиса</label>
+
+                <form id="my_form" action="https://formspree.io/f/xvojlnvq" method="POST">
+                    <input type="email" name="email" id="email" placeholder="email"/>
+                    <button id="my-form-button">подписаться</button>
+                    <p id="my-form-status"></p>
+                  </form>
+        </div>
+    </section>
+    <!-- правый блок -->
+    <section class="right_block">
+        <div class="about_us">
+            <h2 class="know_more1">узнайте <br>больше</h2>
+            <div class="know_more2" a href="">о нас</div>
+        </div>
+        <div class="right_mushroom">
+          <h2 class="guide">твой гид <br>в мир <h2 class="guide_room">гри<br>бов</h2></h2>
+      </div>
+    </section>
+  </body>
+</html>
