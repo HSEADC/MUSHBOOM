@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'MushyScript-Cream';
+    src: url("../fonts/MushyScript-Cream.eot");
+    src: url("../fonts/MushyScript-Cream.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MushyScript-Cream.woff") format("woff"),
+    url("../fonts/MushyScript-Cream.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: 'SoyuzGroteskBold';
+    src: url("../fonts/SoyuzGroteskBold.eot");
+    src: url("../fonts/SoyuzGroteskBold?#iefix")format("embedded-opentype"),
+    url("../fonts/SoyuzGroteskBold.woff") format("woff"),
+    url("../fonts/SoyuzGroteskBold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
