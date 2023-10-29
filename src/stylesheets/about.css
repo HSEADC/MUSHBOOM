@@ -149,12 +149,18 @@ h4 {
 }
 #fourth_mush img:nth-of-type(1) {
   margin-left: -2vw;
+  width: 30vw;
 }
 #fourth_mush img:nth-of-type(2) {
   margin: 0 -5vw 0 -6vw;
+  width: 20vw;
+}
+#fourth_mush img:nth-of-type(3) {
+  width: 12vw;
 }
 #fourth_mush img:nth-of-type(4) {
   margin-left: -2vw;
+  width: 16vw;
 }
 
 #fourth_mush {
@@ -168,9 +174,38 @@ li {
   margin-top: 0.7vw;
 }
 footer {
+  display: flex;
+  flex-direction: column;
   margin-top: 4vw;
+  padding: 3vw;
   width: 100%;
-  height: 7vw;
+  height: 11vw;
   background: #fff;
   border-radius: 3.281vw 3.281vw 0 0;
+}
+footer div {
+  display: flex;
+  margin-top: 1vw;
+}
+footer a {
+  margin: 0 0.5vw 0 0;
+  border-radius: 3.281vw;
+  border: 0.1vw solid black;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 3.125vw;
+  background-image: url('../images/gradient.svg');
+  background-size: cover;
+  padding: 0vw 1vw 0vw 1vw;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+footer p {
+  color: black;
+  margin: 0vw 1vw 0vw 1vw;
+}
+footer a:hover {
+  background-color: #f87239;
+  transition: all 0.5s ease-out;
 }
