@@ -1,23 +1,36 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  entry: {
-    index: './src/index.js'
-  },
+  // entry: {
+  //   index: './src/index.js',
+  //   page: './src/page.jsx'
+  // },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'docs')
+    // clean: true
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -28,21 +41,7 @@ module.exports = {
         }
       },
       {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true
-          }
-        }
-      },
-      {
-        test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      },
-      {
-        test: /\.css$/i,
+        test: /\.(sa|sc|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -54,7 +53,8 @@ module.exports = {
                 plugins: [['postcss-preset-env']]
               }
             }
-          }
+          },
+          'sass-loader'
         ]
       },
       {
@@ -66,14 +66,7 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.png/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'images/[hash][ext][query]'
-        }
-      },
-      {
-        test: /\.svg/,
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
@@ -102,8 +95,8 @@ module.exports = {
 
     // Section
     new HtmlWebpackPlugin({
-      template: './src/arcticles.html',
-      filename: './arcticles.html'
+      template: './src/articles.html',
+      filename: './articles.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/memos.html',
@@ -124,8 +117,8 @@ module.exports = {
 
     // Pages
     new HtmlWebpackPlugin({
-      template: './src/arcticles/arcticle1.html',
-      filename: './arcticles/article1.html'
+      template: './src/articles/article1.html',
+      filename: './articles/article1.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/memos/memo1.html',
