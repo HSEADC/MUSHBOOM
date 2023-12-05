@@ -41,9 +41,7 @@
 }
 .logo {
   position: relative;
-  font-family: 'MUSHBOOM';
-  font-size: 20%;
-  color: white;
+  height: 120%;
   left: 13%;
   top: 20%;
 }
@@ -248,7 +246,7 @@
   line-height: 80%;
 }
 .guide_room {
-  margin: -15% 0 0 10%;
+  margin: 10% 0 0 10%;
   font-size: 25%;
   font-family: 'MUSHBOOM';
   font-weight: 700;

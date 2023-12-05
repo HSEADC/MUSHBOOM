@@ -49,6 +49,7 @@ li {
 }
 /* вторая секция */
 #second_block {
+  margin-top: 4vw;
   padding: 4.2vw 6vw 4.2vw 6vw;
   background: url('../images/background_about1.png');
   background-size: cover;
@@ -75,8 +76,9 @@ li {
   color: #f87239;
 }
 #team img {
-  margin-top: 0.5vw;
-  height: 4vw;
+  margin-top: 0.4vw;
+  margin-bottom: 0.8vw;
+  height: 3.2vw;
   animation: shaking 1s infinite linear;
 }
 #second_text p {
@@ -235,4 +237,49 @@ footer img {
   100% {
     transform: rotate(-10deg);
   }
+}
+.get_verified {
+  position: relative;
+  margin-top: -8vw;
+  margin-left: -16vw;
+  width: 38vw;
+  height: 14vw;
+}
+
+
+#my_form {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+}
+#email {
+  position: relative;
+  /* width: 65%;
+  height: 30%; */
+  padding: 2vw;
+
+  border: none;
+  font-size: 1.5vw;
+  border-radius: 3.3vw;
+}
+#email::placeholder {
+  color: #f87239;
+}
+#my-form-button {
+  padding: 2vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+  position: relative;
+  top: 10%;
+  border: none;
+  border-radius: 3.3vw;
+  background-color: #f87239;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+#my-form-button:hover {
+  transform: scale(1.1);
 }
