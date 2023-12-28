@@ -3,6 +3,48 @@ body.article {
     padding: 2.5vw 5vw ;
     background-color: #211F1D ;
     overflow-x: hidden;
+      // Меню
+  .menu {
+    position: fixed;
+    height: 4vw;
+    width: 90%;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 1vw;
+    border-radius: 1.17vw;
+    background-color: #211F1D;
+    z-index: 10;
+    img {
+      height: 100%;
+      width: auto;
+    }
+    .menu_cattegories {
+      display: flex;
+      flex-direction: row;
+      .menu_button {
+        margin-right: 0.7vw;
+        padding: 0.5vw 2vw;
+        width: auto;
+        height: 2.4vw;
+        border-radius: 2vw;
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        p {
+          font-size: 1vw ;
+          font-weight: 300;
+          color: #ffffff;
+        }
+      }
+      .menu_button:nth-of-type(1) {
+        border: 0.1vw solid #F45734;
+      }
+      .menu_button:hover {
+        background-color: #F45734;
+      }
+    }
+  }
     // общие стили
     p, h1, h2, h3 {
         color: #FFFFFF;
@@ -26,6 +68,7 @@ body.article {
     }
     // главный заголовок
     .header {
+        margin-top: 10vw;
         h2 {
             text-align: center;
         }
@@ -33,14 +76,14 @@ body.article {
             position: absolute;
             width: 3.5vw;
             height: auto;
-            top: 2vw;
+            top: 12vw;
             left: 17.5vw;
         }
         img:last-of-type {
             position: absolute;
             width: 3.5vw;
             height: auto;
-            top: 4.9vw;
+            top: 14.9vw;
             right: 14.5vw;
         }
     }
@@ -81,7 +124,7 @@ body.article {
     .article_img1 {
         position: absolute;
         left: 5vw;
-        top: 20vw;
+        top: 30vw;
         width: 28vw;
         height: 32vw;
         img:first-of-type {
