@@ -1,23 +1,36 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    page: './src/page.jsx'
   },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'docs')
+    // clean: true
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -28,21 +41,7 @@ module.exports = {
         }
       },
       {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true
-          }
-        }
-      },
-      {
-        test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      },
-      {
-        test: /\.css$/i,
+        test: /\.(sa|sc|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -54,7 +53,8 @@ module.exports = {
                 plugins: [['postcss-preset-env']]
               }
             }
-          }
+          },
+          'sass-loader'
         ]
       },
       {
@@ -66,17 +66,19 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.png/,
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
         }
       },
       {
-        test: /\.svg/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'images/[hash][ext][query]'
+        test: /\.(glb|gltf)$/i,
+        loader: 'file-loader',
+        options: {
+          publicPath: './',
+          name: '[name].[ext]',
+          esModule: false
         }
       },
       {
@@ -89,37 +91,28 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/share/'),
+          to: path.resolve(__dirname, 'dev_build/share/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/share/'),
+          to: path.resolve(__dirname, 'docs/share/')
+        }
+      ]
+    }),
+
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css'
     }),
 
-    // Index
+    // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
-    }),
-
-    // Section
-    new HtmlWebpackPlugin({
-      template: './src/articles.html',
-      filename: './articles.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/memos.html',
-      filename: './memos.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/recipes.html',
-      filename: './recipes.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/tests.html',
-      filename: './tests.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: './about.html'
     }),
 
     // Pages
@@ -131,13 +124,11 @@ module.exports = {
       template: './src/memos/memo1.html',
       filename: './memos/memo1.html'
     }),
+
+    // Styleguide
     new HtmlWebpackPlugin({
-      template: './src/recipes/recipe1.html',
-      filename: './recipes/recipe1.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/tests/test1.html',
-      filename: './tests/test1.html'
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
     }),
 
     // Partials
