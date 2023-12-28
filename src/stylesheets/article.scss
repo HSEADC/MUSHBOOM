@@ -1,0 +1,216 @@
+body.article {
+    width: 100%;
+    padding: 2.5vw 5vw ;
+    background-color: #211F1D ;
+    overflow-x: hidden;
+    // общие стили
+    p, h1, h2, h3 {
+        color: #FFFFFF;
+    }
+    h3 {
+        text-transform: none;
+    }
+    div {
+
+        overflow: hidden;
+        img {
+            border-radius: 1.17vw;
+        }
+    }
+    .article_text {
+        width: 32vw;
+        margin: 5vw 0 5vw 48vw;
+    }
+    .article_text:nth-of-type(1) {
+        margin-top: 16vw;
+    }
+    // главный заголовок
+    .header {
+        h2 {
+            text-align: center;
+        }
+        img:first-of-type {
+            position: absolute;
+            width: 3.5vw;
+            height: auto;
+            top: 2vw;
+            left: 17.5vw;
+        }
+        img:last-of-type {
+            position: absolute;
+            width: 3.5vw;
+            height: auto;
+            top: 4.9vw;
+            right: 14.5vw;
+        }
+    }
+    // теги для статей
+    .article_cattegories {
+        margin: 2vw 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        div {
+            margin-right: 0.7vw;
+            padding: 0.5vw 2vw;
+            width: auto;
+            height: 2.4vw;
+            background: #FFFFFF;
+            border-radius: 2vw;
+          }
+          p {
+            font-size: 1vw ;
+            font-weight: 300;
+            color: #211F1D;
+          }
+    }
+    // заголовки разделов
+    .article_subtitle {
+        display: flex;
+        justify-content: space-between;
+        margin: 3vw 0;
+        h3:last-of-type {
+            color: #F45734;
+            opacity: 50%;
+            font-size: 1.8vw;
+            font-weight: 500;
+        }
+    }
+    // общие стили фото
+    .article_img1 {
+        position: absolute;
+        left: 5vw;
+        top: 20vw;
+        width: 28vw;
+        height: 32vw;
+        img:first-of-type {
+            width: 100%;
+            height: 100%;
+        }
+        img:last-of-type {
+            position: absolute;
+            width: 220%;
+            mix-blend-mode: soft-light;
+            opacity: 72%;
+            left: 0vw;
+            top: 0vw;
+        }
+    }
+    .article_img2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            width: 29vw;
+            height: 30vw;
+        }
+    }
+    .article_img3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 4vw;
+    }
+    .article_img4 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+       
+        div {
+            height: 16.5vw;
+            width: 29vw;
+            border-radius: 1.17vw;
+            img {
+                width: 100%;
+                margin-top: -3vw;
+            }
+        }
+    }
+    .article_img5 {
+        width: 29vw;
+        height: 34vw;
+        border-radius: 1.17vw;
+        img {
+            width: auto;
+            height: 100%;
+            margin-left: -2.5vw;
+        }
+    }
+    .article_img6 {
+        width: 100%;
+        height: 32vw;
+        border-radius: 1.17vw;
+        img {
+            margin-top: -6vw;
+            width: 100%;
+        }
+    }
+      // подвал
+  footer {
+    width: 100%;
+    height: 16vw;
+    border-radius: 1.17vw 1.17vw 0px 0px;
+    background: #211F1D;
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // Списки полезностей
+    .footer_cattegories {
+      width: 38vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h5 {
+        color: #979b99;
+      }
+      h6 {
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        color: #ffffff;
+        margin: 0.8vw 0vw;
+      }
+      h6:hover {
+        color: #F45734;
+      }
+      // блок с соц сетями
+      .footer_social_network {
+        h5 {
+          margin-bottom: 0.5vw;
+        }
+        .social_network {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 6.4vw;
+          height: auto;
+
+          .telegram_button, .dzen_button {
+            width: 3vw;
+            height: 3vw;
+            svg {
+              width: 100%;
+              height: 100%;
+              
+              rect {
+                fill: none;
+                stroke: #F45734;
+                stroke-dashoffset: 1vw;
+                stroke-opacity: 1;
+                transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+              }
+              &:hover {
+                rect {
+                  fill: #F45734;
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+    
+}
