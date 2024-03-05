@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MushBoom | Рецепты</title>
+    <link rel="icon" type="image/x-icon" href="images/icon_mushboom.ico" />
+  </head>
+  <body class="recipes">
+    <!-- Менюшка -->
+    <menu class="O_Menubar">
+      <!-- Кнопки для разделов -->
+      <div class="M_SectionsMenubar">
+       <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
+       <a class="A_TextMenubar" href="memos.html">Памятки</a>
+       <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
+       <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
+       <a class="A_TextMenubar" href="tests.html">Тесты</a>
+      </div>
+
+      <div class="M_SearchField">
+        <div class="Q_SearchIcon"></div>
+        <div class="A_SearchField">
+          <input id="Q_SearchField" type="text" id="searchInput" placeholder="Я ищу..."/>
+          <div id="C_SearchResults"></div>
+        </div>
+    </div>
+      <!-- Логотипчег -->
+      <a class="Q_LogoIcon" href="index.html"></a>
+    </menu>
+
+
+    <div class="C_TagsRecipes">
+        <button class="A_TagRecipes active" data-filter="all"><h5>Все рецепты</h5></button>
+        <button class="A_TagRecipes" data-filter="zapechennie"><h5>Запечённые</h5></button>
+        <button class="A_TagRecipes" data-filter="zharenie"><h5>Жареные</h5></button>
+        <button class="A_TagRecipes" data-filter="varenie"><h5>Варёные</h5></button>
+        <button class="A_TagRecipes" data-filter="kopchenie"><h5>Копчёные</h5></button>
+        <button class="A_TagRecipes" data-filter="tushenie"><h5>Тушёные</h5></button>
+    </div>
+    <section class="S_CardsRecipe">
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe zapechennie" href="">
+            <!-- Название блюда -->
+            <h3>Жульен</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Запечённое</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">1 час</h5>
+            </div>
+        </a>
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe zharenie" href="recipes/fettuchini.html">
+            <!-- Название блюда -->
+            <h3>Феттучини</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Жареное</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">30 минут</h5>
+            </div>
+        </a>
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe" href="">
+            <!-- Название блюда -->
+            <h3>Жульен</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Запечённое</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">1 час</h5>
+            </div>
+        </a>
+
+        <!-- Большая карточка единичного рецепта -->
+        <a class="O_CardLargeRecipe" href="">
+            <!-- Название блюда -->
+            <h3><span><img src="images/MushIcon-1.svg" alt=""></span> жареные
+              шампиньоны</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Выбор пользователей</h5>
+                <h5 class="A_TagRecipe">Жареное</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">20 минут</h5>
+            </div>
+        </a>
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe" href="">
+            <!-- Название блюда -->
+            <h3>Жульен</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Запечённое</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">1 час</h5>
+            </div>
+        </a>
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe" href="">
+            <!-- Название блюда -->
+            <h3>Жульен</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Запечённое</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">1 час</h5>
+            </div>
+        </a>
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe" href="">
+            <!-- Название блюда -->
+            <h3>Жульен</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Запечённое</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">1 час</h5>
+            </div>
+        </a>
+
+        <!-- Большая карточка единичного рецепта -->
+        <a class="O_CardLargeRecipe" href="">
+            <!-- Название блюда -->
+            <h3><span><img class="A_MushIcon-1" src="images/MushIcon-1.svg" alt=""></span> жареные
+              шампиньоны</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_TagRecipe">Жареное</h5>
+                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
+                <h5 class="A_TagRecipe">20 минут</h5>
+                <h5 class="A_TagRecipe">Выбор пользователей</h5>
+            </div>
+        </a>
+    </section>
+
+
+ 
+    <!-- Подвал со всей полезной информацией -->
+    <footer class="O_Footer">
+      <!-- Логотип -->
+     <div class="Q_LogoIcon"></div>
+     <div class="W_Authors">
+      <h5 class="A_HeaderFooter">HSE ADC</h5>
+      <div class="C_Authors">
+       <div class="M_TextFooter">
+          <h6 class="A_TextFooter">Захар День</h6>
+          <h6 class="A_TextFooter">Софья Каем</h6>
+          <h6 class="A_TextFooter">Анна Комкова</h6>
+       </div>
+        <div class="M_TextFooter">
+          <h6 class="A_TextFooter">Ирина Аполонник</h6>
+          <h6 class="A_TextFooter">Патимат Иманалиева</h6>
+          <h6 class="A_TextFooter">Анна Деревянкина</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Вся полезная информация -->
+      <div class="W_MainFooter">  
+      <!-- Контактная информация -->
+      <div class="W_TextFooter">
+        <h5 class="A_HeaderFooter">О нас</h5>
+        <h6 class="A_TextFooter">Контакты</h6>
+        <h6 class="A_TextFooter">Обратная связь</h6>
+        <a class="A_TextFooter" href="styleguide.html"><h6>Styleguide</h6></a>
+     </div>
+     <!-- Информация по разделам -->
+      <div class="W_TextFooter">
+        <h5 class="A_HeaderFooter">Разделы</h5>
+        <a href="articles.html"><h6 class="A_TextFooter">Статьи</h6></a>
+        <a href="memos.html"><h6 class="A_TextFooter">Памятки</h6></a>
+        <a href="recipes.html"><h6 class="A_TextFooter">Рецепты</h6></a>
+        <a href="gribwiki.html"><h6 class="A_TextFooter">Грибвики</h6></a>
+        <a href="tests.html"><h6 class="A_TextFooter">Тесты</h6></a>
+      </div>
+      <!-- Информация по соц сетям -->
+      <div class="M_Socials">
+        <h5 class="A_HeaderFooter">Соц сети</h5>
+        <!-- Кнопки соц сетей -->
+        <div class="C_Socials">
+          <!-- Инстаграм -->
+          <a href="" class="A_InstIcon"> 
+            <img src="images/Instagramicon_black.svg" alt="Иконка Инстаграм">
+          </a>
+          <!-- Телеграм -->
+          <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
+            <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">
+          </a>
+          <!-- Яндекс.Дзен -->
+          <a href="https://dzen.ru/id/653d452bbcb41328c6d6bab5?share_to=link" class="A_DzenIcon"> 
+            <img src="images/Dzenicon_black.svg" alt="Иконка Дзен">
+          </a>
+        </div>
+      </div>
+     </div>
+    </footer>  
+  </body>
+</html>

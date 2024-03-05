@@ -1,0 +1,40 @@
+.Q_LogoIcon {
+    background-image: url("./images/Logoicon_white.svg");
+    background-size: cover;
+}
+.Q_SearchIcon {
+    background-image: url("./images/Searchicon.svg");
+    background-size: cover;
+    width: 1.2vw;
+    height: 1.2vw;
+}
+.Q_ClockIcon {
+    width: auto;
+    height: 1.6vw;
+    margin-bottom: 0.7vw;
+}
+.Q_PortionIcon {
+    width: auto;
+    height: 1.6vw;
+    margin-bottom: 0.7vw;
+}
+.Q_KcalIcon {
+    width: auto;
+    height: 1.6vw;
+    margin-bottom: 0.7vw;
+}
+#Q_SearchField {
+    width: 92%;
+    height: 3.2vw;
+    background-color: var(--Mushy-White) 0%;
+    border: none;
+    color: var(--Ashy-Grey);
+    &::placeholder {
+        color: var(--Ashy-Grey);
+    }
+    &:hover, &:focus {
+        outline: none;
+        border: none;
+        color: var(--Mushy-White);
+    }
+}

@@ -1,0 +1,115 @@
+menu {
+    #C_SearchResults {
+        width: 21.4vw;
+        margin-top: 2.4vw;
+        flex-direction: column;
+        position: absolute;
+        gap: 0vw;
+        background-color: var(--Blacky);
+        max-height: 5vw;
+        overflow-x: hidden;
+        border-radius: 0 0 1.17vw 1.17vw ;
+        a {
+            font-weight: 300;
+            transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+            color: var(--Ashy-Grey);
+            padding: 0.7vw;
+            width: 21.4vw;
+            font-size: 0.9vw;
+            &:hover {
+                color: var(--Mushy-White);
+            }
+        }
+    }
+}
+footer {
+    .C_Socials {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        height: auto;
+    }
+    .C_Authors {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        height: auto;
+        .A_TextFooter {
+            &:hover {
+                color: var(--Mushy-White);
+            }
+            &:active {
+                color: var(--Mushy-White);
+            }
+        }
+    }
+}
+body.articles {
+    .C_TagsArticles {
+        width: 100%;
+        display: flex;
+        margin-bottom: 1.2vw;
+        justify-content: space-between;
+    }
+    .C_TagsArticle {
+        margin-top: 0.6vw;
+        width: 25vw ;
+        gap: 0.7vw 1.2vw;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        justify-content: flex-end;
+    }
+    .C_CardsArticle {
+        display: flex;
+        gap: 1.2vw;
+        flex-direction: column;
+    }
+}
+
+body.recipes {
+    .C_TagsRecipes {
+        width: 100%;
+        display: flex;
+        margin-bottom: 1.2vw;
+        justify-content: space-between;
+    }
+    .C_TagsRecipe {
+        margin-top: 0.6vw;
+        gap: 0.7vw 1.2vw;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .C_CharacteristicsRecipe {
+        display: flex;
+        gap: 3.6vw;
+    }
+    .C_Ingredients {
+        display: flex;
+        gap: 5.6vw;
+    }
+    .C_ColumnPointsRecipe {
+        display: flex;
+        width: 36vw;
+        flex-direction: column;
+        gap: 2.4vw;
+    }
+    .C_ButtomsRecipe {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .C_RecipeSocials {
+        display: flex;
+        gap: 0.2vw;
+    }
+    .C_CardRecipes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        row-gap: 1.2vw;
+        margin-bottom: 4vw;
+    }
+}

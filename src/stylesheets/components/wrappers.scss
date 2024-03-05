@@ -1,0 +1,56 @@
+footer {
+    // Подвал, секция с разделами полезностей
+    .W_MainFooter {
+        width: 38vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+body.recipes {
+    .W_InfoPageRecipe {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4vw;
+    }
+    .W_TextIngredients {
+        display: flex;
+        justify-content: space-between;
+        width: 18vw;
+        div {
+
+            display: flex;
+            flex-direction: column;
+            p {
+                padding: 0.7vw 0;
+            }
+        }
+        div:first-of-type {
+            p {
+                color: var(--Charcoal);
+            }
+        }
+        div:last-of-type {
+            align-items: center;
+            p {
+                color: var(--Fox);
+            }
+        }
+    }
+    .W_PointsRecipe {
+        padding: 0 2.4vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.W_TextMainCardArticle {
+    h2 {
+        color: var(--Charcoal);
+        span img{
+            height: 4vw;
+        }
+    }
+    p {
+        color: var(--Charcoal);
+    }
+}

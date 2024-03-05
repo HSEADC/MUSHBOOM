@@ -18,17 +18,17 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192
-            }
-          }
-        ]
-      },
+      // {
+      //   test: /\.(png|jpg|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         limit: 8192
+      //       }
+      //     }
+      //   ]
+      // },
       {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
@@ -114,6 +114,26 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: './articles.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos.html',
+      filename: './memos.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes.html',
+      filename: './recipes.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki.html',
+      filename: './gribwiki.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests.html',
+      filename: './tests.html'
+    }),
 
     // Pages
     new HtmlWebpackPlugin({
@@ -123,6 +143,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/memos/memo1.html',
       filename: './memos/memo1.html'
+    }),
+    // Recipe Pages
+    new HtmlWebpackPlugin({
+      template: './src/recipes/fettuchini.html',
+      filename: './recipes/fettuchini.html'
     }),
 
     // Styleguide

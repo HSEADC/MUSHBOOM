@@ -1,0 +1,225 @@
+menu {
+    .A_TextMenubar {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding: 0.7vw 1.6vw;
+        text-transform: uppercase;
+        color: var(--Mushy-White);
+        font-weight: 400;
+        font-size: 1vw;
+        letter-spacing: 0.12vw;
+        border-radius: 4vw;
+        border: solid 0.1vw #00000000;
+        background-color: var(--Charcoal);
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        &:hover {
+            border: solid 0.1vw var(--Fox); 
+        }
+        &:active {
+            border: solid 0.1vw var(--Sunny); 
+            background-color: var(--Sunny);
+        }
+    }
+    .A_SearchField {
+        width: 92%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+footer {
+    .A_HeaderFooter {
+        font-size: 1vw;
+        text-transform: uppercase;
+        color: var(--Ashy-Grey);
+    }
+    .A_TextFooter {
+        font-size: 0.9vw;
+        font-weight: 200;
+        color: var(--Mushy-White);
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        margin: 0.8vw 0vw;
+        &:hover {
+            color: var(--Fox);
+        }
+        &:active {
+            color: var(--Sunny);
+        }
+    }
+    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 3vw;
+        background-color: var(--Fox);
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        border: solid 0.1vw var(--Fox);
+        img {
+            width: 2vw;
+            height: 2vw;
+        }
+        &:hover {
+            background-color: var(--Sunny);
+        }
+        &:active {
+            transform: scale(0.95);
+            border: solid 0.1vw var(--Sunny);
+        }
+    }
+}
+body.articles {
+    .A_TagArticles {
+        padding: 1vw 4.6vw;
+        border: solid 0.1vw var(--Fox);
+        border-radius: 1.17vw;
+        color: var(--Fox);
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        &:hover {
+            background-color: var(--Fox);
+            color: var(--Mushy-White);
+        }
+        &:active {
+            background-color: var(--Sunny);
+            color: var(--Mushy-White);
+        }
+    }
+    .A_TagArticles.active {
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
+    }
+    .A_TextMenubar {
+        background-color: var(--Blacky);
+    }
+    .A_PhotoMainCardArticle{
+        height: 109%;
+        width: 46vw;
+        background-size: cover;
+        margin: -1.2vw -1.2vw 0 -1.2vw;
+        border-radius: 1.17vw;
+       
+    }
+    .A_TagArticle {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding: 0.7vw 1.6vw;
+        border-radius: 4vw;
+        border: solid var(--Fox) 0.1vw;
+        color: var(--Fox);
+        background-color: var(--Mushy-White) ;
+    }    
+    .A_PhotoArticle {
+        width: 100%;
+        height: auto;
+        border-radius: 1.17vw;
+    }
+    .A_TextArticle {
+        h4 {
+            text-transform:none;
+        }
+        p {
+            font-size: 1.1vw;
+            color: var(--Ashy-Grey);
+        }
+    }
+}
+body.recipes {
+    .A_TextMenubar {
+        background-color: var(--Blacky);
+    }
+    background-color: var(--Charcoal);
+    .A_TextMenubar:nth-of-type(3) {
+        background-color: var(--Fox);
+        &:hover {
+            border: solid 0.1vw var(--Fox); 
+        }
+        &:active {
+            border: solid 0.1vw var(--Sunny); 
+            background-color: var(--Sunny);
+        }
+    }
+    .A_TagRecipes {
+        padding: 1vw 4.29vw;
+        border: solid 0.1vw var(--Fox);
+        border-radius: 1.17vw;
+        color: var(--Fox);
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        &:hover {
+            background-color: var(--Fox);
+            color: var(--Mushy-White);
+        }
+        &:active {
+            background-color: var(--Sunny);
+            color: var(--Mushy-White);
+        }
+    }
+    .A_TagRecipes.active {
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
+    }
+    .O_CardRecipe {
+        .A_TagRecipe {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            padding: 0.7vw 1.6vw;
+            border-radius: 4vw;
+            border: solid var(--Fox) 0.1vw;
+            color: var(--Fox);
+            background-color: var(--Mushy-White) ;
+        }    
+    }
+    .O_CardLargeRecipe {
+        .A_TagRecipe {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            padding: 0.7vw 1.6vw;
+            border-radius: 4vw;
+            border: solid var(--Fox) 0.1vw;
+            color: var(--Mushy-White);
+            background-color: var(--Charcoal) ;
+        }    
+    }
+    .A_CoverRecipe {
+        width: 100%;
+        height: auto;
+    }
+    .M_BottomRecipe {
+        .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+            width: 3vw;
+            height: 3vw;
+            border-radius: 4vw;
+            background-color: var(--Fox);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 0.1vw var(--Mushy-White); 
+            transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+            &:hover {
+                border: solid 0.1vw var(--Fox); 
+            }
+            &:active {
+                border: solid 0.1vw var(--Sunny); 
+                background-color: var(--Sunny);
+            }
+        }
+        .A_ArrowIcon {
+            img {
+                width: 42%;
+                height: 42%;
+            }
+        }
+        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+            img {
+                width: 64%;
+                height: 64%;
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+// Меню
+.O_Menubar {
+    position: fixed;
+    left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vw;
+    width: 94%;
+    top: 1vw;
+    padding: 0 3vw;
+    border-radius: 5vw;
+    background-color:var(--Charcoal);
+    z-index: 99;
+    .Q_LogoIcon {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+}
+// Подвал
+.O_Footer {
+    margin-top: 2vw;
+    float: bottom;
+    width: 94vw;
+    height: 16vw;
+    margin-left: -2vw;
+    border-radius: 2vw 2vw 0px 0px;
+    background: var(--Charcoal);
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .Q_LogoIcon {
+      width: 7vw;
+      height: 7vw;
+    }
+}
+body.articles {
+    .O_Menubar, .O_Footer {
+        background-color: var(--Blacky);
+    }
+    .O_MainCardArticle {
+        display: flex;
+        flex-direction: column;
+        width: 36vw;
+        height: auto;
+        justify-content: space-between;
+    }
+    .O_CardArticle {
+        width: 28.7vw;
+        height: auto;
+        padding: 1.2vw;
+        background-color: var(--Mushy-White);
+        border-radius: 1.17vw;
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        overflow: hidden;
+        &:hover {
+            box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+        }
+    }
+}
+body.recipes {
+    .O_Menubar, .O_Footer {
+        background-color: var(--Blacky);
+    }
+    .O_CardRecipe {
+        display: block;
+        padding: 1.2vw;
+        width: 28.7vw;
+        height: 24vw;
+        border-radius: 1.17vw;
+        background-color: var(--Mushy-White);
+        background-size: cover;
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        h3 {
+            color: var(--Charcoal);
+        }
+        &:nth-of-type(1) {
+            background-image: url('images/RecipeCover1.webp');
+        }
+        &:nth-of-type(2) {
+            background-image: url('images/RecipeCover2.webp');
+        }
+        &:hover {
+            box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+        }
+ 
+    }
+    .O_CardLargeRecipe {
+        padding: 1.2vw 1.2vw 1.2vw 62vw;
+        width: 100%;
+        height: 24vw;
+        border-radius: 1.17vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--Fox);
+        background-size: cover;
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        &:nth-of-type(4) {
+            background-image: url('images/LargeRecipeCover1.webp');
+        }
+        h3 {
+            color: var(--Charcoal);
+            span img{
+                height: 4vw;
+            }
+        }
+       
+        &:hover {
+            box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+        }
+    }
+    .O_CardPageRecipe {
+        width: 100%;
+        height: 24vw;
+        padding: 1.2vw 4.8vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .O_ProcessRecipe, .O_ProcessServing {
+        h3 {
+            color: var(--Mushy-White);
+            margin-bottom: 2.4vw;
+            text-transform: none;
+        }
+    }
+    .O_ProcessServing {
+        p {
+            color: var(--Mushy-White);
+            width: 42vw;
+            margin-left: 6vw;
+            font-weight: 250;
+        }
+    }
+}

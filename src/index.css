@@ -4,47 +4,12 @@
 @import 'stylesheets/index.scss';
 @import 'stylesheets/article.scss';
 @import 'stylesheets/styleguide.scss';
-@import 'stylesheets/index_responsive.scss';
 @import 'stylesheets/vars.scss';
-a {
-    text-decoration: none;
-    color: inherit;
-  }
-  body, a, button {
-      font-family: "Jost";
-  } 
- 
-  h1 {
-      font-size: 5vw;
-      text-transform: uppercase;
-  }
-  h2 {
-      font-size: 3.75vw;
-      text-transform: uppercase;
-  }
-  h3 {
-      font-size: 2.56vw;
-      text-transform: uppercase;
-  }
-  h4 {
-      font-size: 1.6vw;
-      text-transform: uppercase;
-      line-height: 2vw;
-  }
-  h5 {
-      font-size: 1vw;
-      text-transform: uppercase;
-  }
-  h6 {
-      font-size: 0.9vw;
-      font-weight: 200;
-  }
-  p {
-      font-size: 1.4vw;
-      font-weight: 400;
-      line-height: normal;
-  }
-  
-  * {
-      box-sizing: border-box;
-  }
+@import 'stylesheets/general.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/collections.scss';
+@import 'stylesheets/components/wrappers.scss';
+@import 'stylesheets/components/organisms.scss';
+@import 'stylesheets/components/super-organisms.scss';
