@@ -5,6 +5,11 @@ body {
     height: 100vh;
     padding: 6.4vw 5vw 0vw 5vw;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    flex: 1; 
 }
 * {
     box-sizing: border-box;
@@ -23,6 +28,11 @@ h1 {
 h2 {
     font-size: 3.75vw;
     text-transform: uppercase;
+    span {
+        img {
+            height: 4vw;
+        }
+    }
 }
 h3 {
     font-size: 2.56vw;
@@ -46,6 +56,12 @@ p {
     font-weight: 400;
     line-height: normal;
 }
+img {
+    object-fit: cover;
+}
+span img {
+    height: 4vw;
+}
 // Ползунок
 ::-webkit-scrollbar {
     width: 0.7vw; 
@@ -56,7 +72,6 @@ p {
 }
 
 // Настройка цветов страниц
-body.articles {
+body {
     background-color: var(--Charcoal);
 }
-  

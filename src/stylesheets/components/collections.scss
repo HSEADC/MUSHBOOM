@@ -44,72 +44,178 @@ footer {
         }
     }
 }
+.C_Filters {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.2vw;
+    justify-content: space-between;
+}
+
+.C_Tags {
+    width: 100%;
+    gap: 0.7vw 1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.C_PageButtoms {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.C_PageSocials {
+    display: flex;
+    gap: 0.2vw;
+}
+
+// Главная
+.C_IndexArticles {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.2vw;
+    width: 58.7vw;
+    align-items: flex-end;
+    
+}
+.C_IndexTagsArticle {
+    gap: 0.7vw 1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.C_IndexMemos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.C_IndexRecipes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+.C_IndexWikiCards {
+    width: 66.7vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+    justify-content: flex-end;
+}
+
+// Статьи
+.C_TagsArticle {
+    margin-top: 0.6vw;
+    width: 25vw ;
+    gap: 0.7vw 1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: flex-end;
+}
 body.articles {
-    .C_TagsArticles {
-        width: 100%;
-        display: flex;
-        margin-bottom: 1.2vw;
-        justify-content: space-between;
-    }
-    .C_TagsArticle {
-        margin-top: 0.6vw;
-        width: 25vw ;
-        gap: 0.7vw 1.2vw;
-        display: flex;
-        flex-wrap: wrap;
-        position: absolute;
-        justify-content: flex-end;
-    }
     .C_CardsArticle {
         display: flex;
         gap: 1.2vw;
         flex-direction: column;
     }
-}
 
-body.recipes {
-    .C_TagsRecipes {
+    .C_TagsUnoArticle {
+        display: flex;
+        gap: 1.2vw;
+    }
+    .C_PhotoUnoArticle {
         width: 100%;
         display: flex;
-        margin-bottom: 1.2vw;
         justify-content: space-between;
+        gap: 1.2vw;
+        img {
+            width: 28.7vw;
+            height: 36vw;
+            border-radius: 1.17vw;
+        }
+        div {
+            display: flex;
+            gap: 1.2vw;
+            flex-direction: column;
+            img {
+                height: 17.4vw;
+            }
+        }
     }
-    .C_TagsRecipe {
-        margin-top: 0.6vw;
-        gap: 0.7vw 1.2vw;
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    .C_CharacteristicsRecipe {
-        display: flex;
-        gap: 3.6vw;
-    }
-    .C_Ingredients {
-        display: flex;
-        gap: 5.6vw;
-    }
-    .C_ColumnPointsRecipe {
-        display: flex;
-        width: 36vw;
-        flex-direction: column;
-        gap: 2.4vw;
-    }
-    .C_ButtomsRecipe {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .C_RecipeSocials {
-        display: flex;
-        gap: 0.2vw;
-    }
-    .C_CardRecipes {
+    .C_CardArticles {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: space-between;
         row-gap: 1.2vw;
         margin-bottom: 4vw;
+        a {
+            height: 36vw;
+            img {
+                height: 26.4vw;
+            }
+        }
     }
+}
+
+// Рецепты
+.C_TagsRecipe {
+    margin-top: 0.6vw;
+    gap: 0.7vw 1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.C_CharacteristicsRecipe {
+    display: flex;
+    gap: 3.6vw;
+}
+.C_Ingredients {
+    display: flex;
+    gap: 5.6vw;
+}
+.C_ColumnPointsRecipe {
+    display: flex;
+    width: 36vw;
+    flex-direction: column;
+    gap: 2.4vw;
+}
+.C_CardRecipes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1.2vw;
+    margin-bottom: 4vw;
+}
+
+// Грибвики
+.C_TagsGribie {
+    margin-top: 0.6vw;
+    width: 12vw;
+    gap: 0.7vw 1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Памятки
+.C_MemoButtons {
+    position: relative;
+    padding: 1.2vw;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.C_PointsUnoMemo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+// Тесты
+.C_TestsCards {
+    width: 100%;
+    padding: 2.4vw;
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,3 +1,4 @@
+// Иконки
 .Q_LogoIcon {
     background-image: url("./images/Logoicon_white.svg");
     background-size: cover;
@@ -23,18 +24,83 @@
     height: 1.6vw;
     margin-bottom: 0.7vw;
 }
+.Q_MushIcon {
+    height: 4vw;
+}
+
+// Меню
 #Q_SearchField {
     width: 92%;
     height: 3.2vw;
     background-color: var(--Mushy-White) 0%;
     border: none;
     color: var(--Ashy-Grey);
+    font-size: 1vw;
     &::placeholder {
         color: var(--Ashy-Grey);
+        font-size: 1vw;
     }
     &:hover, &:focus {
         outline: none;
         border: none;
         color: var(--Mushy-White);
     }
+}
+
+// Главная
+.Q_IndexCover {
+    width: 100%;
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+}
+.Q_IndexHeader {
+    color: var(--Mushy-White);
+}
+
+// Единичные статьи
+.Q_CoverUnoArticle {
+    width: 100%;
+    border-radius: 1.17vw;
+}
+
+// Памятки
+.Q_PhotoMainCardMemo{
+    height: 109%;
+    width: auto;
+    background-size: cover;
+    margin: -1.2vw -1.2vw 0 -1.2vw;
+    border-radius: 1.17vw;
+}
+
+// Единичные памятки
+.Q_CoverUnoMemo {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    margin-top: -2.4vw;
+}
+.Q_SubtitleUnoMemo {
+    color: var(--Mushy-White);
+}
+
+// Текст на единичных страницах
+.Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
+    width: 36vw;
+    margin-left: 48vw;
+    font-weight: 300;
+    color: var(--Mushy-White);
+}
+
+.Q_LargeRecipeCover {
+    position: absolute;
+    height: 100%;
+    margin-left: 2.4vw;
+}
+
+// Тесты
+.Q_TestsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
 }

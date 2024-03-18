@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MushBoom | Рецепты</title>
+    <title>MushBoom | Памятки </title>
     <link rel="icon" type="image/x-icon" href="images/icon_mushboom.ico" />
   </head>
   <body class="memos">
@@ -18,9 +18,116 @@
        <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
        <a class="A_TextMenubar" href="tests.html">Тесты</a>
       </div>
+      <!-- Поиск -->
+      <div class="M_SearchField">
+        <div class="Q_SearchIcon"></div>
+        <div class="A_SearchField">
+          <input id="Q_SearchField" type="text" id="searchInput" placeholder="Я ищу..."/>
+          <div id="C_SearchResults"></div>
+        </div>
+      </div>
       <!-- Логотипчег -->
       <a class="Q_LogoIcon" href="index.html"></a>
     </menu>
+
+    <!-- Блок с главной, так называемой, памяткой дня -->
+    <div class="MainCardMemo">
+      <a class="S_MainCardMemo" href="memos/odezhda_gribnika.html">
+        <!-- Блок с инфой о статье -->
+          <div class="O_MainCardMemo">
+            <!-- Теги для статьи дня -->
+              <div class="C_Tags">
+                <h5 class="A_Tag">Памятка дня</h5>
+              </div>
+              <!-- Заголовок и описание статьи дня -->
+              <div class="W_TextMainCardMemo">
+              <h2>Одежда <span><img src="images/MushIcon-b3.svg" alt=""></span><br>грибника</h2>
+              <p>Тщательно подобрав одежду, вы сможете комфортно и безопасно наслаждаться сбором грибов в лесу</p>
+              </div>
+          </div>
+          <!-- Обложка (картинка) статьи дня -->
+          <img class="Q_PhotoMainCardMemo" src="images/Memos/OdezhdaGribnika.webp"></img>
+      </a>
+    </div>
+
+    <!-- Секция с библиотекой напоминалок -->
+    <section class="S_CardsMemos">
+    
+        <!-- Карточка отдельной памятки -->
+        <div class="O_CardMemo">
+          <!-- Обложка (картинка) памятки -->
+          <img class="A_PhotoMemo" src="images/Memos/ToxicMush.webp"></img>
+          <!-- Заголовок и начало памятки -->
+          <div class="A_TextMemo">
+            <h3>toxic mush</h3>
+            <p>Как выявить ядовитый гриб?</p>
+          </div>
+          <!-- Кнопка для скачивания памятки -->
+          <div class="C_MemoButtons">    
+            <!-- Кнопка для перехода на страницу памятки -->
+            <a href="memos/toxic_mush.html" class="A_MemoMore">
+              <!-- Наполнение кнопки -->
+              <p>Подробнее</p>
+              <img src="images/arrow1.svg" alt="стрелочка">
+            </a>
+            <!-- Кнопка для скачивания памятки -->
+            <a href="memo_download/toxic_mush.pdf" download="toxic_mush.pdf" class="A_MemoDownload">
+              <img src="images/download.svg" alt="стрелочка «скачать»">
+            </a>
+          </div>
+        </div>
+
+        <!-- Карточка отдельной памятки -->
+        <div class="O_CardMemo">
+          <!-- Обложка (картинка) памятки -->
+          <img class="A_PhotoMemo" src="images/Memos/PutiGribnika.webp"></img>
+          <!-- Заголовок и начало памятки -->
+          <div class="A_TextMemo">
+            <h3>путь грибника</h3>
+            <p>Как правильно собирать грибы?</p>
+          </div>
+          <!-- Кнопка для скачивания памятки -->
+          <div class="C_MemoButtons">    
+            <!-- Кнопка для перехода на страницу памятки -->
+            <a href="memos/puti_gribnika.html" class="A_MemoMore">
+              <!-- Наполнение кнопки -->
+              <p>Подробнее</p>
+              <img src="images/arrow1.svg" alt="стрелочка">
+            </a>
+            <!-- Кнопка для скачивания памятки -->
+            <a href="memo_download/toxic_mush.pdf" download="toxic_mush.pdf" class="A_MemoDownload">
+              <img src="images/download.svg" alt="стрелочка «скачать»">
+            </a>
+          </div>
+        </div>
+
+        <!-- Карточка отдельной памятки -->
+        <div class="O_CardMemo">
+          <!-- Обложка (картинка) памятки -->
+          <img class="A_PhotoMemo" src="images/Memos/GribnoiStrah.webp"></img>
+          <!-- Заголовок и начало памятки -->
+          <div class="A_TextMemo">
+            <h3>Грибной страх</h3>
+            <p>Что делать, когда отравился?</p>
+          </div>
+          <!-- Кнопка для скачивания памятки -->
+          <div class="C_MemoButtons">    
+            <!-- Кнопка для перехода на страницу памятки -->
+            <a href="memos/gribnoi_strah.html" class="A_MemoMore">
+              <!-- Наполнение кнопки -->
+              <p>Подробнее</p>
+              <img src="images/arrow1.svg" alt="стрелочка">
+            </a>
+            <!-- Кнопка для скачивания памятки -->
+            <a href="memo_download/toxic_mush.pdf" download="toxic_mush.pdf" class="A_MemoDownload">
+              <img src="images/download.svg" alt="стрелочка «скачать»">
+            </a>
+          </div>
+        </div>
+  
+    </section>
+
+    <div class="wrapper"> </div>
 
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
@@ -64,10 +171,6 @@
         <h5 class="A_HeaderFooter">Соц сети</h5>
         <!-- Кнопки соц сетей -->
         <div class="C_Socials">
-          <!-- Инстаграм -->
-          <a href="" class="A_InstIcon"> 
-            <img src="images/Instagramicon_black.svg" alt="Иконка Инстаграм">
-          </a>
           <!-- Телеграм -->
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">

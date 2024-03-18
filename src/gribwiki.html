@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MushBoom | Рецепты</title>
+    <title>MushBoom | ГрибWiki</title>
     <link rel="icon" type="image/x-icon" href="images/icon_mushboom.ico" />
   </head>
   <body class="gribwiki">
@@ -18,9 +18,191 @@
        <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
        <a class="A_TextMenubar" href="tests.html">Тесты</a>
       </div>
+      <!-- Поиск -->
+      <div class="M_SearchField">
+        <div class="Q_SearchIcon"></div>
+        <div class="A_SearchField">
+          <input id="Q_SearchField" type="text" id="searchInput" placeholder="Я ищу..."/>
+          <div id="C_SearchResults"></div>
+        </div>
+      </div>
       <!-- Логотипчег -->
       <a class="Q_LogoIcon" href="index.html"></a>
     </menu>
+
+    <!-- Фильтрация -->
+    <div class="C_Filters">
+      <button class="A_Filter active" data-filter="all"><h5>Все виды</h5></button>
+      <button class="A_Filter" data-filter="baz"><h5>Базидиомицеты</h5></button>
+      <button class="A_Filter" data-filter="ask"><h5>Аскомицеты</h5></button>
+      <button class="A_Filter" data-filter="eat"><h5>Съедобные</h5></button>
+      <button class="A_Filter" data-filter="noteat"><h5>несъедобные</h5></button>
+    </div>
+
+    <!-- Секция с коллекцией всех грибов -->
+    <section class="S_CardsGribwiki">
+
+      <!-- Карточка единичного гриба -->
+      <a class="O_CardGrib eat" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/BeliyGrib.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Белый<br>
+            Гриб
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+              <h5 class="A_Tag">Съедобные</h5>
+          </div>
+        </div>
+     </a>
+
+      <!-- Большая карточка единичного гриба -->
+      <a class="O_CardLargeGrib baz" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/ZolotieLisichki.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Золотые<br>
+            Лисички
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+            <h5 class="A_Tag">Сезонные</h5>
+            <h5 class="A_Tag">Базидиомицеты</h5>
+          </div>
+        </div>
+      </a>    
+
+
+      <!-- Карточка единичного гриба -->
+      <a class="O_CardGrib eat" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/BeliyGrib.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Белый<br>
+            Гриб
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+              <h5 class="A_Tag">Съедобные</h5>
+          </div>
+        </div>
+     </a>
+
+      <!-- Большая карточка единичного гриба -->
+      <a class="O_CardLargeGrib baz" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/ZolotieLisichki.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Золотые<br>
+            Лисички
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+            <h5 class="A_Tag">Сезонные</h5>
+            <h5 class="A_Tag">Базидиомицеты</h5>
+          </div>
+        </div>
+      </a>  
+
+      <!-- Карточка единичного гриба -->
+      <a class="O_CardGrib eat" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/BeliyGrib.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Белый<br>
+            Гриб
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+              <h5 class="A_Tag">Съедобные</h5>
+          </div>
+        </div>
+     </a>
+
+      <!-- Карточка единичного гриба -->
+      <a class="O_CardGrib eat" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/BeliyGrib.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Белый<br>
+            Гриб
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+              <h5 class="A_Tag">Съедобные</h5>
+          </div>
+        </div>
+     </a>
+
+      <!-- Карточка единичного гриба -->
+      <a class="O_CardGrib eat" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/BeliyGrib.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Белый<br>
+            Гриб
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+              <h5 class="A_Tag">Съедобные</h5>
+          </div>
+        </div>
+     </a>
+
+      <!-- Карточка единичного гриба -->
+      <a class="O_CardGrib eat" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/BeliyGrib.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Белый<br>
+            Гриб
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+              <h5 class="A_Tag">Съедобные</h5>
+          </div>
+        </div>
+     </a>
+
+      <!-- Большая карточка единичного гриба -->
+      <a class="O_CardLargeGrib baz" href="">
+        <!-- Обложка(фотография) -->
+        <img src="images/Gribwiki/ZolotieLisichki.webp" alt="">
+        <div class="W_TextGribwiki">
+          <!-- Название -->
+          <h3>
+            Золотые<br>
+            Лисички
+          </h3>
+          <!-- Теги (инфа) -->
+          <div class="C_TagsGribie">
+            <h5 class="A_Tag">Сезонные</h5>
+            <h5 class="A_Tag">Базидиомицеты</h5>
+          </div>
+        </div>
+      </a>  
+
+    </section>
+
+   
+    <div class="wrapper"> </div>
 
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
@@ -64,10 +246,6 @@
         <h5 class="A_HeaderFooter">Соц сети</h5>
         <!-- Кнопки соц сетей -->
         <div class="C_Socials">
-          <!-- Инстаграм -->
-          <a href="" class="A_InstIcon"> 
-            <img src="images/Instagramicon_black.svg" alt="Иконка Инстаграм">
-          </a>
           <!-- Телеграм -->
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">

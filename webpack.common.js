@@ -135,19 +135,69 @@ module.exports = {
       filename: './tests.html'
     }),
 
-    // Pages
+    // Article Pages
     new HtmlWebpackPlugin({
-      template: './src/articles/article1.html',
-      filename: './articles/article1.html'
+      template: './src/articles/timberland.html',
+      filename: './articles/timberland.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/memos/memo1.html',
-      filename: './memos/memo1.html'
+      template: './src/articles/tihaya_ohota.html',
+      filename: './articles/tihaya_ohota.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/pink_oyster.html',
+      filename: './articles/pink_oyster.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/gribi_v_iskusstve.html',
+      filename: './articles/gribi_v_iskusstve.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/ekipirovka.html',
+      filename: './articles/ekipirovka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/dozhdeviki.html',
+      filename: './articles/dozhdeviki.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/deti_i_pohodi.html',
+      filename: './articles/deti_i_pohodi.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/angels_wings.html',
+      filename: './articles/angels_wings.html'
+    }),
+
+    // Memo Pages
+    new HtmlWebpackPlugin({
+      template: './src/memos/puti_gribnika.html',
+      filename: './memos/puti_gribnika.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/odezhda_gribnika.html',
+      filename: './memos/odezhda_gribnika.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/gribnoi_strah.html',
+      filename: './memos/gribnoi_strah.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/toxic_mush.html',
+      filename: './memos/toxic_mush.html'
     }),
     // Recipe Pages
     new HtmlWebpackPlugin({
       template: './src/recipes/fettuchini.html',
       filename: './recipes/fettuchini.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/kitaiskie_brokkoli.html',
+      filename: './recipes/kitaiskie_brokkoli.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/zharenie_shampinioni.html',
+      filename: './recipes/zharenie_shampinioni.html'
     }),
 
     // Styleguide

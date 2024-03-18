@@ -1,137 +1,351 @@
-menu {
-    .A_TextMenubar {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        padding: 0.7vw 1.6vw;
-        text-transform: uppercase;
-        color: var(--Mushy-White);
-        font-weight: 400;
-        font-size: 1vw;
-        letter-spacing: 0.12vw;
-        border-radius: 4vw;
-        border: solid 0.1vw #00000000;
-        background-color: var(--Charcoal);
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        &:hover {
-            border: solid 0.1vw var(--Fox); 
-        }
+// Меню
+.A_TextMenubar {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.7vw 1.6vw;
+    text-transform: uppercase;
+    color: var(--Mushy-White);
+    font-weight: 400;
+    font-size: 1vw;
+    letter-spacing: 0.12vw;
+    border-radius: 4vw;
+    border: solid 0.1vw #00000000;
+    background-color: var(--Blacky);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        border: solid 0.1vw var(--Fox); 
+        border: solid 0.1vw var(--Sunny);
+    }
+    &:active {
+        border: solid 0.1vw var(--Sunny); 
+        background-color: var(--Sunny);
+    }
+}
+.A_SearchField {
+    width: 92%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+body.articles {
+    .A_TextMenubar:nth-of-type(1) {
+            background-color: var(--Fox);
+            &:active {
+                background-color: var(--Sunny);
+            }
+    }
+}
+body.memos {
+    .A_TextMenubar:nth-of-type(2) {
+        background-color: var(--Fox);
         &:active {
+            background-color: var(--Sunny);
+        }
+    }
+}
+body.gribwiki {
+    .A_TextMenubar:nth-of-type(4) {
+        background-color: var(--Fox);
+        &:active {
+            background-color: var(--Sunny);
+        }
+    }
+}
+
+// Подвал
+.A_HeaderFooter {
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: var(--Ashy-Grey);
+}
+.A_TextFooter {
+    font-size: 0.9vw;
+    font-weight: 200;
+    color: var(--Mushy-White);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    margin: 0.8vw 0vw;
+    &:hover {
+        color: var(--Fox);
+    }
+    &:active {
+        color: var(--Sunny);
+    }
+}
+.A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 3vw;
+    background-color: var(--Fox);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    border: solid 0.1vw var(--Fox);
+    img {
+        width: 2vw;
+        height: 2vw;
+    }
+    &:hover {
+        background-color: var(--Sunny);
+    }
+    &:active {
+        transform: scale(0.95);
+        border: solid 0.1vw var(--Sunny);
+    }
+}
+
+// Фильтры
+.A_Filter {
+    padding: 1vw 4.6vw;
+    border: solid 0.1vw var(--Fox);
+    border-radius: 1.17vw;
+    color: var(--Fox);
+    background-color: var(--Charcoal);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
+    }
+    &:active {
+        background-color: var(--Sunny);
+        color: var(--Mushy-White);
+    }
+}
+.A_Filter.active {
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    background-color: var(--Fox);
+    color: var(--Mushy-White);
+}
+body.recipes {
+    .A_Filter {
+        padding: 1vw 4.4vw;
+    }
+}
+body.gribwiki {
+    .A_Filter {
+        padding: 1vw 5.2vw;
+    }
+}
+
+// Теги
+.A_Tag {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.7vw 1.6vw;
+    border-radius: 4vw;
+    border: solid var(--Fox) 0.1vw;
+    color: var(--Fox);
+    background-color: var(--Mushy-White) ;
+} 
+.W_SignsUnoMemo {
+    .A_Tag {
+        color: var(--Charcoal);
+    }
+} 
+.S_MainCardArticle {
+    .A_Tag:nth-of-type(1) {
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
+    }
+}
+.O_CardLargeRecipe {
+    .A_Tag {
+        border: solid var(--Charcoal) 0.1vw;
+        color: var(--Charcoal);
+        background-color: var(--Fox) ;
+        &:nth-of-type(1) {
+        color: var(--Fox);
+        background-color: var(--Charcoal) ;
+        }
+    }    
+}
+.O_IndexArticle {
+    .A_Tag {
+        background-color: var(--Charcoal);
+    }
+}
+.O_CardLargeGrib {
+    .A_Tag:nth-of-type(1) {
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
+    }
+}
+
+// Кнопки в единичных страницах
+.M_PageBottom {
+    .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+        img {
+            width: 64%;
+            height: 64%;
+        }
+    }
+}
+.A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 4vw;
+    background-color: var(--Fox);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1vw var(--Fox);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        background-color: var(--Sunny);
+        border: solid 0.1vw var(--Sunny);
+    }
+    &:active {
+        transform: scale(0.95);
+        border: solid 0.1vw var(--Sunny);
+    }
+}
+.A_ArrowIcon {
+    img {
+        width: 42%;
+        height: 42%;
+    }
+}
+
+// Главная
+.A_TextIndexCover {
+    h1 {
+        color: var(--Fox);
+        margin-bottom: 0.7vw;
+    }
+    h2 {
+        color: var(--Mushy-White);
+    }
+}
+.A_IndexAllButton {
+    display: flex;
+    gap: 1.2vw;
+    align-items: center;
+    p {
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+        color: var(--Fox);
+    }
+    .A_ArrowIcon {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    &:hover {
+        p {
+            color: var(--Sunny);
+        }
+        .A_ArrowIcon {
             border: solid 0.1vw var(--Sunny); 
             background-color: var(--Sunny);
         }
     }
-    .A_SearchField {
-        width: 92%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
+
 }
-footer {
-    .A_HeaderFooter {
-        font-size: 1vw;
-        text-transform: uppercase;
-        color: var(--Ashy-Grey);
-    }
-    .A_TextFooter {
-        font-size: 0.9vw;
-        font-weight: 200;
-        color: var(--Mushy-White);
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        margin: 0.8vw 0vw;
-        &:hover {
-            color: var(--Fox);
-        }
-        &:active {
-            color: var(--Sunny);
-        }
-    }
-    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 3vw;
-        height: 3vw;
-        border-radius: 3vw;
-        background-color: var(--Fox);
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        border: solid 0.1vw var(--Fox);
-        img {
-            width: 2vw;
-            height: 2vw;
-        }
-        &:hover {
-            background-color: var(--Sunny);
-        }
-        &:active {
-            transform: scale(0.95);
-            border: solid 0.1vw var(--Sunny);
-        }
-    }
+.A_IndexPhotoArticle {
+    width: 100%;
+    height: 16vw;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
 }
-body.articles {
-    .A_TagArticles {
-        padding: 1vw 4.6vw;
-        border: solid 0.1vw var(--Fox);
-        border-radius: 1.17vw;
-        color: var(--Fox);
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        &:hover {
-            background-color: var(--Fox);
-            color: var(--Mushy-White);
-        }
-        &:active {
-            background-color: var(--Sunny);
-            color: var(--Mushy-White);
-        }
-    }
-    .A_TagArticles.active {
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        background-color: var(--Fox);
-        color: var(--Mushy-White);
-    }
-    .A_TextMenubar {
-        background-color: var(--Blacky);
-    }
-    .A_PhotoMainCardArticle{
-        height: 109%;
-        width: 46vw;
-        background-size: cover;
-        margin: -1.2vw -1.2vw 0 -1.2vw;
-        border-radius: 1.17vw;
-       
-    }
-    .A_TagArticle {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        padding: 0.7vw 1.6vw;
-        border-radius: 4vw;
-        border: solid var(--Fox) 0.1vw;
-        color: var(--Fox);
-        background-color: var(--Mushy-White) ;
-    }    
-    .A_PhotoArticle {
-        width: 100%;
-        height: auto;
-        border-radius: 1.17vw;
-    }
+body.index {
     .A_TextArticle {
         h4 {
-            text-transform:none;
+            color: var(--Mushy-White);      
         }
-        p {
-            font-size: 1.1vw;
-            color: var(--Ashy-Grey);
-        }
+
     }
 }
-body.recipes {
-    .A_TextMenubar {
-        background-color: var(--Blacky);
+.A_IndexFormCover {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 60.4vw;
+    height: 28.9vw;
+    border-radius: 1.17vw;
+    overflow: hidden;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
-    background-color: var(--Charcoal);
+    h3 {
+        color: var(--Charcoal);
+        position: relative;
+        margin: 2.4vw;
+    }
+}
+#A_IndexFormButton {
+    font-size: 1.4vw;
+    width: 100%;
+    padding: 2.4vw;
+    border-radius: 1vw;
+    border: 0;
+    outline: none;
+    color: var(--Mushy-White);
+    background: var(--Fox);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+    &:active {
+        background-color: var(--Sunny);
+    }
+}
+
+// Статьи
+.A_PhotoMainCardArticle{
+    height: 109%;
+    width: 46vw;
+    background-size: cover;
+    margin: -1.2vw -1.2vw 0 -1.2vw;
+    border-radius: 1.17vw;
+   
+}
+.A_TagUnoArticle {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.7vw 1.6vw;
+    border-radius: 4vw;
+    border: solid var(--Fox) 0.1vw;
+    color: var(--Fox);
+    background-color: var(--Charcoal) ;
+}
+.A_PhotoArticle {
+    width: 100%;
+    border-radius: 1.17vw;
+    object-fit: cover;
+}
+.A_TextArticle {
+    h4 {
+        color: var(--Charcoal);
+        text-transform:none;
+        margin-bottom: 0.4vw;
+    }
+    p {
+        font-size: 1.1vw;
+        color: var(--Ashy-Grey);
+    }
+}
+
+.A_SubtitleUnoAtricle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        color: var(--Mushy-White);
+    }
+    h3:nth-of-type(2) {
+        color: var(--Fox);
+    }
+}
+
+
+
+body.recipes {
     .A_TextMenubar:nth-of-type(3) {
         background-color: var(--Fox);
         &:hover {
@@ -142,84 +356,87 @@ body.recipes {
             background-color: var(--Sunny);
         }
     }
-    .A_TagRecipes {
-        padding: 1vw 4.29vw;
-        border: solid 0.1vw var(--Fox);
-        border-radius: 1.17vw;
-        color: var(--Fox);
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        &:hover {
-            background-color: var(--Fox);
-            color: var(--Mushy-White);
-        }
-        &:active {
-            background-color: var(--Sunny);
-            color: var(--Mushy-White);
-        }
-    }
-    .A_TagRecipes.active {
-        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-        background-color: var(--Fox);
-        color: var(--Mushy-White);
-    }
-    .O_CardRecipe {
-        .A_TagRecipe {
-            display: flex;
-            justify-items: center;
-            align-items: center;
-            padding: 0.7vw 1.6vw;
-            border-radius: 4vw;
-            border: solid var(--Fox) 0.1vw;
-            color: var(--Fox);
-            background-color: var(--Mushy-White) ;
-        }    
-    }
-    .O_CardLargeRecipe {
-        .A_TagRecipe {
-            display: flex;
-            justify-items: center;
-            align-items: center;
-            padding: 0.7vw 1.6vw;
-            border-radius: 4vw;
-            border: solid var(--Fox) 0.1vw;
-            color: var(--Mushy-White);
-            background-color: var(--Charcoal) ;
-        }    
-    }
+    // Страница единичного рецепта
     .A_CoverRecipe {
         width: 100%;
         height: auto;
     }
-    .M_BottomRecipe {
-        .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
-            width: 3vw;
-            height: 3vw;
-            border-radius: 4vw;
-            background-color: var(--Fox);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: solid 0.1vw var(--Mushy-White); 
-            transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-            &:hover {
-                border: solid 0.1vw var(--Fox); 
-            }
-            &:active {
-                border: solid 0.1vw var(--Sunny); 
-                background-color: var(--Sunny);
-            }
-        }
-        .A_ArrowIcon {
-            img {
-                width: 42%;
-                height: 42%;
-            }
-        }
-        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
-            img {
-                width: 64%;
-                height: 64%;
-            }
-        }
+}
+
+// Памятки
+.S_MainCardMemo {
+    .A_Tag:nth-of-type(1) {
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
     }
 }
+.A_PhotoMemo {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+.A_TextMemo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 1.6vw;
+    p {
+        font-size: 1.2vw;
+    }
+}
+.A_MemoDownload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Fox);
+    width: 18%;
+    height: 100%;
+    border: none;
+    border-radius: 5vw;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    img {
+      position: relative;
+      width: auto;
+      height: 38%;
+    }
+    &:hover {
+      box-shadow: 0px 0px 0px 0.5vw #ffffff, 0px 0px 0px 0.6vw #0000003a;
+    }
+    &:active {
+        background-color: var(--Sunny);
+      }
+  }
+.A_MemoMore {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Mushy-White);
+    width: 78%;
+    height: 100%;
+    border: none;
+    border-radius: 1.2vw;
+    padding: 0 2vw;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    p {
+      position: relative;
+      color: var(--Charcoal);
+    }
+    img {
+      position: relative;
+      width: auto;
+      transform: rotate(180deg);
+      height: 28%;
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw #00000000, 0px 0px 0px 0.6vw #ffffff3a;
+      }
+    &:active {
+        background-color: var(--Ashy-Grey);
+    }
+  }

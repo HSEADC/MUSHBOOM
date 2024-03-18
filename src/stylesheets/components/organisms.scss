@@ -10,7 +10,7 @@
     top: 1vw;
     padding: 0 3vw;
     border-radius: 5vw;
-    background-color:var(--Charcoal);
+    background-color:var(--Blacky);
     z-index: 99;
     .Q_LogoIcon {
         width: 2.4vw;
@@ -19,13 +19,13 @@
 }
 // Подвал
 .O_Footer {
-    margin-top: 2vw;
+    margin-top: 1.2vw;
     float: bottom;
     width: 94vw;
     height: 16vw;
     margin-left: -2vw;
     border-radius: 2vw 2vw 0px 0px;
-    background: var(--Charcoal);
+    background: var(--Blacky);
     padding: 3vw;
     display: flex;
     flex-direction: row;
@@ -35,104 +35,194 @@
       height: 7vw;
     }
 }
-body.articles {
-    .O_Menubar, .O_Footer {
-        background-color: var(--Blacky);
-    }
-    .O_MainCardArticle {
-        display: flex;
-        flex-direction: column;
-        width: 36vw;
-        height: auto;
-        justify-content: space-between;
-    }
-    .O_CardArticle {
-        width: 28.7vw;
-        height: auto;
-        padding: 1.2vw;
-        background-color: var(--Mushy-White);
-        border-radius: 1.17vw;
-        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
-        overflow: hidden;
-        &:hover {
-            box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
-        }
+// Главная
+.O_IndexArticle {
+    width: 28.7vw;
+    padding: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    border-radius: 1.17vw;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
     }
 }
-body.recipes {
-    .O_Menubar, .O_Footer {
-        background-color: var(--Blacky);
+#O_IndexForm {
+    width: 28.9vw;
+    border-radius: 1.17vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+// Статьи
+.O_MainCardArticle {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    height: auto;
+    justify-content: space-between;
+}
+.O_CardArticle {
+    width: 28.7vw;
+    height: auto;
+    padding: 1.2vw;
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    overflow: hidden;
+
+}
+
+// Рецепты
+.O_CardRecipe {
+    display: block;
+    padding: 1.2vw;
+    width: 28.7vw;
+    height: 24vw;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
+    background-size: cover;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    h3 {
+        color: var(--Charcoal);
     }
-    .O_CardRecipe {
-        display: block;
+    &:nth-of-type(1) {
+        background-image: url('images/RecipeCover1.webp');
+    }
+    &:nth-of-type(2) {
+        background-image: url('images/RecipeCover2.webp');
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+
+}
+.O_CardLargeRecipe {
+    position: relative;
+    width: 100%;
+    height: 24vw;
+    border-radius: 1.17vw;
+    display: flex;
+    align-content: flex-end;
+    background-color: var(--Fox);
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.O_CardPageRecipe {
+    width: 100%;
+    height: 24vw;
+    padding: 1.2vw 4.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.O_ProcessRecipe, .O_ProcessServing {
+    h3 {
+        color: var(--Mushy-White);
+        margin-bottom: 2.4vw;
+        text-transform: none;
+    }
+}
+.O_ProcessServing {
+    p {
+        color: var(--Mushy-White);
+        width: 42vw;
+        margin-left: 6vw;
+        font-weight: 250;
+    }
+}
+
+// Грибвики
+.O_CardGrib {
+    position: relative;
+    width: 21.4vw;
+    height: 21.4vw;
+    overflow: hidden;
+    border-radius: 1.17vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    h3 {
+        color: var(--Charcoal);
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.O_CardLargeGrib {
+    position: relative;
+    width: 44vw;
+    height: 21.4vw;
+    overflow: hidden;
+    border-radius: 1.17vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    h3 {
+        color: var(--Charcoal);
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+
+// Памятки
+.O_MainCardMemo, .O_CoverUnoMemo {
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    height: auto;
+    justify-content: space-between;
+}
+.O_CardMemo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28.9vw;
+    height: 36vw;
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+    overflow: hidden;
+    align-items: center;
+}
+.O_PointMemo {
+    width: 28.9vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    h3 {
+        color: var(--Mushy-White);
+    }
+    h3:nth-of-type(1) {
+        color: var(--Fox);
+    }
+    p {
         padding: 1.2vw;
-        width: 28.7vw;
-        height: 24vw;
-        border-radius: 1.17vw;
-        background-color: var(--Mushy-White);
-        background-size: cover;
-        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
-        h3 {
-            color: var(--Charcoal);
-        }
-        &:nth-of-type(1) {
-            background-image: url('images/RecipeCover1.webp');
-        }
-        &:nth-of-type(2) {
-            background-image: url('images/RecipeCover2.webp');
-        }
-        &:hover {
-            box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
-        }
- 
-    }
-    .O_CardLargeRecipe {
-        padding: 1.2vw 1.2vw 1.2vw 62vw;
-        width: 100%;
-        height: 24vw;
-        border-radius: 1.17vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         background-color: var(--Fox);
-        background-size: cover;
-        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
-        &:nth-of-type(4) {
-            background-image: url('images/LargeRecipeCover1.webp');
-        }
-        h3 {
-            color: var(--Charcoal);
-            span img{
-                height: 4vw;
-            }
-        }
-       
-        &:hover {
-            box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
-        }
+        color: var(--Charcoal);
+        border-radius: 1.17vw;
+        height: 100%;
     }
-    .O_CardPageRecipe {
-        width: 100%;
-        height: 24vw;
-        padding: 1.2vw 4.8vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .O_ProcessRecipe, .O_ProcessServing {
-        h3 {
-            color: var(--Mushy-White);
-            margin-bottom: 2.4vw;
-            text-transform: none;
-        }
-    }
-    .O_ProcessServing {
-        p {
-            color: var(--Mushy-White);
-            width: 42vw;
-            margin-left: 6vw;
-            font-weight: 250;
-        }
-    }
+}
+
+// Тесты
+.O_TestsCards {
+    position: relative;
+    width: 100%;
+    height: 36vw;
+    border-radius: 1.17vw;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
 }

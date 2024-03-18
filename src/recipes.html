@@ -30,13 +30,13 @@
     </menu>
 
 
-    <div class="C_TagsRecipes">
-        <button class="A_TagRecipes active" data-filter="all"><h5>Все рецепты</h5></button>
-        <button class="A_TagRecipes" data-filter="zapechennie"><h5>Запечённые</h5></button>
-        <button class="A_TagRecipes" data-filter="zharenie"><h5>Жареные</h5></button>
-        <button class="A_TagRecipes" data-filter="varenie"><h5>Варёные</h5></button>
-        <button class="A_TagRecipes" data-filter="kopchenie"><h5>Копчёные</h5></button>
-        <button class="A_TagRecipes" data-filter="tushenie"><h5>Тушёные</h5></button>
+    <div class="C_Filters">
+        <button class="A_Filter active" data-filter="all"><h5>Все рецепты</h5></button>
+        <button class="A_Filter" data-filter="zapechennie"><h5>Запечённые</h5></button>
+        <button class="A_Filter" data-filter="zharenie"><h5>Жареные</h5></button>
+        <button class="A_Filter" data-filter="varenie"><h5>Варёные</h5></button>
+        <button class="A_Filter" data-filter="kopchenie"><h5>Копчёные</h5></button>
+        <button class="A_Filter" data-filter="tushenie"><h5>Тушёные</h5></button>
     </div>
     <section class="S_CardsRecipe">
 
@@ -46,9 +46,9 @@
             <h3>Жульен</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Запечённое</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">1 час</h5>
+                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
 
@@ -58,9 +58,9 @@
             <h3>Феттучини</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Жареное</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">30 минут</h5>
+                <h5 class="A_Tag">Жареное</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">30 минут</h5>
             </div>
         </a>
 
@@ -70,23 +70,38 @@
             <h3>Жульен</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Запечённое</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">1 час</h5>
+                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
 
         <!-- Большая карточка единичного рецепта -->
         <a class="O_CardLargeRecipe" href="">
+          <img class="Q_LargeRecipeCover" src="images/LargeRecipeCover1.webp" alt="">
+          <div class="M_LargeRecipeInfo">
             <!-- Название блюда -->
             <h3><span><img src="images/MushIcon-1.svg" alt=""></span> жареные
               шампиньоны</h3>
             <!-- Теги блюда (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">Жареное</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">20 минут</h5>
+                <h5 class="A_Tag">Выбор пользователей</h5>
+            </div>
+          </div>
+        </a>
+
+        <!-- Карточка единичного рецепта -->
+        <a class="O_CardRecipe" href="">
+            <!-- Название блюда -->
+            <h3>Жульен</h3>
+            <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Выбор пользователей</h5>
-                <h5 class="A_TagRecipe">Жареное</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">20 минут</h5>
+                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
 
@@ -96,9 +111,9 @@
             <h3>Жульен</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Запечённое</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">1 час</h5>
+                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
 
@@ -108,40 +123,31 @@
             <h3>Жульен</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Запечённое</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">1 час</h5>
-            </div>
-        </a>
-
-        <!-- Карточка единичного рецепта -->
-        <a class="O_CardRecipe" href="">
-            <!-- Название блюда -->
-            <h3>Жульен</h3>
-            <!-- Теги блюда (инфа) -->
-            <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Запечённое</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">1 час</h5>
+                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
 
         <!-- Большая карточка единичного рецепта -->
         <a class="O_CardLargeRecipe" href="">
+          <img class="Q_LargeRecipeCover" src="images/LargeRecipeCover1.webp" alt="">
+          <div class="M_LargeRecipeInfo">
             <!-- Название блюда -->
-            <h3><span><img class="A_MushIcon-1" src="images/MushIcon-1.svg" alt=""></span> жареные
+            <h3><span><img src="images/MushIcon-1.svg" alt=""></span> жареные
               шампиньоны</h3>
             <!-- Теги блюда (инфа) -->
-            <div class="C_TagsRecipe">
-                <h5 class="A_TagRecipe">Жареное</h5>
-                <h5 class="A_TagRecipe">4 ПОРЦИИ</h5>
-                <h5 class="A_TagRecipe">20 минут</h5>
-                <h5 class="A_TagRecipe">Выбор пользователей</h5>
+            <div class="C_Tags">
+                <h5 class="A_Tag">Жареное</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">20 минут</h5>
+                <h5 class="A_Tag">Выбор пользователей</h5>
             </div>
+          </div>
         </a>
     </section>
 
-
+    <div class="wrapper"> </div>
  
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
@@ -185,10 +191,6 @@
         <h5 class="A_HeaderFooter">Соц сети</h5>
         <!-- Кнопки соц сетей -->
         <div class="C_Socials">
-          <!-- Инстаграм -->
-          <a href="" class="A_InstIcon"> 
-            <img src="images/Instagramicon_black.svg" alt="Иконка Инстаграм">
-          </a>
           <!-- Телеграм -->
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">

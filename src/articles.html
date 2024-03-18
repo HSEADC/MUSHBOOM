@@ -31,49 +31,47 @@
     </menu>
 
     <!-- Фильтрация -->
-    <div class="C_TagsArticles">
-      <button class="A_TagArticles active" data-filter="all"><h5>Все статьи</h5></button>
-      <button class="A_TagArticles" data-filter="ekipirovka"><h5>Экипировка</h5></button>
-      <button class="A_TagArticles" data-filter="les"><h5>Лес</h5></button>
-      <button class="A_TagArticles" data-filter="gribi"><h5>Грибы</h5></button>
-      <button class="A_TagArticles" data-filter="istoria"><h5>История</h5></button>
-      <button class="A_TagArticles" data-filter="zdorovie"><h5>Здоровье</h5></button>
+    <div class="C_Filters">
+      <button class="A_Filter active" data-filter="all"><h5>Все статьи</h5></button>
+      <button class="A_Filter" data-filter="ekipirovka"><h5>Экипировка</h5></button>
+      <button class="A_Filter" data-filter="les"><h5>Лес</h5></button>
+      <button class="A_Filter" data-filter="gribi"><h5>Грибы</h5></button>
+      <button class="A_Filter" data-filter="istoria"><h5>История</h5></button>
+      <button class="A_Filter" data-filter="zdorovie"><h5>Здоровье</h5></button>
     </div>
 
     <!-- Блок с главной, так называемой, статьей дня -->
     <div class="MainCardArticle ekipirovka">
-      <a class="S_MainCardArticle" href="articles/article1.html">
+      <a class="S_MainCardArticle" href="articles/ekipirovka.html">
         <!-- Блок с инфой о статье -->
           <div class="O_MainCardArticle">
             <!-- Теги для статьи дня -->
               <div class="M_TagsLargeArticle">
-                <h5 class="A_TagArticle">Статья дня</h5>
-                <h5 class="A_TagArticle">Экипировка</h5>
+                <h5 class="A_Tag">Статья дня</h5>
+                <h5 class="A_Tag">Экипировка</h5>
               </div>
               <!-- Заголовок и описание статьи дня -->
               <div class="W_TextMainCardArticle">
-              <h2>Как <span><img class="A_MushIcon-1" src="images/MushIcon-1.svg" alt=""></span> выбрать<br>экипировку?</h2>
+              <h2>Как <span><img src="images/MushIcon-b3.svg" alt=""></span> выбрать<br>экипировку?</h2>
               <p>Узнайте, где найти правильную одежду<br>для дождливой тихой охоты</p>
               </div>
           </div>
           <!-- Обложка (картинка) статьи дня -->
-          <img class="A_PhotoMainCardArticle" src="images/A_Ekipirovka1.webp"></img>
+          <img class="A_PhotoMainCardArticle" src="images/articles/Ekipirovka.webp"></img>
       </a>
     </div>
 
     <!-- Секция с библиотекой статей -->
     <section class="S_CardsArticle">
     
-      <div class="C_CardsArticle">
-
         <!-- Карточка отдельной статьи -->
-        <a class="O_CardArticle gribi" href="articles/article1.html">
+        <a class="O_CardArticle gribi" href="articles/pink_oyster.html">
           <!-- Теги статьи -->
           <div class="C_TagsArticle">
-            <h5 class="A_TagArticle">Грибы</h5>
+            <h5 class="A_Tag">Грибы</h5>
           </div>
           <!-- Обложка (картинка) статьи -->
-          <img class="A_PhotoArticle" src="images/A_PinkOyster1.webp"></img>
+          <img class="A_PhotoArticle" src="images/Articles/PinkOyster.webp"></img>
           <!-- Заголовок и начало статьи -->
           <div class="A_TextArticle">
             <h4>Наборы для выращивания Pink Oyster</h4>
@@ -82,32 +80,32 @@
         </a>
 
         <!-- Карточка отдельной статьи -->
-        <a class="O_CardArticle les" href="">
+        <a class="O_CardArticle les" href="articles/deti_i_pohodi.html">
           <!-- Теги статьи -->
           <div class="C_TagsArticle">
-            <h5 class="A_TagArticle">Лес</h5>
+            <h5 class="A_Tag">Лес</h5>
           </div>
           <!-- Обложка (картинка) статьи -->
-          <img class="A_PhotoArticle" src="images/A_DetiIPohodi1.webp"></img>
+          <img class="A_PhotoArticle" src="images/Articles/DetiIPohodi.webp"></img>
           <!-- Заголовок и начало статьи -->
           <div class="A_TextArticle">
             <h4>Как привить детям любовь к грибным походам?</h4>
             <p>Многие родители боятся брать своих детей в поход, потому что не знают, как правильно по...</p>
           </div>
         </a>
-        
-      </div>
 
-      <div class="C_CardsArticle">
+
+
+
         <!-- Карточка отдельной статьи -->
-        <a class="O_CardArticle gribi les" href="">
+        <a class="O_CardArticle gribi les" href="articles/angels_wings.html">
           <!-- Теги статьи -->
           <div class="C_TagsArticle">
-            <h5 class="A_TagArticle">Грибы</h5>
-            <h5 class="A_TagArticle">Лес</h5>
+            <h5 class="A_Tag">Грибы</h5>
+            <h5 class="A_Tag">Лес</h5>
           </div>
           <!-- Обложка (картинка) статьи -->
-          <img class="A_PhotoArticle" src="images/A_AngelsWings1.webp"></img>
+          <img class="A_PhotoArticle" src="images/Articles/AngelsWings.webp"></img>
           <!-- Заголовок и начало статьи -->
           <div class="A_TextArticle">
             <h4>Angels Wings — самые лучшие леса для правильного поиска</h4>
@@ -116,13 +114,13 @@
         </a>
 
         <!-- Карточка отдельной статьи -->
-        <a class="O_CardArticle ekipirovka" href="">
+        <a class="O_CardArticle ekipirovka" href="articles/dozhdeviki.html">
           <!-- Теги статьи -->
           <div class="C_TagsArticle">
-            <h5 class="A_TagArticle">Экипировка</h5>
+            <h5 class="A_Tag">Экипировка</h5>
           </div>
           <!-- Обложка (картинка) статьи -->
-          <img class="A_PhotoArticle" src="images/A_Dozhdeviki1.webp"></img>
+          <img class="A_PhotoArticle" src="images/Articles/Dozhdeviki.webp"></img>
           <!-- Заголовок и начало статьи -->
           <div class="A_TextArticle">
             <h4>Самые практичные дождевики
@@ -131,18 +129,18 @@
           </div>
         </a>
 
-      </div>
 
-      <div class="C_CardsArticle">
+
+
         <!-- Карточка отдельной статьи -->
-        <a class="O_CardArticle gribi istoria" href="">
+        <a class="O_CardArticle gribi istoria" href="articles/gribi_v_iskusstve.html">
           <!-- Теги статьи -->
           <div class="C_TagsArticle">
-            <h5 class="A_TagArticle">История</h5>
-            <h5 class="A_TagArticle">Грибы</h5>
+            <h5 class="A_Tag">История</h5>
+            <h5 class="A_Tag">Грибы</h5>
           </div>
           <!-- Обложка (картинка) статьи -->
-          <img class="A_PhotoArticle" src="images/A_GribiVIskusstve1.webp"></img>
+          <img class="A_PhotoArticle" src="images/Articles/GribiVIskusstve.webp"></img>
           <!-- Заголовок и начало статьи -->
           <div class="A_TextArticle">
             <h4>Грибы в искусстве: влияние на литературу, живопись и музыку</h4>
@@ -151,13 +149,13 @@
         </a>
 
         <!-- Карточка отдельной статьи -->
-        <a class="O_CardArticle ekipirovka" href="articles/article1.html">
+        <a class="O_CardArticle ekipirovka" href="articles/timberland.html">
           <!-- Теги статьи -->
           <div class="C_TagsArticle">
-            <h5 class="A_TagArticle">Экипировка</h5>
+            <h5 class="A_Tag">Экипировка</h5>
           </div>
           <!-- Обложка (картинка) статьи -->
-          <img class="A_PhotoArticle" src="images/A_Timberland1.webp"></img>
+          <img class="A_PhotoArticle" src="images/Articles/Timberland.webp"></img>
           <!-- Заголовок и начало статьи -->
           <div class="A_TextArticle">
             <h4>Timberland x Nina Chanel — свежий выбор для грибников?</h4>
@@ -165,25 +163,25 @@
           </div>
         </a>
 
-      </div>
+
   
     </section>
 
     <div class="MainCardArticle zdorovie">
       <!-- Блок с главной, так называемой, статьей дня -->
-      <a class="S_MainCardArticle" href="articles/article1.html">
+      <a class="S_MainCardArticle" href="articles/tihaya_ohota.html">
           <!-- Обложка (картинка) статьи дня -->
-          <img class="A_PhotoMainCardArticle" src="images/A_TihayaOhota1.webp"></img>
+          <img class="A_PhotoMainCardArticle" src="images/Articles/TihayaOhota.webp"></img>
         <!-- Блок с инфой о статье -->
           <div class="O_MainCardArticle">
             <!-- Теги для статьи дня -->
               <div class="M_TagsLargeArticle">
-                <h5 class="A_TagArticle">Статья дня</h5>
-                <h5 class="A_TagArticle">Здоровье</h5>
+                <h5 class="A_Tag">Статья дня</h5>
+                <h5 class="A_Tag">Здоровье</h5>
               </div>
               <!-- Заголовок и описание статьи дня -->
               <div class="W_TextMainCardArticle">
-              <h2>Тихая <span><img class="A_MushIcon-1" src="images/MushIcon-1.svg" alt=""></span> охота<br>топ 5 правил</h2>
+              <h2>Тихая <span><img class="A_MushIcon-1" src="images/MushIcon-b3.svg" alt=""></span> охота<br>топ 5 правил</h2>
               <p>Узнайте, как вести себя в походе<br>безопасно для себя и природы</p>
               </div>
           </div>
@@ -191,6 +189,7 @@
       </a>
     </div>
 
+    <div class="wrapper"> </div>
 
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
@@ -234,10 +233,6 @@
         <h5 class="A_HeaderFooter">Соц сети</h5>
         <!-- Кнопки соц сетей -->
         <div class="C_Socials">
-          <!-- Инстаграм -->
-          <a href="" class="A_InstIcon"> 
-            <img src="images/Instagramicon_black.svg" alt="Иконка Инстаграм">
-          </a>
           <!-- Телеграм -->
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">
