@@ -1,54 +1,55 @@
-menu {
-    #C_SearchResults {
+
+#C_SearchResults {
+    width: 21.4vw;
+    margin-top: 2.4vw;
+    flex-direction: column;
+    position: absolute;
+    gap: 0vw;
+    background-color: var(--Blacky);
+    max-height: 5vw;
+    overflow-x: hidden;
+    border-radius: 0 0 1.17vw 1.17vw ;
+    a {
+        font-weight: 300;
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        color: var(--Ashy-Grey);
+        padding: 0.7vw;
         width: 21.4vw;
-        margin-top: 2.4vw;
-        flex-direction: column;
-        position: absolute;
-        gap: 0vw;
-        background-color: var(--Blacky);
-        max-height: 5vw;
-        overflow-x: hidden;
-        border-radius: 0 0 1.17vw 1.17vw ;
-        a {
-            font-weight: 300;
-            transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
-            color: var(--Ashy-Grey);
-            padding: 0.7vw;
-            width: 21.4vw;
-            font-size: 0.9vw;
-            &:hover {
-                color: var(--Mushy-White);
-            }
+        font-size: 0.9vw;
+        &:hover {
+            color: var(--Mushy-White);
         }
     }
 }
-footer {
-    .C_Socials {
-        display: flex;
-        flex-direction: row;
-        gap: 1vw;
-        height: auto;
-    }
-    .C_Authors {
-        display: flex;
-        flex-direction: row;
-        gap: 3vw;
-        height: auto;
-        .A_TextFooter {
-            &:hover {
-                color: var(--Mushy-White);
-            }
-            &:active {
-                color: var(--Mushy-White);
-            }
+
+
+.C_Socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: auto;
+}
+.C_Authors {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    height: auto;
+    .A_TextFooter {
+        &:hover {
+            color: var(--Mushy-White);
+        }
+        &:active {
+            color: var(--Mushy-White);
         }
     }
 }
+
 .C_Filters {
     width: 100%;
     display: flex;
+    gap: 1.2vw;
     margin-bottom: 1.2vw;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 
 .C_Tags {
@@ -65,6 +66,10 @@ footer {
 .C_PageSocials {
     display: flex;
     gap: 0.2vw;
+}
+.C_Reccomendations {
+    display: flex;
+    justify-content: space-between;
 }
 
 // Главная
@@ -190,10 +195,29 @@ body.articles {
 // Грибвики
 .C_TagsGribie {
     margin-top: 0.6vw;
-    width: 12vw;
-    gap: 0.7vw 1.2vw;
+    gap: 0.6vw 1.2vw;
     display: flex;
     flex-wrap: wrap;
+}
+.C_GribwikiPageInfo {
+    position: absolute;
+    margin: 2.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    h2 {
+        color: var(--Charcoal);
+    }
+}
+.C_GribwikiValues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6vw 1.2vw;
+}
+.C_Dvoiniki {
+    display: flex;
+    gap: 1.2vw;
+    margin: 1.2vw 0 4.8vw 0;
 }
 
 // Памятки
@@ -218,4 +242,66 @@ body.articles {
     padding: 2.4vw;
     display: flex;
     justify-content: space-between;
+}
+.C_TestAnswers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+    justify-content: space-between;
+}
+.C_TestNavigation {
+    display: flex;
+    justify-content: space-between;
+    p {
+        color: var(--Fox);
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .C_IndexArticles {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap:6.4vw;
+        width: 100%;
+    }
+    .C_IndexMemos {
+        width: 100%;
+        display: flex;
+        justify-content: none;
+        flex-direction: column;
+        gap: 6.4vw;
+    }
+    .C_MemoButtons {
+        padding: 4.8vw;
+        height: 22.4vw;
+    }
+    .C_IndexRecipes {
+        gap: 6.4vw;
+    }
+    .C_TestsCards {
+        width: 100%;
+        padding: 4.8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6.4vw;
+    }
+    .C_IndexWikiCards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.8vw;
+        justify-content: flex-start;
+    }
+    .C_Authors {
+        flex-direction: column;
+        gap: 2.4vw;
+    }
+    .C_Socials {
+        display: flex;
+        flex-direction: row;
+        gap: 1.8vw;
+        justify-content: space-evenly;
+        height: auto;
+    }
 }

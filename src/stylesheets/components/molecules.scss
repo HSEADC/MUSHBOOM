@@ -25,14 +25,19 @@ footer {
     }
 }
 .M_PageBottom {
-    width: 21vw;
     height: 4.8vw;
     display: flex;
+    gap: 2.4vw;
     padding: 1.2vw;
-    justify-content: space-between;
     align-items: center;
-    background-color: var(--Mushy-White);
-    border-radius: 1.17vw;
+    p {
+        color: var(--Fox);
+    }
+    &:hover {
+        p{
+            color: var(--Sunny);
+        }
+    }
     &.download {
         background-color: var(--Fox);
         color: var(--Mushy-White);
@@ -54,55 +59,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.W_IndexForm {
-    display: flex;
-    flex-direction: column;
-    padding: 2.4vw;
-    gap:1.2vw;
-    p {
-        text-align: center;
-    }
-    .input-field {
-        position: relative;
-        width: 100%;
-        .input {
-            width: 100%;
-            outline: none;
-            border-radius: 1vw;
-            height: 5vw;
-            border: 0.1vw solid var(--Ashy-Grey);
-            background: transparent;
-            padding-left: 2vw;
-            font-size: 1.4vw;
-            &:focus {
-                border: 0.1vw solid var(--Fox);
-            }
-        }
-    }
-    
-    .input-field .label {
-        position: absolute;
-        top: 2vw;
-        left: 1.5vw;
-        color: var(--Ashy-Grey);
-        transition: all 0.3s ease;
-        pointer-events: none;
-        z-index: 2;
-        font-size: 1.4vw;
-    }
-        .input-field .input:focus ~ .label,
-        .input-field .input:valid ~ .label {
-          font-size: 1.2vw;
-          top: -0.4vw;
-          left: 2vw;
-          color: var(--Fox);
-          background-color: var(--Mushy-White);
-          padding-left: 0.2vw;
-          padding-right: 0.2vw;
-        }
-        
-
 }
 
 body.articles {
@@ -160,6 +116,18 @@ body.articles {
     }
 }
 
+//Грибвики
+.M_Navigation {
+    color: var(--Ashy-Grey);
+    font-weight: 250;
+    span {
+        color: var(--Mushy-White);
+        img {
+            height: 0.7vw;
+        }
+    }
+}
+
 // Тесты
 .M_TestCard {
     position: relative;
@@ -182,5 +150,35 @@ body.articles {
     }
     &:hover {
         box-shadow: 0px 0px 0px 0.5vw #00000000, 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.M_TestInfo {
+    margin: 2.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 36vw;
+}
+
+@media only screen and (max-width: 430px) {
+    .M_LargeRecipeInfo {
+        margin: 4.8vw;
+        width: 100%;
+        h3 {
+            margin-bottom: 2.4vw;
+        }
+    }
+    .M_TestCard {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 3.34vw;
+        padding: 4.8vw;
+        width: 100%;
+        height: 48vw;
+        h3 {
+            margin-bottom: 0.8vw;
+        }
     }
 }

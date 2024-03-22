@@ -47,6 +47,12 @@
     }
 }
 
+
+.Q_ReccomendationsHeader {
+    color: var(--Mushy-White);
+    margin: 4vw 0 2.4vw 0;
+}
+
 // Главная
 .Q_IndexCover {
     width: 100%;
@@ -90,6 +96,17 @@
     margin-left: 48vw;
     font-weight: 300;
     color: var(--Mushy-White);
+    a {
+        color: var(--Fox);
+        text-decoration: underline;
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        &:hover {
+            color: var(--Sunny);
+        }
+    }
+    span {
+        color: var(--Fox);
+    }
 }
 
 .Q_LargeRecipeCover {
@@ -98,9 +115,71 @@
     margin-left: 2.4vw;
 }
 
+//грибвики
+.Q_GribwikiPageCover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.2vw;
+    border-radius: 1.17vw;
+}
+
 // Тесты
 .Q_TestsBackground {
     position: absolute;
     width: 100%;
     height: 100%; 
+}
+.Q_TestCover {
+    height: 100%;
+}
+.Q_QuestionNumber {
+    color: var(--Fox);
+    span {
+        color: var(--Misty-Grey);
+    }
+}
+#Q_QuestionText {
+    color: var(--Charcoal);
+    text-transform: none;
+}
+.Q_AnswerLetter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Fox);
+    width: 3.6vw;
+    height: 3.6vw;
+    padding: 0.7vw;
+    border-radius: 12vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.A_TestAnswer:hover {
+    .Q_AnswerLetter {
+        background-color: var(--Sunny);
+    }
+}
+#Q_PreviousQuestion, #Q_NextQuestion {
+    background-color: var(--Mushy-White);
+    border: none;
+}
+
+
+@media only screen and (max-width: 430px) {
+    .Q_IndexCover {
+        width: 100%;
+        height: 36vh;
+        border-radius: 3.34vw;
+    }
+
+    .Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
+        width: 100%;
+        margin-left: 0vw;
+    }
+    .Q_LargeRecipeCover {
+        position: relative;
+        width: 164%;
+        height: auto;
+        margin-left: 2.4vw;
+    }
 }

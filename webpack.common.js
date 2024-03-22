@@ -200,6 +200,102 @@ module.exports = {
       filename: './recipes/zharenie_shampinioni.html'
     }),
 
+    //Gribwiki Pages
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/zolotie_lisichki.html',
+      filename: './gribwiki/zolotie_lisichki.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/volnushka.html',
+      filename: './gribwiki/volnushka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/svinushka.html',
+      filename: './gribwiki/svinushka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/smorchok.html',
+      filename: './gribwiki/smorchok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/shampinion.html',
+      filename: './gribwiki/shampinion.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/rizhik.html',
+      filename: './gribwiki/rizhik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/podosinovik.html',
+      filename: './gribwiki/podosinovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/podberezovik.html',
+      filename: './gribwiki/podberezovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/openok.html',
+      filename: './gribwiki/openok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/muhomor.html',
+      filename: './gribwiki/muhomor.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/maslenok.html',
+      filename: './gribwiki/maslenok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_podosinovik.html',
+      filename: './gribwiki/lozhniy_podosinovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_podberezovik.html',
+      filename: './gribwiki/lozhniy_podberezovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_openok.html',
+      filename: './gribwiki/lozhniy_openok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_borovik.html',
+      filename: './gribwiki/lozhniy_borovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhnaya_lisichka.html',
+      filename: './gribwiki/lozhnaya_lisichka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/gruzd.html',
+      filename: './gribwiki/gruzd.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/galerina_okaymlennaya.html',
+      filename: './gribwiki/galerina_okaymlennaya.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/blednaya_poganka.html',
+      filename: './gribwiki/blednaya_poganka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/beliy_grib.html',
+      filename: './gribwiki/beliy_grib.html'
+    }),
+
+    // Test Pages
+    new HtmlWebpackPlugin({
+      template: './src/tests/kalendar.html',
+      filename: './tests/kalendar.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/sedobnie_ili_yadovitie.html',
+      filename: './tests/sedobnie_ili_yadovitie.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/gribnaya_bezopasnost.html',
+      filename: './tests/gribnaya_bezopasnost.html'
+    }),
+
     // Styleguide
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',

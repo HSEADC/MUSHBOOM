@@ -97,7 +97,6 @@ body.gribwiki {
 
 // Фильтры
 .A_Filter {
-    padding: 1vw 4.6vw;
     border: solid 0.1vw var(--Fox);
     border-radius: 1.17vw;
     color: var(--Fox);
@@ -117,14 +116,19 @@ body.gribwiki {
     background-color: var(--Fox);
     color: var(--Mushy-White);
 }
+body.articles {
+    .A_Filter {
+        padding: 1vw 4.6vw;
+    }
+}
 body.recipes {
     .A_Filter {
-        padding: 1vw 4.4vw;
+        padding: 1vw 4.25vw;
     }
 }
 body.gribwiki {
     .A_Filter {
-        padding: 1vw 5.2vw;
+        padding: 1vw 6.95vw;
     }
 }
 
@@ -152,7 +156,7 @@ body.gribwiki {
 }
 .O_CardLargeRecipe {
     .A_Tag {
-        border: solid var(--Charcoal) 0.1vw;
+        border-color: var(--Charcoal);
         color: var(--Charcoal);
         background-color: var(--Fox) ;
         &:nth-of-type(1) {
@@ -164,12 +168,25 @@ body.gribwiki {
 .O_IndexArticle {
     .A_Tag {
         background-color: var(--Charcoal);
+        color: var(--Mushy-White);
     }
 }
 .O_CardLargeGrib {
     .A_Tag:nth-of-type(1) {
         background-color: var(--Fox);
         color: var(--Mushy-White);
+    }
+}
+.C_GribwikiPageInfo {
+    .A_Tag {
+        background-color: var(--Fox);
+        color: var(--Mushy-White);
+    }
+}
+.C_GribwikiValues {
+    .A_Tag {
+        color: var(--Charcoal);
+        border-color: var(--Mushy-White);
     }
 }
 
@@ -207,14 +224,36 @@ body.gribwiki {
         height: 42%;
     }
 }
+.M_TestCard {
+    .A_ArrowIcon {
+        position: absolute;
+        top: 1.2vw;
+        right: 1.2vw;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    &:hover {
+        .A_ArrowIcon {
+            background-color: var(--Sunny);
+        } 
+    }
+}
+.M_PageBottom {
+    &:hover {
+        .A_ArrowIcon {
+            background-color: var(--Sunny);
+        } 
+    }
+}
 
 // Главная
 .A_TextIndexCover {
     h1 {
         color: var(--Fox);
-        margin-bottom: 0.7vw;
+        margin-bottom: 0.4vw;
     }
-    h2 {
+    p {
         color: var(--Mushy-White);
     }
 }
@@ -241,6 +280,20 @@ body.gribwiki {
         }
     }
 
+}
+.A_IndexAllButton2 {
+    display: none;
+}
+.O_CardTest:hover {
+    .A_IndexAllButton {
+        p {
+            color: var(--Sunny);
+        }
+        .A_ArrowIcon {
+            border: solid 0.1vw var(--Sunny); 
+            background-color: var(--Sunny);
+        }
+    } 
 }
 .A_IndexPhotoArticle {
     width: 100%;
@@ -321,7 +374,7 @@ body.index {
 }
 .A_TextArticle {
     h4 {
-        color: var(--Charcoal);
+        color: var(--Mushy-White);
         text-transform:none;
         margin-bottom: 0.4vw;
     }
@@ -331,7 +384,7 @@ body.index {
     }
 }
 
-.A_SubtitleUnoAtricle {
+.A_SubtitleUnoAtricle, .A_GribwikiPageSubtitle {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -382,9 +435,6 @@ body.recipes {
     width: 100%;
     align-items: center;
     margin-top: 1.6vw;
-    p {
-        font-size: 1.2vw;
-    }
 }
 .A_MemoDownload {
     position: relative;
@@ -440,3 +490,147 @@ body.recipes {
         background-color: var(--Ashy-Grey);
     }
   }
+
+//Tests
+.A_TestAnswer {
+    background-color: var(--Misty-Grey);
+    width: 26.4vw;
+    padding: 1.2vw;
+    border-radius: 1.17vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &.incorrect {
+        background-color: #DB6666;
+        .Q_AnswerLetter {
+            background-color: var(--Mushy-White);
+            color: #DB6666;
+        }
+    }
+    &.correct {
+        background-color: #99AE5B;
+        .Q_AnswerLetter {
+            background-color: var(--Mushy-White);
+            color: #99AE5B;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 430px) {
+    .A_IndexAllButton2 {
+        display: flex;
+        gap: 4.8vw;
+        align-items: center;
+        p {
+            transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+            color: var(--Fox);
+        }
+        .A_ArrowIcon {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        &:hover {
+            p {
+                color: var(--Sunny);
+            }
+            .A_ArrowIcon {
+                border: solid 0.1vw var(--Sunny); 
+                background-color: var(--Sunny);
+            }
+        }
+    
+    }
+    .A_IndexAllButton {
+        display: none;
+    }
+    // Кнопки в единичных страницах
+    .M_PageBottom {
+        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+            img {
+                width: 64%;
+                height: 64%;
+            }
+        }
+    }
+    .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 9vw;
+    }
+    .M_TestCard {
+        .A_ArrowIcon {
+            top: 4.8vw;
+            right: 4.8vw;
+        }
+    }
+    .A_IndexPhotoArticle {
+        height: 48vw;
+        border-radius: 3.34vw;
+    }
+    .A_TextArticle {
+        h4 {
+            margin-bottom: 1.2vw;
+        }
+        p {
+            font-size: 3.6vw;
+        }
+    }
+    .A_Tag {
+        padding: 2.4vw 5.6vw;
+        border-radius: 10vw;
+        border: solid var(--Fox) 0.36vw;
+        color: var(--Fox);
+        background-color: var(--Mushy-White) ;
+    } 
+    .A_TextMemo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 4.8vw;
+    }
+    .A_MemoMore {
+        border-radius: 2.4vw;
+        padding: 0 4.8vw;
+    }
+    .A_MemoDownload {
+        border-radius: 16vw;
+    }
+    .A_IndexFormCover {
+        width: 100%;
+        height: 56vw;
+        border-radius: 3.34vw;
+        h3 {
+            margin: 4.8vw;
+        }
+    }
+    #A_IndexFormButton {
+        font-size: 3.6vw;
+        padding: 2.4vw;
+        border-radius: 3vw;
+    }
+    .A_HeaderFooter {
+        font-size: 5.6vw;
+        text-align: center;
+        margin-bottom: 2.4vw;
+    }
+    .A_TextFooter {
+        font-size: 3.6vw;
+        margin: 1.6vw 0vw;
+        text-align: center;
+    }
+    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+        width: 9.6vw;
+        height: 9.6vw;
+        border-radius: 12vw;
+        img {
+            width: 66%;
+            height: 66%;
+        }
+    }
+}

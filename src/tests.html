@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MushBoom | Рецепты</title>
+    <title>MushBoom | Тесты</title>
     <link rel="icon" type="image/x-icon" href="images/icon_mushboom.ico" />
   </head>
   <body class="tests">
-
     <!-- Менюшка -->
     <menu class="O_Menubar">
       <!-- Кнопки для разделов -->
@@ -18,10 +17,99 @@
        <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
        <a class="A_TextMenubar" href="tests.html">Тесты</a>
       </div>
+
+      <div class="M_SearchField">
+        <div class="Q_SearchIcon"></div>
+        <div class="A_SearchField">
+          <input id="Q_SearchField" type="text" id="searchInput" placeholder="Я ищу..."/>
+          <div id="C_SearchResults"></div>
+        </div>
+    </div>
       <!-- Логотипчег -->
       <a class="Q_LogoIcon" href="index.html"></a>
     </menu>
 
+    <section class="S_CardsTests">
+ 
+        <!-- Большая карточка единичного теста -->
+        <a class="O_CardTest" href="tests/kalendar.html">
+          <div class="M_TestInfo">
+            <!-- Название теста -->
+            <h2>
+              календарь грибной охоты
+            </h2>
+            <!-- Теги теста (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">7 вопросов</h5>
+                <h5 class="A_Tag">4 минуты</h5>
+            </div>
+            <p>Проверьте свои знания о сезонных <br>особенностях роста грибов</p>
+            <!-- Кнопка пройти тест -->
+            <div class="A_IndexAllButton">
+              <p>Пройти тест</p>
+              <div class="A_ArrowIcon">
+                <img src="images/ArrowIcon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Обложка теста -->
+          <img class="Q_TestCover" src="images/Tests/Kalendar.webp" alt="">
+        </a>
+
+        <!-- Большая карточка единичного теста -->
+        <a class="O_CardTest" href="tests/sedobnie_ili_yadovitie.html">
+          <div class="M_TestInfo">
+            <!-- Название теста -->
+            <h2>
+              съедобный или ядовитый
+            </h2>
+            <!-- Теги теста (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">6 вопросов</h5>
+                <h5 class="A_Tag">3 минуты</h5>
+            </div>
+            <p>Проверьте свои знания <br>в определении съедобных<br>и ядовитых грибов</p>
+            <!-- Кнопка пройти тест -->
+            <div class="A_IndexAllButton">
+              <p>Пройти тест</p>
+              <div class="A_ArrowIcon">
+                <img src="images/ArrowIcon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Обложка теста -->
+          <img class="Q_TestCover" src="images/Tests/SedobnieIliYadovitie.webp" alt="">
+        </a>
+      
+        <!-- Большая карточка единичного теста -->
+        <a class="O_CardTest" href="tests/gribnaya_bezopasnost.html">
+          <div class="M_TestInfo">
+            <!-- Название теста -->
+            <h2>
+              Грибная безопасность
+            </h2>
+            <!-- Теги теста (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">7 вопросов</h5>
+                <h5 class="A_Tag">3 минуты</h5>
+            </div>
+            <p>Проверьте, насколько вы <br>разбираетесь в правилах <br>безопасности при сборе грибов</p>
+            <!-- Кнопка пройти тест -->
+            <div class="A_IndexAllButton">
+              <p>Пройти тест</p>
+              <div class="A_ArrowIcon">
+                <img src="images/ArrowIcon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Обложка теста -->
+          <img class="Q_TestCover" src="images/Tests/GribnayaBezopasnost.webp" alt="">
+        </a>
+
+    </section>
+
+    <div class="wrapper"> </div>
+ 
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
       <!-- Логотип -->
@@ -64,10 +152,6 @@
         <h5 class="A_HeaderFooter">Соц сети</h5>
         <!-- Кнопки соц сетей -->
         <div class="C_Socials">
-          <!-- Инстаграм -->
-          <a href="" class="A_InstIcon"> 
-            <img src="images/Instagramicon_black.svg" alt="Иконка Инстаграм">
-          </a>
           <!-- Телеграм -->
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">
@@ -79,6 +163,6 @@
         </div>
       </div>
      </div>
-    </footer>
+    </footer>  
   </body>
 </html>

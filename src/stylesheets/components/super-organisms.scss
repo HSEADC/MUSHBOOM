@@ -57,14 +57,13 @@ body.articles {
         h2, p {
             color: var(--Mushy-White);
         }
-    }
-    .S_RecommendationsArticles {
-        .M_TextRecommendation {
-            color: var(--Mushy-White);
-            margin: 4vw 0 2.4vw 0;
+        h2 {
+            text-align: center;
         }
     }
+
 }
+
 body.recipes {
     // Страница с рецептами
     .S_CardsRecipe {
@@ -104,15 +103,26 @@ body.recipes {
         }
     }
 }
-body.gribwiki {
-    .S_CardsGribwiki {
-        width: 100%;
-        display: flex;
-        gap: 1.2vw;
-        justify-content: space-between;
-        flex-wrap: wrap;
+
+//Грибвики
+.S_CardsGribwiki {
+    width: 100%;
+    display: flex;
+    gap: 1.2vw;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+}
+.S_GribwikiPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.S_Dvoiniki {
+    h3 {
+        color: var(--Mushy-White);
     }
 }
+
 body.memos {
     .S_MainCardMemo, .S_CoverUnoMemo {
         position: relative;
@@ -149,5 +159,28 @@ body.memos {
         flex-direction: column;
         gap: 2.4vw;
         margin-bottom: 4.8vw;
+    }
+}
+
+.S_CardsTests {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+@media only screen and (max-width: 430px) {
+    .S_IndexCover {
+        gap: 5.2vw;
+    }
+    .S_IndexSection {
+        margin-top: 12.4vw;
+        gap: 5.2vw;
+        align-items: flex-start;
+    }
+    .S_IndexForm {
+        margin-top: 12.4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2vw;
     }
 }

@@ -28,11 +28,6 @@ h1 {
 h2 {
     font-size: 3.75vw;
     text-transform: uppercase;
-    span {
-        img {
-            height: 4vw;
-        }
-    }
 }
 h3 {
     font-size: 2.56vw;
@@ -74,4 +69,37 @@ span img {
 // Настройка цветов страниц
 body {
     background-color: var(--Charcoal);
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        width: 100vw;
+        padding: 6.4vh 5vh 0vh 5vh;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+    h2 {
+        font-size: 8.6vw;
+    }
+    h3 {
+        font-size: 6.4vw;
+    }
+    h4 {
+        font-size: 4.8vw;
+        line-height: 5.6vw;
+    }
+    h5 {
+        font-size: 2.4vw;
+    }
+    h6 {
+        font-size: 0.9vh;
+    }
+    p, ol, ul, li {
+        font-size: 3.6vw;
+    }
+    span img {
+        height: 10vw;
+    }
+    
 }
