@@ -159,9 +159,21 @@
         background-color: var(--Sunny);
     }
 }
-#Q_PreviousQuestion, #Q_NextQuestion {
+#Q_PreviousQuestion, #Q_NextQuestion, #Q_FinishTest {
     background-color: var(--Mushy-White);
     border: none;
+}
+.Q_TestResultCover {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+.Q_TestResultText {
+    text-align: center;
+    color: var(--Charcoal);
+    span {
+        color: var(--Fox);
+    }  
 }
 
 

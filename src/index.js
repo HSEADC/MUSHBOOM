@@ -259,141 +259,68 @@ function getPageUrl(option) {
   
 
 
-
-
-  const questionContainers = document.querySelectorAll('.O_TestQuestion');
-  const resultContainer = document.querySelector('.O_ResultContainer');
-  const questionText = document.getElementById('Q_QuestionText');
-  const answers = document.querySelectorAll('.A_TestAnswer');
-  const nextQuestionBtn = document.getElementById('Q_NextQuestion');
-  const prevQuestionBtn = document.getElementById('Q_PreviousQuestion');
-
-
-  let currentQuestionIndex = 0;
-  let correctAnswers = 0;
+  let currentQuestion = 0;
+  let score = 0;
+  const questions = document.querySelectorAll('.O_TestQuestion');
+  const totalQuestions = questions.length;
   
-  // Добавляем обработчики событий для кнопок "Следующий вопрос", "Предыдущий вопрос" и для ответов
-  nextQuestionBtn.addEventListener('click', nextQuestion);
-  prevQuestionBtn.addEventListener('click', prevQuestion);
-  answers.forEach(answer => answer.addEventListener('click', selectAnswer));
-  
-  function nextQuestion() {
-    const selectedAnswer = document.querySelector('.selected');
-    if (selectedAnswer) {
-      const correctAnswerIndex = questions[currentQuestionIndex].correctAnswerIndex;
-      if (selectedAnswer.dataset.index == correctAnswerIndex) {
-        selectedAnswer.classList.add('correct');
-        correctAnswers++;
-      } else {
-        selectedAnswer.classList.add('incorrect');
-        answers[correctAnswerIndex + (4 * currentQuestionIndex)].classList.add('correct');
-      }
-      selectedAnswer.classList.remove('selected');
-    }
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questionContainers.length) {
-      displayQuestion();
-    } else {
-      finishTest();
-    }
-  }
-  
-  function prevQuestion() {
-    const selectedAnswer = document.querySelector('.selected');
-    if (selectedAnswer) {
-      const correctAnswerIndex = questions[currentQuestionIndex].correctAnswerIndex;
-      if (selectedAnswer.dataset.index == correctAnswerIndex) {
-        correctAnswers--;
-      }
-    }
-    currentQuestionIndex--;
-    if (currentQuestionIndex >= 0) {
-      displayQuestion();
-    } else {
-      currentQuestionIndex = 0;
-    }
-  }
-  
-  function displayQuestion() {
-    questionContainers.forEach((container, index) => {
-      if (index === currentQuestionIndex) {
-        container.style.display = 'flex';
-      } else {
-        container.style.display = 'none';
-      }
-    });
-    highlightCorrectAnswer();
-  }
-  
-  function selectAnswer(event) {
-    const selectedAnswer = event.currentTarget;
-    const correctAnswerIndex = questions[currentQuestionIndex].correctAnswerIndex;
+  questions.forEach((question, i) => {
+    const answers = question.querySelectorAll('.A_TestAnswer');
     answers.forEach(answer => {
-      answer.classList.remove('selected', 'correct', 'incorrect');
+      answer.addEventListener('click', (e) => {
+        const isCorrect = answer.classList.contains('correct');
+        if (isCorrect) {
+          score++;
+          answer.classList.add('green');
+        } else {
+          answer.classList.add('red');
+          const correctAnswer = question.querySelector('.A_TestAnswer.correct');
+          correctAnswer.classList.add('green');
+        }
+        answers.forEach(ans => ans.style.pointerEvents = 'none');
+      });
     });
-    selectedAnswer.classList.add('selected');
-    if (selectedAnswer.dataset.index == correctAnswerIndex) {
-      selectedAnswer.classList.add('correct');
-    } else {
-      selectedAnswer.classList.add('incorrect');
-      answers[correctAnswerIndex + (4 * currentQuestionIndex)].classList.add('correct');
-    }
-  }
   
-  function highlightCorrectAnswer() {
-    const correctAnswerIndex = questions[currentQuestionIndex].correctAnswerIndex;
-    answers.forEach(answer => {
-      answer.classList.remove('correct', 'incorrect');
-      if (answer.dataset.index == correctAnswerIndex + (4 * currentQuestionIndex)) {
-        answer.classList.add('correct');
+    const nextButton = question.querySelector('#Q_NextQuestion');
+    const prevButton = question.querySelector('#Q_PreviousQuestion');
+  
+    nextButton && nextButton.addEventListener('click', (e) => {
+      currentQuestion++;
+      updateQuestion();
+    });
+  
+    prevButton && prevButton.addEventListener('click', (e) => {
+      currentQuestion--;
+      updateQuestion();
+    });
+  });
+  
+  function updateQuestion() {
+    questions.forEach((question, i) => {
+      if (i === currentQuestion) {
+        question.style.display = 'flex';
+      } else {
+        question.style.display = 'none';
       }
     });
-  }
-  
-  function finishTest() {
-    const score = Math.round(correctAnswers / questionContainers.length * 100);
-    resultContainer.style.display = 'block';
-    resultContainer.querySelector('#result-text').textContent = `Вы ответили правильно на ${score}% вопросов.`;
-    nextQuestionBtn.style.display = 'none';
-    prevQuestionBtn.style.display = 'none';
-  }
-  
-  
-  
-  // Список вопросов и ответов
-  const questions = [
-    {
-      question: 'В какое время года начинается сезон грибной охоты?',
-      answers: ['Весной', 'Летом', 'Осенью', 'Зимой'],
-      correctAnswerIndex: 2
-    },
-    {
-      question: 'Какие факторы влияют на начало сезона грибной охоты??',
-      answers: ['Температура и влажность', 'Количество солнечных дней', 'Фаза луны', 'Все вышеперечисленные факторы'],
-      correctAnswerIndex: 3
-    },
-    {
-      question: 'Какой тип леса лучше всего подходит для сбора грибов?',
-      answers: ['Хвойные леса', 'Широколиственные леса', 'Смешанные леса', 'Тропические леса'],
-      correctAnswerIndex: 2
-    },
-    {
-      question: 'Какие виды грибов чаще всего встречаются в начале осеннего сезона?',
-      answers: ['Белые грибы', 'Лисички', 'Подберезовики', 'Моховики'],
-      correctAnswerIndex: 1
-    },
-    {
-      question: 'Какие грибы растут на старых пнях и палой древесине?',
-      answers: ['Опята', 'Чага', 'Маслёнки', 'Красноголовик'],
-      correctAnswerIndex: 1
-    },
-    {
-      question: 'В какое время суток лучше всего отправляться на грибную охоту?',
-      answers: ['Утром', 'Днем', 'Вечером', 'Ночью'],
-      correctAnswerIndex: 1
+    if (currentQuestion === totalQuestions - 1) {
+      showResults();
     }
-  ];
+  }
   
-  // Первоначальное отображение первого вопроса
-  displayQuestion();
+  function showResults() {
+    const result = document.querySelector('#Q_TestResult');
+    const percentage = Math.round(score / totalQuestions * 100);
+    result.textContent = `${percentage}%`;
+  }
+  
+  const finishButton = document.querySelector('#Q_FinishTest');
+  
+  finishButton && finishButton.addEventListener('click', (e) => {
+      const testResults = document.querySelector('.O_TestResults');
+      questions[currentQuestion].style.display = 'none';
+      testResults.style.display = 'flex';
+  });
+  
+  updateQuestion();
   

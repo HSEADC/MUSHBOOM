@@ -501,14 +501,14 @@ body.recipes {
     align-items: center;
     justify-content: space-between;
     transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
-    &.incorrect {
+    &.red {
         background-color: #DB6666;
         .Q_AnswerLetter {
             background-color: var(--Mushy-White);
             color: #DB6666;
         }
     }
-    &.correct {
+    &.green {
         background-color: #99AE5B;
         .Q_AnswerLetter {
             background-color: var(--Mushy-White);

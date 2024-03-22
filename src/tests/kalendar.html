@@ -55,7 +55,7 @@
               <h4 class="Q_AnswerLetter">B</h4>
             </div>
             <!-- Ответ №3 -->
-            <div class="A_TestAnswer">
+            <div class="A_TestAnswer correct">
               <p class="TestAnswer">Осенью</p>
               <h4 class="Q_AnswerLetter">C</h4>
             </div>
@@ -100,7 +100,7 @@
               <h4 class="Q_AnswerLetter">C</h4>
             </div>
             <!-- Ответ №4 -->
-            <div class="A_TestAnswer">
+            <div class="A_TestAnswer correct">
               <p>Все вышеперечисленные факторы</p>
               <h4 class="Q_AnswerLetter">D</h4>
             </div>
@@ -135,7 +135,7 @@
               <h4 class="Q_AnswerLetter">B</h4>
             </div>
             <!-- Ответ №3 -->
-            <div class="A_TestAnswer">
+            <div class="A_TestAnswer correct">
               <p>Смешанные леса</p>
               <h4 class="Q_AnswerLetter">C</h4>
             </div>
@@ -146,8 +146,8 @@
             </div>
           </div>
           <div class="C_TestNavigation">
-            <button class="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
-            <button class="Q_NextQuestion"><p>Следующий вопрос</p></button>
+            <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
+            <button id="Q_NextQuestion"><p>Следующий вопрос</p></button>
           </div>
         </div>
         <!-- Картинка справа -->
@@ -170,7 +170,7 @@
               <h4 class="Q_AnswerLetter">A</h4>
             </div>
             <!-- Ответ №2 -->
-            <div class="A_TestAnswer">
+            <div class="A_TestAnswer correct">
               <p>Лисички</p>
               <h4 class="Q_AnswerLetter">B</h4>
             </div>
@@ -210,7 +210,7 @@
               <h4 class="Q_AnswerLetter">A</h4>
             </div>
             <!-- Ответ №2 -->
-            <div class="A_TestAnswer">
+            <div class="A_TestAnswer correct">
               <p>Чага</p>
               <h4 class="Q_AnswerLetter">B</h4>
             </div>
@@ -245,7 +245,7 @@
           <!-- Блок со всеми вариантами ответов -->
           <div class="C_TestAnswers">
             <!-- Ответ №1 -->
-            <div class="A_TestAnswer">
+            <div class="A_TestAnswer correct">
               <p>Утром</p>
               <h4 class="Q_AnswerLetter">A</h4>
             </div>
@@ -267,13 +267,28 @@
           </div>
           <div class="C_TestNavigation">
             <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
-            <div></div>
+            <button id="Q_FinishTest"><p>Закончить тест</p></button>
           </div>
         </div>
         <!-- Картинка справа -->
         <img src="../images/form_cover_mushroom.webp" alt="">
       </div>
- 
+
+      <!-- Финиш -->
+      <div class="O_TestResults">
+        <img class="Q_TestResultCover" src="../images/TestsBackground.webp" alt="">
+        <div class="W_TestResults">
+          <h2>Поздравляем!</h2>
+          <p class="Q_TestResultText">Вы прошли тест на <span id="Q_TestResult"></span>! Теперь Вы знаете больше о грибах и сезоне их сбора</p>
+          <a class="M_PageBottom" href="../tests.html">
+            <p>Другие тесты</p>
+            <div class="A_ArrowIcon">
+                <img src="../images/ArrowIcon.svg" alt="Стрелочка">
+            </div>
+        </a>
+        </div>
+      </div>
+    </section>
 
     <div class="wrapper"> </div>
 

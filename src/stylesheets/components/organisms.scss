@@ -278,6 +278,18 @@
 .O_TestQuestion:first-of-type {
     display: flex;
 }
+.O_TestResults {
+    position: relative;
+    background-color: var(--Mushy-White);
+    display: none;
+    width: 100%;
+    border-radius: 1.17vw;
+    overflow: hidden;
+    height: 36vw;
+    margin-top: 1.2vw;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media only screen and (max-width: 430px) {
