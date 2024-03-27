@@ -1,0 +1,291 @@
+
+    // Подвал, секция с разделами полезностей
+    .W_MainFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5.6vw;
+    }
+
+
+
+.W_IndexForm {
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+    width: 100%;
+    padding: 1.2vw;
+    gap: 1.2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        text-align: center;
+    }
+    .input-field {
+        position: relative;
+        width: 100%;
+        .input {
+            width: 100%;
+            outline: none;
+            border-radius: 1vw;
+            height: 5vw;
+            border: 0.1vw solid var(--Ashy-Grey);
+            background: transparent;
+            padding-left: 2vw;
+            font-size: 1.4vw;
+            &:focus {
+                border: 0.1vw solid var(--Fox);
+            }
+        }
+    }
+    
+    .input-field .label {
+        position: absolute;
+        top: 2vw;
+        left: 1.5vw;
+        color: var(--Ashy-Grey);
+        transition: all 0.3s ease;
+        pointer-events: none;
+        z-index: 2;
+        font-size: 1.4vw;
+    }
+        .input-field .input:focus ~ .label,
+        .input-field .input:valid ~ .label {
+          font-size: 1.2vw;
+          top: -0.4vw;
+          left: 2vw;
+          color: var(--Fox);
+          background-color: var(--Mushy-White);
+          padding-left: 0.2vw;
+          padding-right: 0.2vw;
+        }
+        
+
+}
+
+
+.W_InfoPageRecipe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+}
+.W_TextIngredients {
+    display: flex;
+    justify-content: space-between;
+    width: 18vw;
+    div {
+
+        display: flex;
+        flex-direction: column;
+        p {
+            padding: 0.7vw 0;
+        }
+    }
+    div:first-of-type {
+        p {
+            color: var(--Charcoal);
+        }
+    }
+    div:last-of-type {
+        align-items: center;
+        p {
+            color: var(--Fox);
+        }
+    }
+}
+.W_PointsRecipe {
+    padding: 0 2.4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+//Грибвики
+.W_TextGribwiki {
+    position: absolute;  
+    width: 90%;
+    bottom: 1.2vw;
+    left: 1.2vw;
+    h3 {
+        color: var(--Charcoal);
+        font-size: 2.16vw;
+    }
+}
+.W_GribwikiPage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8vw;
+}
+.W_GribwikiPageText {
+    p {
+        color: var(--Mushy-White);
+        margin-top: 1.2vw;
+        font-weight: 250;
+    }
+}
+
+//Памятки
+.W_TextMainCardMemo {
+    h2 {
+        color: var(--Charcoal);
+        margin-bottom: 0.7vw;
+    }
+    p {
+        color: var(--Charcoal);
+    }
+}
+.W_SignsUnoMemo {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5.6vw 16vw;
+    gap: 0.7vw 1.2vw;
+    background-color: var(--Fox);
+    border-radius: 1.17vw;
+    overflow: hidden;
+    img {
+        margin: -5.6vw -16vw 0 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Tests
+.W_TestQuestion {
+    padding: 2.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+}
+.W_TestResults {
+    position: relative;
+    width: 36vw;
+    padding: 3.6vw 4.8vw;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
+    h2 {
+        color: var(--Fox);
+        text-align: center;
+        margin-bottom: 1.2vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .W_TextGribwiki {
+        width: 90%;
+        bottom: 4.8vw;
+        left: 4.8vw;
+        h3 {
+            font-size: 6.4vw;
+            margin-bottom: 2.4vw;
+        }
+    }
+    .W_IndexForm{
+        border-radius: 3.34vw;
+        width: 100%;
+        padding: 4.8vw;
+        gap: 2.4vw;
+        .input-field {
+            position: relative;
+            width: 100%;
+            .input {
+                border-radius: 3vw;
+                height: 12vw;
+                font-size: 2.8vw;
+            }
+        }
+        .input-field .label {
+            top: 5.2vw;
+            left: 3.6vw;
+            font-size: 2.8vw;
+        }
+            .input-field .input:focus ~ .label,
+            .input-field .input:valid ~ .label {
+              font-size: 2.4vw;
+              top: -0.4vw;
+              left: 4.8vw;
+              color: var(--Fox);
+              background-color: var(--Mushy-White);
+              padding-left: 0.2vw;
+              padding-right: 0.2vw;
+            }
+    }
+    .W_MainFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 6.4vw;
+    }
+    .W_TextMainCardArticle {
+        p {
+            width: 70vw;
+        }
+        h2 {
+            width: 70vw;
+            margin: 4.8vw 0;
+        }
+    }
+    .W_TextMainCardMemo {
+        width: 100%;
+        p {
+            width: 70vw;
+        }
+        h2 {
+            width: 70vw;
+            margin: 4.8vw 0;
+        }
+    }
+    .W_GribwikiPage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2vw;
+        margin-bottom: 12vw;
+    }
+    .W_GribwikiPageText {
+        p {
+            margin-top: 3.6vw;
+        }
+    }
+    .W_TestQuestion {
+        padding: 4.8vw;
+        gap: 5.6vw;
+    }
+    .W_TestResults {
+        position: relative;
+        width: 100%;
+        padding: 3.6vw 4.8vw;
+        border-radius: 3.34vw;
+        h2 {
+            margin-bottom: 3.6vw;
+        }
+    }
+    .W_TextIngredients {
+        width: 70vw;
+        div {
+            p {
+                padding: 1.2vw 0;
+            }
+            
+        }
+        div:last-of-type {
+            align-items: flex-end;
+            p {
+                color: var(--Fox);
+            }
+        }
+    }
+    .W_InfoPageRecipe {
+        gap: 4.8vw;
+    }
+    .W_PointsRecipe {
+        padding: 0;
+        flex-direction: column;
+        gap: 5.6vw;
+    }
+}
+
+

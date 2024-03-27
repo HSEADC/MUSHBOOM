@@ -1,0 +1,247 @@
+// Главная
+.S_IndexCover {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
+}
+.S_IndexSection {
+    margin-top: 4.8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+    align-items: flex-end;
+}
+.S_IndexForm {
+    width: 100%;
+    margin-top: 4.8vw;
+    display: flex;
+    gap: 1.2vw;
+}
+
+
+// Страница со статьями
+.S_MainCardArticle {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4vw;
+    margin-bottom: 1.2vw;
+    width: 100%;
+    height: 30vw;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    overflow: hidden;
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.S_CardsArticle {
+    margin-bottom: 1.2vw;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 100vw;
+    gap: 1.2vw;
+}
+// Страницы единичных статей
+.S_CoverUnoArticle, .S_ChapterUnoArticle {
+    width: 100%;
+    margin-bottom: 6.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4vw;
+    h2, p {
+        color: var(--Mushy-White);
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+// Страница с рецептами
+.S_CardsRecipe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+}
+// Страница единичного рецепта
+.S_CoverRecipe {
+    width: 100%;
+    height: 48vw;
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
+    .A_CoverRecipe {
+        border-radius: 1.17vw 1.17vw 0 0;
+    }
+}
+.S_PageRecipeBody {
+    margin: 4vw 0;
+    width: 100%;
+    height: auto;
+    padding: 0 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8vw;
+}
+.S_RecommendationsRecipes {
+    .M_TextRecommendation {
+        color: var(--Mushy-White);
+        margin: 4vw 0 2.4vw 0;
+    }
+}
+
+//Грибвики
+.S_CardsGribwiki {
+    width: 100%;
+    display: flex;
+    gap: 1.2vw;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+}
+.S_GribwikiPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.S_Dvoiniki {
+    h3 {
+        color: var(--Mushy-White);
+    }
+}
+
+.S_MainCardMemo, .S_CoverUnoMemo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4vw;
+    margin-bottom: 1.2vw;
+    width: 100%;
+    height: 30vw;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    overflow: hidden;
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.S_CoverUnoMemo {
+    &:hover {
+        box-shadow: none;
+    }
+}
+.S_CardsMemos {
+    width: 100%;
+    display: flex;
+    gap: 1.2vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.S_ChapterUnoMemo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+    margin-bottom: 4.8vw;
+}
+
+.S_CardsTests {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+//Errors 
+.S_Error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -2.4vw;
+    gap: 3.6vw;
+}
+@media only screen and (max-width: 430px) {
+    .S_IndexCover {
+        gap: 5.2vw;
+    }
+    .S_IndexSection {
+        margin-top: 12.4vw;
+        gap: 5.2vw;
+        align-items: flex-start;
+    }
+    .S_IndexForm {
+        margin-top: 12.4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2vw;
+    }
+    .S_MainCardArticle {
+        flex-direction: column;
+        gap: 5.2vw;
+        padding: 4.8vw;
+        margin-bottom: 5.2vw;
+        width: 100%;
+        height: auto;
+        border-radius: 3.34vw;
+    }
+    .S_CardsArticle {
+        margin-bottom: 5.2vw;
+        max-width: none;
+        width: 100%;
+        max-height: none;
+        gap: 5.2vw;
+    }
+    .S_MainCardMemo, .S_CoverUnoMemo {
+        flex-direction: column;
+        gap: 5.2vw;
+        padding: 4.8vw;
+        margin-bottom: 5.2vw;
+        width: 100%;
+        height: auto;
+        border-radius: 3.34vw;
+    }
+    .S_CardsMemos {
+        gap: 5.2vw;
+    } 
+    .S_CardsGribwiki {
+        gap: 5.2vw;
+    }
+    .S_CardsTests {
+        gap: 5.2vw;
+    }
+    .S_CardsRecipe {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 5.2vw;
+    }
+    .S_ChapterUnoMemo {
+        gap: 4.8vw;
+        margin-bottom: 12vw;
+    }
+    .S_CoverUnoArticle, .S_ChapterUnoArticle {
+        margin-bottom: 12vw;
+        gap: 5.2vw;
+    }
+    .S_CoverRecipe {
+        height: auto;
+        border-radius: 3.34vw;
+        .A_CoverRecipe {
+            border-radius: 3.34vw 3.34vw 0 0;
+        }
+    }
+    .S_PageRecipeBody {
+        margin: 5.2vw 0;
+        width: 100%;
+
+        padding: 0;
+        gap: 12vw;
+    }
+}

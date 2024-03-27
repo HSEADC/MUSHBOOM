@@ -1,0 +1,235 @@
+// Иконки
+.Q_LogoIcon {
+    background-image: url("./images/Logoicon_white.svg");
+    background-size: cover;
+}
+.Q_SearchIcon {
+    background-image: url("./images/Searchicon.svg");
+    background-size: cover;
+    width: 1.2vw;
+    height: 1.2vw;
+}
+.Q_ClockIcon {
+    width: auto;
+    height: 1.6vw;
+    margin-bottom: 0.7vw;
+}
+.Q_PortionIcon {
+    width: auto;
+    height: 1.6vw;
+    margin-bottom: 0.7vw;
+}
+.Q_KcalIcon {
+    width: auto;
+    height: 1.6vw;
+    margin-bottom: 0.7vw;
+}
+.Q_MushIcon {
+    height: 4vw;
+}
+
+// Меню
+#Q_SearchField {
+    width: 92%;
+    height: 3.2vw;
+    background-color: var(--Mushy-White) 0%;
+    border: none;
+    color: var(--Ashy-Grey);
+    font-size: 1vw;
+    &::placeholder {
+        color: var(--Ashy-Grey);
+        font-size: 1vw;
+    }
+    &:hover, &:focus {
+        outline: none;
+        border: none;
+        color: var(--Mushy-White);
+    }
+}
+
+
+.Q_ReccomendationsHeader {
+    color: var(--Mushy-White);
+    margin: 4vw 0 2.4vw 0;
+}
+
+// Главная
+.Q_IndexCover {
+    width: 100%;
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+}
+.Q_IndexHeader {
+    color: var(--Mushy-White);
+}
+
+// Единичные статьи
+.Q_CoverUnoArticle {
+    width: 100%;
+    border-radius: 1.17vw;
+}
+
+// Памятки
+.Q_PhotoMainCardMemo{
+    height: 109%;
+    width: auto;
+    background-size: cover;
+    margin: -1.2vw -1.2vw 0 -1.2vw;
+    border-radius: 1.17vw;
+}
+
+// Единичные памятки
+.Q_CoverUnoMemo {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    margin-top: -2.4vw;
+}
+.Q_SubtitleUnoMemo {
+    color: var(--Mushy-White);
+}
+
+// Текст на единичных страницах
+.Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
+    width: 36vw;
+    margin-left: 48vw;
+    font-weight: 300;
+    color: var(--Mushy-White);
+    a {
+        color: var(--Fox);
+        text-decoration: underline;
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        &:hover {
+            color: var(--Sunny);
+        }
+    }
+    span {
+        color: var(--Fox);
+    }
+}
+
+//Рецепты
+.Q_LargeRecipeCover {
+    position: absolute;
+    height: 100%;
+    margin-left: 2.4vw;
+}
+
+//грибвики
+.Q_GribwikiPageCover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.2vw;
+    border-radius: 1.17vw;
+}
+
+// Тесты
+.Q_TestsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+.Q_TestCover {
+    height: 100%;
+}
+.Q_QuestionNumber {
+    color: var(--Fox);
+    span {
+        color: var(--Misty-Grey);
+    }
+}
+#Q_QuestionText {
+    color: var(--Charcoal);
+    text-transform: none;
+}
+.Q_AnswerLetter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Fox);
+    width: 3.6vw;
+    height: 3.6vw;
+    padding: 0.7vw;
+    border-radius: 12vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.A_TestAnswer:hover {
+    .Q_AnswerLetter {
+        background-color: var(--Sunny);
+    }
+}
+#Q_PreviousQuestion, #Q_NextQuestion, #Q_FinishTest {
+    background-color: var(--Mushy-White);
+    border: none;
+}
+.Q_TestResultCover {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+.Q_TestResultText {
+    text-align: center;
+    color: var(--Charcoal);
+    span {
+        color: var(--Fox);
+    }  
+}
+//Errors
+.Q_ErrorImg {
+    width: 64vw;
+}
+.Q_ErrorText {
+    font-size: 1.78vw;
+    color: var(--Misty-Grey);
+}
+
+
+@media only screen and (max-width: 430px) {
+    .Q_IndexCover {
+        width: 100%;
+        height: 36vh;
+        border-radius: 3.34vw;
+    }
+
+    .Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
+        width: 100%;
+        margin-left: 0vw;
+    }
+    .Q_LargeRecipeCover {
+        position: relative;
+        width: 164%;
+        height: auto;
+        margin-left: 2.4vw;
+    }
+    .Q_CoverUnoMemo {
+        width: 100%;
+        height: auto;
+        width: auto;
+        position: relative;
+        margin-top: -2.4vw;
+    }
+    .Q_TestCover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .Q_AnswerLetter {
+        width: 8.4vw;
+        height: 8.4vw;
+        padding: 1.2vw;
+    }
+    .Q_ClockIcon {
+        height: 4.8vw;
+        margin-bottom: 1.2vw;
+    }
+    .Q_PortionIcon {
+        height: 4.8vw;
+        margin-bottom: 1.2vw;
+    }
+    .Q_KcalIcon {
+        height: 4.8vw;
+        margin-bottom: 1.2vw;
+    }
+}

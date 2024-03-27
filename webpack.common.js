@@ -18,17 +18,17 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192
-            }
-          }
-        ]
-      },
+      // {
+      //   test: /\.(png|jpg|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         limit: 8192
+      //       }
+      //     }
+      //   ]
+      // },
       {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
@@ -114,21 +114,238 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html'
     }),
-
-    // Pages
     new HtmlWebpackPlugin({
-      template: './src/articles/article1.html',
-      filename: './articles/article1.html'
+      template: './src/articles.html',
+      filename: './articles.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/memos/memo1.html',
-      filename: './memos/memo1.html'
+      template: './src/memos.html',
+      filename: './memos.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes.html',
+      filename: './recipes.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki.html',
+      filename: './gribwiki.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests.html',
+      filename: './tests.html'
+    }),
+
+    // Article Pages
+    new HtmlWebpackPlugin({
+      template: './src/articles/timberland.html',
+      filename: './articles/timberland.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/tihaya_ohota.html',
+      filename: './articles/tihaya_ohota.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/pink_oyster.html',
+      filename: './articles/pink_oyster.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/gribi_v_iskusstve.html',
+      filename: './articles/gribi_v_iskusstve.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/ekipirovka.html',
+      filename: './articles/ekipirovka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/dozhdeviki.html',
+      filename: './articles/dozhdeviki.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/deti_i_pohodi.html',
+      filename: './articles/deti_i_pohodi.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/angels_wings.html',
+      filename: './articles/angels_wings.html'
+    }),
+
+    // Memo Pages
+    new HtmlWebpackPlugin({
+      template: './src/memos/puti_gribnika.html',
+      filename: './memos/puti_gribnika.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/odezhda_gribnika.html',
+      filename: './memos/odezhda_gribnika.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/gribnoi_strah.html',
+      filename: './memos/gribnoi_strah.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/toxic_mush.html',
+      filename: './memos/toxic_mush.html'
+    }),
+    // Recipe Pages
+    new HtmlWebpackPlugin({
+      template: './src/recipes/fettuchini.html',
+      filename: './recipes/fettuchini.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/kitaiskie_brokkoli.html',
+      filename: './recipes/kitaiskie_brokkoli.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/zharenie_shampinioni.html',
+      filename: './recipes/zharenie_shampinioni.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/zhulien.html',
+      filename: './recipes/zhulien.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/skumbria.html',
+      filename: './recipes/skumbria.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/humus.html',
+      filename: './recipes/humus.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/gribnoi_otvar.html',
+      filename: './recipes/gribnoi_otvar.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/palenta.html',
+      filename: './recipes/palenta.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/golubci.html',
+      filename: './recipes/golubci.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/ovoshnoe_ragu.html',
+      filename: './recipes/ovoshnoe_ragu.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/lazania.html',
+      filename: './recipes/lazania.html'
+    }),
+
+    //Gribwiki Pages
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/zolotie_lisichki.html',
+      filename: './gribwiki/zolotie_lisichki.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/volnushka.html',
+      filename: './gribwiki/volnushka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/svinushka.html',
+      filename: './gribwiki/svinushka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/smorchok.html',
+      filename: './gribwiki/smorchok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/shampinion.html',
+      filename: './gribwiki/shampinion.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/rizhik.html',
+      filename: './gribwiki/rizhik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/podosinovik.html',
+      filename: './gribwiki/podosinovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/podberezovik.html',
+      filename: './gribwiki/podberezovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/openok.html',
+      filename: './gribwiki/openok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/muhomor.html',
+      filename: './gribwiki/muhomor.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/maslenok.html',
+      filename: './gribwiki/maslenok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_podosinovik.html',
+      filename: './gribwiki/lozhniy_podosinovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_podberezovik.html',
+      filename: './gribwiki/lozhniy_podberezovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_openok.html',
+      filename: './gribwiki/lozhniy_openok.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhniy_borovik.html',
+      filename: './gribwiki/lozhniy_borovik.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/lozhnaya_lisichka.html',
+      filename: './gribwiki/lozhnaya_lisichka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/gruzd.html',
+      filename: './gribwiki/gruzd.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/galerina_okaymlennaya.html',
+      filename: './gribwiki/galerina_okaymlennaya.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/blednaya_poganka.html',
+      filename: './gribwiki/blednaya_poganka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gribwiki/beliy_grib.html',
+      filename: './gribwiki/beliy_grib.html'
+    }),
+
+    // Test Pages
+    new HtmlWebpackPlugin({
+      template: './src/tests/kalendar.html',
+      filename: './tests/kalendar.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/sedobnie_ili_yadovitie.html',
+      filename: './tests/sedobnie_ili_yadovitie.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/gribnaya_bezopasnost.html',
+      filename: './tests/gribnaya_bezopasnost.html'
     }),
 
     // Styleguide
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html'
+    }),
+    
+    // Errors
+    new HtmlWebpackPlugin({
+      template: './src/400.html',
+      filename: './400.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/404.html',
+      filename: './404.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/500.html',
+      filename: './500.html'
     }),
 
     // Partials

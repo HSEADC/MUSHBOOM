@@ -1,0 +1,111 @@
+// Общие стили для страниц (отступы, размеры текстов)
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 6.4vw 5vw 0vw 5vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    flex: 1; 
+}
+* {
+    box-sizing: border-box;
+}
+body, a, button {
+    font-family: "TRYGrtsk";
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3.36vw;
+    text-transform: uppercase;
+    line-height: 3.64vw;
+}
+h3 {
+    font-size: 2.36vw;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 1.56vw;
+    text-transform: uppercase;
+    line-height: 1.8vw;
+}
+h5 {
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+h6 {
+    font-size: 0.9vw;
+    font-weight: 200;
+}
+p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 1.8vw;
+}
+img {
+    object-fit: cover;
+}
+span img {
+    height: 4vw;
+}
+// Ползунок
+::-webkit-scrollbar {
+    width: 0.7vw; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--Fox); 
+    border-radius: 1.17vw;
+}
+
+// Настройка цветов страниц
+body {
+    background-color: var(--Charcoal);
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        width: 100vw;
+        padding: 6.4vh 5vh 0vh 5vh;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+    h2 {
+        font-size: 7.6vw;
+        line-height: 8.6vw;
+    }
+    h3 {
+        font-size: 6.4vw;
+    }
+    h4 {
+        font-size: 4.8vw;
+        line-height: 5.6vw;
+    }
+    h5 {
+        font-size: 2.4vw;
+    }
+    h6 {
+        font-size: 0.9vh;
+    }
+    p, ol, ul, li {
+        font-size: 3.6vw;
+        line-height: 4.8vw;
+    }
+    span img {
+        height: 10vw;
+    }
+    menu {
+        display: none!important;
+    }
+    
+}

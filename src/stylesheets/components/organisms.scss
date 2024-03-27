@@ -1,0 +1,441 @@
+// Меню
+.O_Menubar {
+    position: fixed;
+    left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vw;
+    width: 94%;
+    top: 1vw;
+    padding: 0 3vw;
+    border-radius: 5vw;
+    background-color:var(--Blacky);
+    z-index: 99;
+    .Q_LogoIcon {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+}
+// Подвал
+.O_Footer {
+    margin-top: 1.2vw;
+    float: bottom;
+    width: 94vw;
+    height: 16vw;
+    margin-left: -2vw;
+    border-radius: 2vw 2vw 0px 0px;
+    background: var(--Blacky);
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .Q_LogoIcon {
+      width: 7vw;
+      height: 7vw;
+    }
+}
+// Главная
+.O_IndexArticle {
+    width: 28.7vw;
+    padding: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    border-radius: 1.17vw;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+#O_IndexForm {
+    width: 28.9vw;
+    border-radius: 1.17vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+// Статьи
+.O_MainCardArticle {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    height: auto;
+    justify-content: space-between;
+}
+.O_CardArticle {
+    width: 29vw;
+    height: auto;
+    padding: 1.2vw;
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    overflow: hidden;
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+
+}
+
+// Рецепты
+.O_CardRecipe {
+    position: relative;
+    display: block;
+    padding: 1.2vw;
+    width: 28.9vw;
+    height: 24vw;
+    border-radius: 1.17vw;
+    background-color: var(--Mushy-White);
+    background-size: cover;
+    overflow: hidden;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    h3 {
+        position: relative;
+        color: var(--Charcoal);
+    }
+    img {
+        position: absolute;
+        margin: -1.2vw 0 0 -1.2vw;
+        height: 100%;
+        width: 100%;
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+
+}
+.O_CardLargeRecipe {
+    position: relative;
+    width: 100%;
+    height: 24vw;
+    border-radius: 1.17vw;
+    display: flex;
+    align-content: flex-end;
+    background-color: var(--Fox);
+    overflow: hidden;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.O_CardPageRecipe {
+    width: 100%;
+    height: 24vw;
+    padding: 1.2vw 4.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.O_ProcessRecipe, .O_ProcessServing {
+    h3 {
+        color: var(--Mushy-White);
+        margin-bottom: 2.4vw;
+        text-transform: none;
+    }
+}
+.O_ProcessServing {
+    p {
+        color: var(--Mushy-White);
+        width: 42vw;
+        margin-left: 6vw;
+        font-weight: 250;
+    }
+}
+
+// Грибвики
+.O_CardGrib, .O_Dvoiniki {
+    position: relative;
+    width: 21.4vw;
+    height: 21.4vw;
+    overflow: hidden;
+    border-radius: 1.17vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    h3, h4 {
+        color: var(--Charcoal);
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.O_Dvoiniki {
+    h4 {
+        position: absolute;
+        margin: 1.2vw;
+        bottom: 0;
+    }
+}
+.O_CardLargeGrib {
+    position: relative;
+    width: 44vw;
+    height: 21.4vw;
+    overflow: hidden;
+    border-radius: 1.17vw;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    h3 {
+        color: var(--Charcoal);
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.O_GribwikiPageCover {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.O_GribwikiPageText {
+    width: 68.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8vw;
+    margin: 0 5.6vw;
+}
+
+
+// Памятки
+.O_MainCardMemo, .O_CoverUnoMemo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+    height: auto;
+    justify-content: space-between;
+}
+.O_CardMemo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28.9vw;
+    height: 36vw;
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+    overflow: hidden;
+    align-items: center;
+}
+.O_PointMemo {
+    width: 28.9vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    h3 {
+        color: var(--Mushy-White);
+    }
+    h3:nth-of-type(1) {
+        color: var(--Fox);
+    }
+    p {
+        padding: 1.2vw;
+        background-color: var(--Fox);
+        color: var(--Charcoal);
+        border-radius: 1.17vw;
+        height: 100%;
+    }
+}
+
+// Тесты
+.O_TestsCards {
+    position: relative;
+    width: 100%;
+    height: 36vw;
+    border-radius: 1.17vw;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.O_CardTest {
+    position: relative;
+    width: 100%;
+    height: 28vw;
+    border-radius: 1.17vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Mushy-White);
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
+    }
+}
+.O_TestQuestion {
+    background-color: var(--Mushy-White);
+    display: none;
+    width: 100%;
+    border-radius: 1.17vw;
+    overflow: hidden;
+    height: 36vw;
+    margin-top: 1.2vw;
+    img {
+        width: 32vw;
+        height: 100%;
+    }
+}
+.O_TestQuestion:first-of-type {
+    display: flex;
+}
+.O_TestResults {
+    position: relative;
+    background-color: var(--Mushy-White);
+    display: none;
+    width: 100%;
+    border-radius: 1.17vw;
+    overflow: hidden;
+    height: 36vw;
+    margin-top: 1.2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 430px) {
+    .O_IndexArticle {
+        width: 100%;
+        gap: 2.4vw;
+        border-radius: 3.34vw;
+        padding: 4.8vw;
+    }
+    .O_CardMemo {
+        flex-direction: column;
+        width: 100%;
+        height: 96vw;
+        border-radius: 3.34vw;
+    }
+    .O_CardLargeRecipe {
+        height: auto;
+        flex-direction: column;
+        border-radius: 3.34vw;
+    }
+    .O_TestsCards {
+        height: auto;
+        border-radius: 3.34vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    .O_CardGrib, .O_Dvoiniki {
+        width: 100%;
+        height: 58vw;
+        border-radius: 3.34vw;
+    }
+    .O_CardLargeGrib {
+        width: 100%;
+        height: 58vw;
+        border-radius: 3.34vw;
+    }
+    #O_IndexForm {
+        width: 100%;
+        border-radius: 3.34vw;
+        gap: 2.4vw;
+    }
+    .O_Footer {
+        margin-top: 2.4vw;
+        width: 120%;
+        height: auto;
+        margin-left: -10%;
+        border-radius: 3.34vw 3.34vw 0px 0px;
+        padding: 4.8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        gap: 6.4vw;
+        .Q_LogoIcon {
+          width: 16vw;
+          height: 16vw;
+        }
+    }
+    .O_CardArticle {
+        width: 100%;
+        height: auto;
+        padding: 4.8vw;
+        border-radius: 3.34vw;
+    
+    }
+    .O_CardTest {
+        height: 78vw;
+        border-radius: 3.34vw;
+        flex-direction: column;
+        gap: 4.8vw;
+    }
+    .O_CardRecipe {
+        padding: 4.8vw;
+        width: 100%;
+        height: 56vw;
+        border-radius: 3.34vw;
+        img {
+            position: absolute;
+            margin: -4.8vw 0 0 -4.8vw;
+            height: 100%;
+            width: 100%;
+
+        }
+        h3 {
+            margin-bottom: 2.4vw;
+        }
+    }
+    .O_PointMemo {
+        width: 100%;
+        gap: 5.2vw;
+        p {
+            padding: 4.8vw;
+            border-radius: 3.37vw;
+        }
+    }
+    .O_GribwikiPageCover {
+        gap: 2.4vw;
+    }
+    .O_GribwikiPageText {
+        width: 100%;
+        gap: 12vw;
+        margin: 0;
+    }
+    .O_Dvoiniki {
+        h4 {
+            margin: 4.8vw;
+        }
+    }
+    .O_TestQuestion {
+        flex-direction: column;
+        border-radius: 3.34vw;
+        height: auto;
+        img {
+            width: 100%;
+            height: 34vw;
+        }
+    }
+    .O_TestResults {
+        width: 100%;
+        border-radius: 3.34vw;
+        height: auto;
+    }
+    .O_CardPageRecipe {
+        width: 100%;
+        height: auto;
+        padding: 4.8vw;
+        gap: 4.8vw;
+        flex-direction: column;
+    }
+    .O_ProcessRecipe, .O_ProcessServing {
+        h3 {
+            margin-bottom: 4.8vw;
+        }
+    }
+    .O_ProcessServing {
+        p {
+            width: 100%;
+        }
+    }
+}
