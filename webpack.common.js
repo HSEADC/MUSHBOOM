@@ -333,6 +333,20 @@ module.exports = {
       template: './src/styleguide.html',
       filename: './styleguide.html'
     }),
+    
+    // Errors
+    new HtmlWebpackPlugin({
+      template: './src/400.html',
+      filename: './400.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/404.html',
+      filename: './404.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/500.html',
+      filename: './500.html'
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([

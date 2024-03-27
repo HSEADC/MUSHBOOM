@@ -65,51 +65,41 @@
 }
 
 
-body.recipes {
-    .W_InfoPageRecipe {
+.W_InfoPageRecipe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+}
+.W_TextIngredients {
+    display: flex;
+    justify-content: space-between;
+    width: 18vw;
+    div {
+
         display: flex;
         flex-direction: column;
-        gap: 2.4vw;
+        p {
+            padding: 0.7vw 0;
+        }
     }
-    .W_TextIngredients {
-        display: flex;
-        justify-content: space-between;
-        width: 18vw;
-        div {
+    div:first-of-type {
+        p {
+            color: var(--Charcoal);
+        }
+    }
+    div:last-of-type {
+        align-items: center;
+        p {
+            color: var(--Fox);
+        }
+    }
+}
+.W_PointsRecipe {
+    padding: 0 2.4vw;
+    display: flex;
+    justify-content: space-between;
+}
 
-            display: flex;
-            flex-direction: column;
-            p {
-                padding: 0.7vw 0;
-            }
-        }
-        div:first-of-type {
-            p {
-                color: var(--Charcoal);
-            }
-        }
-        div:last-of-type {
-            align-items: center;
-            p {
-                color: var(--Fox);
-            }
-        }
-    }
-    .W_PointsRecipe {
-        padding: 0 2.4vw;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-.W_TextMainCardArticle {
-    h2 {
-        color: var(--Charcoal);
-        margin-bottom: 0.4vw;
-    }
-    p {
-        color: var(--Charcoal);
-    }
-}
 
 //Грибвики
 .W_TextGribwiki {
@@ -189,6 +179,10 @@ body.recipes {
         width: 90%;
         bottom: 4.8vw;
         left: 4.8vw;
+        h3 {
+            font-size: 6.4vw;
+            margin-bottom: 2.4vw;
+        }
     }
     .W_IndexForm{
         border-radius: 3.34vw;
@@ -225,4 +219,73 @@ body.recipes {
         align-items: center;
         gap: 6.4vw;
     }
+    .W_TextMainCardArticle {
+        p {
+            width: 70vw;
+        }
+        h2 {
+            width: 70vw;
+            margin: 4.8vw 0;
+        }
+    }
+    .W_TextMainCardMemo {
+        width: 100%;
+        p {
+            width: 70vw;
+        }
+        h2 {
+            width: 70vw;
+            margin: 4.8vw 0;
+        }
+    }
+    .W_GribwikiPage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2vw;
+        margin-bottom: 12vw;
+    }
+    .W_GribwikiPageText {
+        p {
+            margin-top: 3.6vw;
+        }
+    }
+    .W_TestQuestion {
+        padding: 4.8vw;
+        gap: 5.6vw;
+    }
+    .W_TestResults {
+        position: relative;
+        width: 100%;
+        padding: 3.6vw 4.8vw;
+        border-radius: 3.34vw;
+        h2 {
+            margin-bottom: 3.6vw;
+        }
+    }
+    .W_TextIngredients {
+        width: 70vw;
+        div {
+            p {
+                padding: 1.2vw 0;
+            }
+            
+        }
+        div:last-of-type {
+            align-items: flex-end;
+            p {
+                color: var(--Fox);
+            }
+        }
+    }
+    .W_InfoPageRecipe {
+        gap: 4.8vw;
+    }
+    .W_PointsRecipe {
+        padding: 0;
+        flex-direction: column;
+        gap: 5.6vw;
+    }
 }
+
+

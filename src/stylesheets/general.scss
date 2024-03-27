@@ -81,7 +81,8 @@ body {
         font-size: 12vw;
     }
     h2 {
-        font-size: 8.6vw;
+        font-size: 7.6vw;
+        line-height: 8.6vw;
     }
     h3 {
         font-size: 6.4vw;
@@ -98,9 +99,13 @@ body {
     }
     p, ol, ul, li {
         font-size: 3.6vw;
+        line-height: 4.8vw;
     }
     span img {
         height: 10vw;
+    }
+    menu {
+        display: none!important;
     }
     
 }

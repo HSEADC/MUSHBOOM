@@ -109,6 +109,7 @@
     }
 }
 
+//Рецепты
 .Q_LargeRecipeCover {
     position: absolute;
     height: 100%;
@@ -175,6 +176,14 @@
         color: var(--Fox);
     }  
 }
+//Errors
+.Q_ErrorImg {
+    width: 64vw;
+}
+.Q_ErrorText {
+    font-size: 1.78vw;
+    color: var(--Misty-Grey);
+}
 
 
 @media only screen and (max-width: 430px) {
@@ -193,5 +202,34 @@
         width: 164%;
         height: auto;
         margin-left: 2.4vw;
+    }
+    .Q_CoverUnoMemo {
+        width: 100%;
+        height: auto;
+        width: auto;
+        position: relative;
+        margin-top: -2.4vw;
+    }
+    .Q_TestCover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .Q_AnswerLetter {
+        width: 8.4vw;
+        height: 8.4vw;
+        padding: 1.2vw;
+    }
+    .Q_ClockIcon {
+        height: 4.8vw;
+        margin-bottom: 1.2vw;
+    }
+    .Q_PortionIcon {
+        height: 4.8vw;
+        margin-bottom: 1.2vw;
+    }
+    .Q_KcalIcon {
+        height: 4.8vw;
+        margin-bottom: 1.2vw;
     }
 }

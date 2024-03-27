@@ -314,4 +314,51 @@
         justify-content: space-evenly;
         height: auto;
     }
+    .C_Filters {
+        display: none;
+    }
+    .C_PointsUnoMemo {
+        flex-direction: column;
+        gap: 5.2vw;
+    }
+    .C_PageButtoms {
+        flex-direction: column;
+        gap: 5.2vw;
+    }
+    .C_Reccomendations {
+        display: flex;
+        flex-direction: column;
+        gap: 5.2vw;
+        justify-content: space-between;
+    }
+    .C_TagsUnoArticle {
+        justify-content: center;
+        gap: 2.4vw;
+        flex-wrap: wrap;
+    }
+    .C_Dvoiniki {
+        gap: 5.2vw;
+        margin: 5.2vw 0 6.4vw 0;
+        flex-direction: column;
+    }
+    .C_GribwikiValues {
+        gap: 1.2vw 4.8vw;
+    }
+    .C_CharacteristicsRecipe {
+        gap: none;
+        justify-content: space-between;
+    }
+    .C_Ingredients {
+        flex-direction: column;
+        gap: 0;
+    }
+    .C_ColumnPointsRecipe {
+        width: 100%;
+        gap: 4.8vw;
+    }
+    .C_CardRecipes {
+        flex-direction: column;
+        row-gap: 5.6vw;
+        margin-bottom: 5.6vw;
+    }
 }

@@ -60,6 +60,14 @@ body.tests {
         }
     }
 }
+body.recipes {
+    .A_TextMenubar:nth-of-type(3) {
+        background-color: var(--Fox);
+        &:active {
+            background-color: var(--Sunny);
+        }
+    }
+}
 
 // Подвал
 .A_HeaderFooter {
@@ -405,23 +413,14 @@ body.index {
 
 
 
-body.recipes {
-    .A_TextMenubar:nth-of-type(3) {
-        background-color: var(--Fox);
-        &:hover {
-            border: solid 0.1vw var(--Fox); 
-        }
-        &:active {
-            border: solid 0.1vw var(--Sunny); 
-            background-color: var(--Sunny);
-        }
-    }
-    // Страница единичного рецепта
-    .A_CoverRecipe {
-        width: 100%;
-        height: auto;
-    }
+
+
+// Страница единичного рецепта
+.A_CoverRecipe {
+    width: 100%;
+    height: auto;
 }
+
 
 // Памятки
 .S_MainCardMemo {
@@ -595,6 +594,7 @@ body.recipes {
             margin-bottom: 1.2vw;
         }
         p {
+            line-height: 4.8vw;
             font-size: 3.6vw;
         }
     }
@@ -650,5 +650,27 @@ body.recipes {
             width: 66%;
             height: 66%;
         }
+    }
+    .A_PhotoMainCardArticle{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        border-radius: 3.34vw;
+    }
+    .A_PhotoArticle {
+        border-radius: 3.34vw;
+    }
+    .A_TagUnoArticle {
+        padding: 2.4vw 5.6vw;
+        border-radius: 12vw;
+        border: solid var(--Fox) 0.2vw;
+    }
+    .A_TestAnswer {
+        width: 100%;
+        padding: 4.8vw;
+        border-radius: 3.34vw;
+    }
+    .A_CoverRecipe {
+        height: 56vw;
     }
 }
