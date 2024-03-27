@@ -205,10 +205,11 @@ body.articles {
         height: 12vw;
         width: 100%;
         gap: 2.4vw;
-        padding: 4.8vw;
+        padding: 4.8vw 0;
         justify-content: space-between;
         align-items: center;
         &.download {
+            padding: 4.8vw;
             border-radius: 3.34vw;
         }
     }
@@ -222,6 +223,7 @@ body.articles {
         span {
             img {
                 height: 2.4vw;
+                margin: 0 1.2vw;
             }
         }
     }
