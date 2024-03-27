@@ -49,7 +49,7 @@ body.articles {
     // Страницы единичных статей
     .S_CoverUnoArticle, .S_ChapterUnoArticle {
         width: 100%;
-        margin-bottom: 4vw;
+        margin-bottom: 6.4vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -71,8 +71,7 @@ body.recipes {
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        row-gap: 1.2vw;
+        gap: 1.2vw;
     }
     // Страница единичного рецепта
     .S_CoverRecipe {
@@ -94,7 +93,7 @@ body.recipes {
         padding: 0 4vw;
         display: flex;
         flex-direction: column;
-        gap: 4vw;
+        gap: 4.8vw;
     }
     .S_RecommendationsRecipes {
         .M_TextRecommendation {

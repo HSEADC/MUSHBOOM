@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MushBoom | Грибной Страх</title>
-    <link rel="icon" type="image/x-icon" href="../images/icon_mushboom.ico" />
-  <body class="memos">
+    <title>MushBoom | Календарь грибной охоты</title>
+    <link rel="icon" type="image/x-icon" href="../images/LogoIcon.ico" />
+    <analitics></analitics>
+  </head>
+  <body class="tests">
     <!-- Менюшка -->
     <menu class="O_Menubar">
       <!-- Кнопки для разделов -->
@@ -28,120 +30,266 @@
       <a class="Q_LogoIcon" href="../index.html"></a>
     </menu>
     <!-- Обложка памятки -->
-    <section class="S_ChapterUnoMemo">
-        <div class="S_CoverUnoMemo">
-          <!-- Картинка с обложки -->
-          <img class="Q_CoverUnoMemo" src="../images/Memos/ToxicMush/1.webp"></img>
-          <div class="O_CoverUnoMemo">
-            <!-- Теги памятки -->
-            <div class="C_Tags">
-              <h5 class="A_Tag">PDF формат</h5>
+    <section class="S_UnoTest">
+
+      <!-- Хлебные крошки -->
+      <p class="M_Navigation">Тесты <span><img src="../images/ArrowIconNavigationIcon.svg" alt=""></span> <span>Календарь грибной охоты</span></p>
+
+      <!-- Вопрос №1 -->
+      <div class="O_TestQuestion">
+        <!-- Сам вопрос и варианты ответов -->
+        <div class="W_TestQuestion">
+          <!-- Нумерация вопросов -->
+          <h2 class="Q_QuestionNumber">01<span>/06</span></h2>
+          <!-- Сам вопрос -->
+          <h3 id="Q_QuestionText">В какое время года начинается сезон грибной охоты?</h3>
+          <!-- Блок со всеми вариантами ответов -->
+          <div class="C_TestAnswers">
+            <!-- Ответ №1 -->
+            <div class="A_TestAnswer">
+              <p class="TestAnswer">Весной</p>
+              <h4 class="Q_AnswerLetter">A</h4>
             </div>
-            <!-- Описание и название памятки -->
-            <div class="W_TextMainCardMemo">
-              <h2>Toxic <span><img src="../images/MushIcon-b4.svg" alt=""></span> Mush</h2>
-              <p>Как выявить ядовитый гриб?</p>
+            <!-- Ответ №2 -->
+            <div class="A_TestAnswer">
+              <p class="TestAnswer">Летом</p>
+              <h4 class="Q_AnswerLetter">B</h4>
+            </div>
+            <!-- Ответ №3 -->
+            <div class="A_TestAnswer correct">
+              <p class="TestAnswer">Осенью</p>
+              <h4 class="Q_AnswerLetter">C</h4>
+            </div>
+            <!-- Ответ №4 -->
+            <div class="A_TestAnswer">
+              <p class="TestAnswer">Зимой</p>
+              <h4 class="Q_AnswerLetter">D</h4>
             </div>
           </div>
+          <div class="C_TestNavigation">
+            <div></div>
+            <button id="Q_NextQuestion"><p>Следующий вопрос</p></button>
+          </div>
         </div>
-        <!-- Начала основного текста памятки(поясняющая часть) -->
-        <p class="Q_TextUnoMemo">
-          Правильно узнавать ядовитые грибы и отличать их от съедобных — это важный и сложный навык. Вот несколько рекомендаций, которые могут помочь вам в распознавании ядовитых грибов.
-        </p>
-    </section>
-    <!-- Первый раздел памятки -->
-    <section class="S_ChapterUnoMemo">
-      <!-- 3 раздела важностей -->
-      <div class="C_PointsUnoMemo">
-        <!-- 1 -->
-        <div class="O_PointMemo">
-          <h3>01</h3>
-          <h3>Грибные шляпки</h3>
-          <p>
-            Изучите внутреннюю сторону грибной шляпки. По внешнему виду можно определить ее строение. 
-            <br><br>
-            Грибы, непригодные в пищу, частоимеют пластинчатое строение шляпки, съедобные — трубчатое.
-          </p>
-        </div>
-        <!-- 2 -->
-        <div class="O_PointMemo">
-          <h3>02</h3>
-          <h3>Ножка</h3>
-          <p>
-            Отличительные особенности нижней части гриба также могут говорить о содержании в нем ядовитых веществ. 
-            <br><br>
-            У поганок всех видов в нижней части ножки есть небольшое утолщение.
-          </p>
-        </div>
-        <!-- 3 -->
-        <div class="O_PointMemo">
-          <h3>03</h3>
-          <h3>Юбочка</h3>
-          <p>
-            Если на ножке есть «юбочка», расположенная ближе к шляпке, этот гриб тоже нельзя употреблять в пищу.
-          </p>
-        </div>
+        <!-- Картинка справа -->
+        <img src="../images/form_cover_mushroom.webp" alt="">
       </div>
-      <!-- Поясняющий текст -->
-      <p class="Q_TextUnoMemo">
-        Ядовитые грибы могут иметь приятный вкус, но не стоит пробовать сомнительные экземпляры. Запах и потемнение гриба при разламывании — тоже не показатель его пригодности в пищу.
-        <br><br>
-        Стоит также помнить, что ядовитые вещества не испаряются при термической обработке. 
-      </p>
-    </section>
-    <!-- Второй раздел памятки -->
-    <section class="S_ChapterUnoMemo">
-      <!-- Заголовок -->
-      <h3 class="Q_SubtitleUnoMemo">Первая помощь при отравлении</h3>
-      <!-- Текст -->
-      <p class="Q_TextUnoMemo">
-        Заниматься самолечением при подозрении на отравление грибами не стоит. Вызвать бригаду скорой помощи, если появилось:
-      </p>
-      <!-- Важные критерии -->
-      <div class="W_SignsUnoMemo">
-        <h5 class="A_Tag">недомогание</h5>
-        <h5 class="A_Tag">бледность кожи</h5>
-        <h5 class="A_Tag">диарея</h5>
-        <h5 class="A_Tag">одышка</h5>
-        <h5 class="A_Tag">тошнота</h5>
-        <h5 class="A_Tag">слабость</h5>
-        <h5 class="A_Tag">головокружение</h5>
-        <h5 class="A_Tag">боль в животе</h5>
+
+      <!-- Вопрос №2 -->
+      <div class="O_TestQuestion">
+        <!-- Сам вопрос и варианты ответов -->
+        <div class="W_TestQuestion">
+          <!-- Нумерация вопросов -->
+          <h2 class="Q_QuestionNumber">02<span>/06</span></h2>
+          <!-- Сам вопрос -->
+          <h3 id="Q_QuestionText">Какие факторы влияют на начало сезона грибной охоты?</h3>
+          <!-- Блок со всеми вариантами ответов -->
+          <div class="C_TestAnswers">
+            <!-- Ответ №1 -->
+            <div class="A_TestAnswer">
+              <p>Температура и влажность</p>
+              <h4 class="Q_AnswerLetter">A</h4>
+            </div>
+            <!-- Ответ №2 -->
+            <div class="A_TestAnswer">
+              <p>Количество солнечных дней</p>
+              <h4 class="Q_AnswerLetter">B</h4>
+            </div>
+            <!-- Ответ №3 -->
+            <div class="A_TestAnswer">
+              <p>Фаза луны</p>
+              <h4 class="Q_AnswerLetter">C</h4>
+            </div>
+            <!-- Ответ №4 -->
+            <div class="A_TestAnswer correct">
+              <p>Все вышеперечисленные факторы</p>
+              <h4 class="Q_AnswerLetter">D</h4>
+            </div>
+          </div>
+          <div class="C_TestNavigation">
+            <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
+            <button id="Q_NextQuestion"><p>Следующий вопрос</p></button>
+          </div>
+        </div>
+        <!-- Картинка справа -->
+        <img src="../images/form_cover_mushroom.webp" alt="">
       </div>
-      <!-- Текст -->
-      <p class="Q_TextUnoMemo">
-        Не медлите с вызовом неотложной помощи. Самостоятельно можно принять сорбенты для снижения симптомов интоксикации. А после стабилизации состояния потребуется обильное щелочное питье для восполнения потери жидкости.
-      </p>
-    </section>
-    <!-- Кнопки в конце памятки -->
-    <div class="C_PageButtoms">
-      <!-- Кнопка для возврата на страницу памяток -->
-      <div class="M_PageBottom">
-        <p>Другие памятки</p>
-        <a class="A_ArrowIcon" href="../recipes.html">
-          <img src="../images/ArrowIcon.svg" alt="Стрелочка">
+
+      <!-- Вопрос №3 -->
+      <div class="O_TestQuestion">
+        <!-- Сам вопрос и варианты ответов -->
+        <div class="W_TestQuestion">
+          <!-- Нумерация вопросов -->
+          <h2 class="Q_QuestionNumber">03<span>/06</span></h2>
+          <!-- Сам вопрос -->
+          <h3 id="Q_QuestionText">Какой тип леса лучше всего подходит для сбора грибов?</h3>
+          <!-- Блок со всеми вариантами ответов -->
+          <div class="C_TestAnswers">
+            <!-- Ответ №1 -->
+            <div class="A_TestAnswer">
+              <p>Хвойные леса</p>
+              <h4 class="Q_AnswerLetter">A</h4>
+            </div>
+            <!-- Ответ №2 -->
+            <div class="A_TestAnswer">
+              <p>Широколиственные леса</p>
+              <h4 class="Q_AnswerLetter">B</h4>
+            </div>
+            <!-- Ответ №3 -->
+            <div class="A_TestAnswer correct">
+              <p>Смешанные леса</p>
+              <h4 class="Q_AnswerLetter">C</h4>
+            </div>
+            <!-- Ответ №4 -->
+            <div class="A_TestAnswer">
+              <p>Тропические леса</p>
+              <h4 class="Q_AnswerLetter">D</h4>
+            </div>
+          </div>
+          <div class="C_TestNavigation">
+            <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
+            <button id="Q_NextQuestion"><p>Следующий вопрос</p></button>
+          </div>
+        </div>
+        <!-- Картинка справа -->
+        <img src="../images/form_cover_mushroom.webp" alt="">
+      </div>
+
+      <!-- Вопрос №4 -->
+      <div class="O_TestQuestion">
+        <!-- Сам вопрос и варианты ответов -->
+        <div class="W_TestQuestion">
+          <!-- Нумерация вопросов -->
+          <h2 class="Q_QuestionNumber">04<span>/06</span></h2>
+          <!-- Сам вопрос -->
+          <h3 id="Q_QuestionText">Какие виды грибов чаще всего встречаются в начале осеннего сезона?</h3>
+          <!-- Блок со всеми вариантами ответов -->
+          <div class="C_TestAnswers">
+            <!-- Ответ №1 -->
+            <div class="A_TestAnswer">
+              <p>Белые грибы</p>
+              <h4 class="Q_AnswerLetter">A</h4>
+            </div>
+            <!-- Ответ №2 -->
+            <div class="A_TestAnswer correct">
+              <p>Лисички</p>
+              <h4 class="Q_AnswerLetter">B</h4>
+            </div>
+            <!-- Ответ №3 -->
+            <div class="A_TestAnswer">
+              <p>Подберезовики</p>
+              <h4 class="Q_AnswerLetter">C</h4>
+            </div>
+            <!-- Ответ №4 -->
+            <div class="A_TestAnswer">
+              <p>Моховики</p>
+              <h4 class="Q_AnswerLetter">D</h4>
+            </div>
+          </div>
+          <div class="C_TestNavigation">
+            <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
+            <button id="Q_NextQuestion"><p>Следующий вопрос</p></button>
+          </div>
+        </div>
+        <!-- Картинка справа -->
+        <img src="../images/form_cover_mushroom.webp" alt="">
+      </div>
+
+      <!-- Вопрос №5 -->
+      <div class="O_TestQuestion">
+        <!-- Сам вопрос и варианты ответов -->
+        <div class="W_TestQuestion">
+          <!-- Нумерация вопросов -->
+          <h2 class="Q_QuestionNumber">05<span>/06</span></h2>
+          <!-- Сам вопрос -->
+          <h3 id="Q_QuestionText">Какие грибы растут на старых пнях и палой древесине?</h3>
+          <!-- Блок со всеми вариантами ответов -->
+          <div class="C_TestAnswers">
+            <!-- Ответ №1 -->
+            <div class="A_TestAnswer">
+              <p>Опята</p>
+              <h4 class="Q_AnswerLetter">A</h4>
+            </div>
+            <!-- Ответ №2 -->
+            <div class="A_TestAnswer correct">
+              <p>Чага</p>
+              <h4 class="Q_AnswerLetter">B</h4>
+            </div>
+            <!-- Ответ №3 -->
+            <div class="A_TestAnswer">
+              <p>Маслёнки</p>
+              <h4 class="Q_AnswerLetter">C</h4>
+            </div>
+            <!-- Ответ №4 -->
+            <div class="A_TestAnswer">
+              <p>Красноголовик</p>
+              <h4 class="Q_AnswerLetter">D</h4>
+            </div>
+          </div>
+          <div class="C_TestNavigation">
+            <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
+            <button id="Q_NextQuestion"><p>Следующий вопрос</p></button>
+          </div>
+        </div>
+        <!-- Картинка справа -->
+        <img src="../images/form_cover_mushroom.webp" alt="">
+      </div>
+
+      <!-- Вопрос №6 -->
+      <div class="O_TestQuestion">
+        <!-- Сам вопрос и варианты ответов -->
+        <div class="W_TestQuestion">
+          <!-- Нумерация вопросов -->
+          <h2 class="Q_QuestionNumber">06<span>/06</span></h2>
+          <!-- Сам вопрос -->
+          <h3 id="Q_QuestionText">В какое время суток лучше всего отправляться на грибную охоту?</h3>
+          <!-- Блок со всеми вариантами ответов -->
+          <div class="C_TestAnswers">
+            <!-- Ответ №1 -->
+            <div class="A_TestAnswer correct">
+              <p>Утром</p>
+              <h4 class="Q_AnswerLetter">A</h4>
+            </div>
+            <!-- Ответ №2 -->
+            <div class="A_TestAnswer">
+              <p>Днем</p>
+              <h4 class="Q_AnswerLetter">B</h4>
+            </div>
+            <!-- Ответ №3 -->
+            <div class="A_TestAnswer">
+              <p>Вечером</p>
+              <h4 class="Q_AnswerLetter">C</h4>
+            </div>
+            <!-- Ответ №4 -->
+            <div class="A_TestAnswer">
+              <p>Ночью</p>
+              <h4 class="Q_AnswerLetter">D</h4>
+            </div>
+          </div>
+          <div class="C_TestNavigation">
+            <button id="Q_PreviousQuestion"><p>Предыдущий вопрос</p></button>
+            <button id="Q_FinishTest"><p>Закончить тест</p></button>
+          </div>
+        </div>
+        <!-- Картинка справа -->
+        <img src="../images/form_cover_mushroom.webp" alt="">
+      </div>
+
+      <!-- Финиш -->
+      <div class="O_TestResults">
+        <img class="Q_TestResultCover" src="../images/TestsBackground.webp" alt="">
+        <div class="W_TestResults">
+          <h2>Поздравляем!</h2>
+          <p class="Q_TestResultText">Вы прошли тест на <span id="Q_TestResult"></span>! Теперь Вы знаете больше о грибах и сезоне их сбора</p>
+          <a class="M_PageBottom" href="../tests.html">
+            <p>Другие тесты</p>
+            <div class="A_ArrowIcon">
+                <img src="../images/ArrowIcon.svg" alt="Стрелочка">
+            </div>
         </a>
+        </div>
       </div>
-      <!-- Кнопка для скачивания памятки -->
-      <a class="M_PageBottom download" href="../memo_download/toxic_mush.pdf" download="toxic_mush.pdf">
-        <p>Скачать PDF</p>
-        <img src="../images/download.svg" alt="">
-      </a>
-      <!-- Кнопка поделиться -->
-      <div class="M_PageBottom">
-          <p>Поделиться</p>
-          <div class="C_PageSocials">
-            <!-- Телеграм -->
-            <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
-              <img src="../images/Telegramicon_black.svg" alt="Иконка Телеграм">
-            </a>
-            <!-- Яндекс.Дзен -->
-            <a href="https://dzen.ru/id/653d452bbcb41328c6d6bab5?share_to=link" class="A_DzenIcon"> 
-              <img src="../images/Dzenicon_black.svg" alt="Иконка Дзен">
-            </a>
-          </div>
-      </div>
-    </div>
+    </section>
 
     <div class="wrapper"> </div>
 

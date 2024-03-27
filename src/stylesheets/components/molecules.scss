@@ -40,8 +40,11 @@ footer {
     }
     &.download {
         background-color: var(--Fox);
-        color: var(--Mushy-White);
+        border-radius: 1.17vw;
         transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+        p {
+            color: var(--Mushy-White);
+        }
         img {
             margin-right: 0.7vw;
         }
@@ -77,8 +80,10 @@ body.articles {
 
 // Рецепты
 .M_LargeRecipeInfo {
-    margin: 1.2vw 1.2vw 1.2vw 62vw;
-    width: 26vw;
+    position: absolute;
+    top: 1.2vw;
+    right: 1.2vw;
+    width: 28vw;
     h3 {
         margin-bottom: 1.2vw;
         color: var(--Charcoal);
@@ -126,6 +131,7 @@ body.articles {
 .M_Navigation {
     color: var(--Ashy-Grey);
     font-weight: 250;
+    margin-bottom: 1.2vw;
     span {
         color: var(--Mushy-White);
         img {

@@ -119,34 +119,35 @@ body.recipes {
     left: 1.2vw;
     h3 {
         color: var(--Charcoal);
-        font-size: 2.36vw;
+        font-size: 2.16vw;
     }
 }
 .W_GribwikiPage {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 1.2vw 0 4.8vw 0;
+    margin-bottom: 4.8vw;
 }
 .W_GribwikiPageText {
     p {
         color: var(--Mushy-White);
-        margin-top: 0.7vw;
+        margin-top: 1.2vw;
         font-weight: 250;
     }
 }
 
-
+//Памятки
 .W_TextMainCardMemo {
     h2 {
         color: var(--Charcoal);
-        margin-bottom: 0.4vw;
+        margin-bottom: 0.7vw;
     }
     p {
         color: var(--Charcoal);
     }
 }
 .W_SignsUnoMemo {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,6 +155,13 @@ body.recipes {
     gap: 0.7vw 1.2vw;
     background-color: var(--Fox);
     border-radius: 1.17vw;
+    overflow: hidden;
+    img {
+        margin: -5.6vw -16vw 0 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 //Tests

@@ -52,6 +52,14 @@ body.gribwiki {
         }
     }
 }
+body.tests {
+    .A_TextMenubar:nth-of-type(5) {
+        background-color: var(--Fox);
+        &:active {
+            background-color: var(--Sunny);
+        }
+    }
+}
 
 // Подвал
 .A_HeaderFooter {
@@ -118,17 +126,17 @@ body.gribwiki {
 }
 body.articles {
     .A_Filter {
-        padding: 1vw 4.6vw;
+        padding: 1vw 4.3vw;
     }
 }
 body.recipes {
     .A_Filter {
-        padding: 1vw 4.25vw;
+        padding: 1vw 3.77vw;
     }
 }
 body.gribwiki {
     .A_Filter {
-        padding: 1vw 6.95vw;
+        padding: 1vw 6.47vw;
     }
 }
 
@@ -143,8 +151,15 @@ body.gribwiki {
     color: var(--Fox);
     background-color: var(--Mushy-White) ;
 } 
+.S_CoverUnoMemo {
+    .A_Tag {
+        color: var(--Mushy-White);
+        background-color: var(--Fox);
+    }
+}
 .W_SignsUnoMemo {
     .A_Tag {
+        position: relative;
         color: var(--Charcoal);
     }
 } 
@@ -315,7 +330,7 @@ body.index {
     justify-content: flex-end;
     align-items: flex-end;
     width: 60.4vw;
-    height: 28.9vw;
+    height: 28vw;
     border-radius: 1.17vw;
     overflow: hidden;
     img {
@@ -374,15 +389,20 @@ body.index {
 }
 .A_TextArticle {
     h4 {
-        color: var(--Mushy-White);
+        color: var(--Charcoal);
         text-transform:none;
-        margin-bottom: 0.4vw;
+        margin: 0.4vw 0;
+    }
+    span {
+        color: var(--Mushy-White);
     }
     p {
-        font-size: 1.1vw;
+        font-size: 0.96vw;
+        line-height: 1.6vw;
         color: var(--Ashy-Grey);
     }
 }
+
 
 .A_SubtitleUnoAtricle, .A_GribwikiPageSubtitle {
     width: 100%;
@@ -435,6 +455,9 @@ body.recipes {
     width: 100%;
     align-items: center;
     margin-top: 1.6vw;
+    h3 {
+        margin-bottom: 0.4vw;
+    }
 }
 .A_MemoDownload {
     position: relative;
@@ -491,6 +514,14 @@ body.recipes {
     }
   }
 
+//Gribwiki
+.A_GribwikiPageAttention {
+    background-color: var(--Mushy-White);
+    border-radius: 1.17vw;
+    color: var(--Fox)!important;
+    font-weight: 400!important;
+    padding: 2.4vw;
+}
 //Tests
 .A_TestAnswer {
     background-color: var(--Misty-Grey);

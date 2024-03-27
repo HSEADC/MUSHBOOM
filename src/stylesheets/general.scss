@@ -15,7 +15,7 @@ body {
     box-sizing: border-box;
 }
 body, a, button {
-    font-family: "Jost";
+    font-family: "TRYGrtsk";
 }
 a {
     text-decoration: none;
@@ -26,17 +26,18 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    font-size: 3.75vw;
+    font-size: 3.36vw;
     text-transform: uppercase;
+    line-height: 3.64vw;
 }
 h3 {
     font-size: 2.56vw;
     text-transform: uppercase;
 }
 h4 {
-    font-size: 1.6vw;
+    font-size: 1.56vw;
     text-transform: uppercase;
-    line-height: 2vw;
+    line-height: 1.8vw;
 }
 h5 {
     font-size: 1vw;
@@ -47,9 +48,9 @@ h6 {
     font-weight: 200;
 }
 p {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.8vw;
 }
 img {
     object-fit: cover;

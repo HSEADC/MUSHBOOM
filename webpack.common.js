@@ -199,6 +199,38 @@ module.exports = {
       template: './src/recipes/zharenie_shampinioni.html',
       filename: './recipes/zharenie_shampinioni.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/zhulien.html',
+      filename: './recipes/zhulien.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/skumbria.html',
+      filename: './recipes/skumbria.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/humus.html',
+      filename: './recipes/humus.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/gribnoi_otvar.html',
+      filename: './recipes/gribnoi_otvar.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/palenta.html',
+      filename: './recipes/palenta.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/golubci.html',
+      filename: './recipes/golubci.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/ovoshnoe_ragu.html',
+      filename: './recipes/ovoshnoe_ragu.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/recipes/lazania.html',
+      filename: './recipes/lazania.html'
+    }),
 
     //Gribwiki Pages
     new HtmlWebpackPlugin({

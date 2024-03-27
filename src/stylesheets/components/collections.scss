@@ -115,54 +115,64 @@
     position: absolute;
     justify-content: flex-end;
 }
-body.articles {
-    .C_CardsArticle {
+.C_CardsArticle {
+    display: flex;
+    gap: 1.2vw;
+    flex-direction: column;
+}
+
+.C_TagsUnoArticle {
+    display: flex;
+    gap: 1.2vw;
+}
+.C_PhotoUnoArticle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2vw;
+    img {
+        width: 28.7vw;
+        height: 36vw;
+        border-radius: 1.17vw;
+    }
+    div {
         display: flex;
         gap: 1.2vw;
         flex-direction: column;
-    }
-
-    .C_TagsUnoArticle {
-        display: flex;
-        gap: 1.2vw;
-    }
-    .C_PhotoUnoArticle {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 1.2vw;
         img {
-            width: 28.7vw;
-            height: 36vw;
-            border-radius: 1.17vw;
-        }
-        div {
-            display: flex;
-            gap: 1.2vw;
-            flex-direction: column;
-            img {
-                height: 17.4vw;
-            }
+            height: 17.4vw;
         }
     }
-    .C_CardArticles {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        row-gap: 1.2vw;
-        margin-bottom: 4vw;
-        a {
-            height: 36vw;
-            img {
-                height: 26.4vw;
-            }
+}
+.C_PhotoUnoArticle2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2vw;
+    img {
+        width: 60%;
+        height: 36vw;
+        border-radius: 1.17vw;
+    }
+}
+.C_CardArticles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1.2vw;
+    margin-bottom: 4vw;
+    a {
+        height: 36vw;
+        img {
+            height: 26.4vw;
         }
     }
 }
 
 // Рецепты
 .C_TagsRecipe {
+    position: relative;
     margin-top: 0.6vw;
     gap: 0.7vw 1.2vw;
     display: flex;

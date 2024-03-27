@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MushBoom | Рецепты</title>
-    <link rel="icon" type="image/x-icon" href="images/icon_mushboom.ico" />
+    <link rel="icon" type="image/x-icon" href="images/LogoIcon.ico" />
+    <analitics></analitics>
   </head>
   <body class="recipes">
     <!-- Менюшка -->
@@ -40,20 +41,25 @@
     </div>
     <section class="S_CardsRecipe">
 
-        <!-- Карточка единичного рецепта -->
-        <a class="O_CardRecipe zapechennie" href="">
-            <!-- Название блюда -->
-            <h3>Жульен</h3>
-            <!-- Теги блюда (инфа) -->
-            <div class="C_TagsRecipe">
-                <h5 class="A_Tag">Запечённое</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
-                <h5 class="A_Tag">1 час</h5>
-            </div>
+        <!-- Карточка грибного отвара -->
+        <a class="O_CardRecipe varenie zharenie" href="recipes/gribnoi_otvar.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/GribnoiOtvar.webp" alt="">
+          <!-- Название блюда -->
+          <h3>ГРИБНОЙ ОТВАР</h3>
+          <!-- Теги блюда (инфа) -->
+          <div class="C_TagsRecipe">
+            <h5 class="A_Tag">Варёное</h5>
+            <h5 class="A_Tag">Жареное</h5>
+            <h5 class="A_Tag">4 ПОРЦИИ</h5>
+            <h5 class="A_Tag">1 час</h5>
+          </div>
         </a>
 
-        <!-- Карточка единичного рецепта -->
+        <!-- Карточка Феттучини -->
         <a class="O_CardRecipe zharenie" href="recipes/fettuchini.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Fettuchini.webp" alt="">          
             <!-- Название блюда -->
             <h3>Феттучини</h3>
             <!-- Теги блюда (инфа) -->
@@ -64,20 +70,23 @@
             </div>
         </a>
 
-        <!-- Карточка единичного рецепта -->
-        <a class="O_CardRecipe" href="">
+        <!-- Карточка Паленты -->
+        <a class="O_CardRecipe zharenie varenie" href="recipes/palenta.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Polenta.webp" alt="">
             <!-- Название блюда -->
-            <h3>Жульен</h3>
+            <h3>палента</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">Жареное</h5>
+                <h5 class="A_Tag">Варёное</h5>
                 <h5 class="A_Tag">4 ПОРЦИИ</h5>
-                <h5 class="A_Tag">1 час</h5>
+                <h5 class="A_Tag">40 минут</h5>
             </div>
         </a>
 
         <!-- Большая карточка единичного рецепта -->
-        <a class="O_CardLargeRecipe" href="">
+        <a class="O_CardLargeRecipe zharenie" href="recipes/zharenie_shampinioni.html">
           <img class="Q_LargeRecipeCover" src="images/LargeRecipeCover1.webp" alt="">
           <div class="M_LargeRecipeInfo">
             <!-- Название блюда -->
@@ -85,16 +94,61 @@
               шампиньоны</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_Tags">
+                <h5 class="A_Tag">Выбор пользователей</h5>
                 <h5 class="A_Tag">Жареное</h5>
                 <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">20 минут</h5>
-                <h5 class="A_Tag">Выбор пользователей</h5>
             </div>
           </div>
         </a>
 
-        <!-- Карточка единичного рецепта -->
-        <a class="O_CardRecipe" href="">
+        <!-- Карточка Хумус -->
+        <a class="O_CardRecipe varenie" href="recipes/humus.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Humus.webp" alt="">
+            <!-- Название блюда -->
+            <h3>Хумус</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+              <h5 class="A_Tag">варёное</h5>
+              <h5 class="A_Tag">4 ПОРЦИИ</h5>
+              <h5 class="A_Tag">40 минут</h5>
+            </div>
+        </a>
+
+        <!-- Карточка скумбриЯ -->
+        <a class="O_CardRecipe kopchenie" href="recipes/skumbria.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Skumbria.webp" alt="">
+            <!-- Название блюда -->
+            <h3>скумбриЯ</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_Tag">Копчёное</h5>
+                <h5 class="A_Tag">4 ПОРЦИИ</h5>
+                <h5 class="A_Tag">40 минут</h5>
+            </div>
+        </a>
+
+        <!-- Карточка лазанья -->
+        <a class="O_CardRecipe zapechennie varenie" href="recipes/lazania.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Lazania.webp" alt="">
+            <!-- Название блюда -->
+            <h3>лазанья</h3>
+            <!-- Теги блюда (инфа) -->
+            <div class="C_TagsRecipe">
+                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">Варёное</h5>
+                <h5 class="A_Tag">6-8 ПОРЦИй</h5>
+                <h5 class="A_Tag">1 час</h5>
+            </div>
+        </a>
+
+        <!-- Карточка Жульена -->
+        <a class="O_CardRecipe zapechennie" href="recipes/zhulien.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Zhulien.webp" alt="">
             <!-- Название блюда -->
             <h3>Жульен</h3>
             <!-- Теги блюда (инфа) -->
@@ -105,43 +159,47 @@
             </div>
         </a>
 
-        <!-- Карточка единичного рецепта -->
-        <a class="O_CardRecipe" href="">
+        <!-- Карточка голубцы -->
+        <a class="O_CardRecipe tushenie" href="recipes/golubci.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/Golubci.webp" alt="">
             <!-- Название блюда -->
-            <h3>Жульен</h3>
+            <h3>голубцы</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">Тушёное</h5>
                 <h5 class="A_Tag">4 ПОРЦИИ</h5>
-                <h5 class="A_Tag">1 час</h5>
+                <h5 class="A_Tag">1,5 часа</h5>
             </div>
         </a>
 
-        <!-- Карточка единичного рецепта -->
-        <a class="O_CardRecipe" href="">
+        <!-- Карточка овощное рагу -->
+        <a class="O_CardRecipe tushenie" href="recipes/ovoshnoe_ragu.html">
+          <!-- Картинка -->
+          <img src="images/Recipes/OvoshnoeRagu.webp" alt="">
             <!-- Название блюда -->
-            <h3>Жульен</h3>
+            <h3>овощное рагу</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
-                <h5 class="A_Tag">Запечённое</h5>
+                <h5 class="A_Tag">Тушёное</h5>
                 <h5 class="A_Tag">4 ПОРЦИИ</h5>
-                <h5 class="A_Tag">1 час</h5>
+                <h5 class="A_Tag">40 минут</h5>
             </div>
         </a>
 
         <!-- Большая карточка единичного рецепта -->
-        <a class="O_CardLargeRecipe" href="">
-          <img class="Q_LargeRecipeCover" src="images/LargeRecipeCover1.webp" alt="">
+        <a class="O_CardLargeRecipe zharenie" href="recipes/kitaiskie_brokkoli.html">
+          <img class="Q_LargeRecipeCover" src="images/Recipes/KitaiskieBrokkoli.webp" alt="">
           <div class="M_LargeRecipeInfo">
             <!-- Название блюда -->
-            <h3><span><img src="images/MushIcon-1.svg" alt=""></span> жареные
-              шампиньоны</h3>
+            <h3><span><img src="images/MushIcon-b2.svg" alt=""></span> китайские
+              брокколи</h3>
             <!-- Теги блюда (инфа) -->
             <div class="C_Tags">
+                <h5 class="A_Tag">Выбор пользователей</h5>
                 <h5 class="A_Tag">Жареное</h5>
                 <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">20 минут</h5>
-                <h5 class="A_Tag">Выбор пользователей</h5>
             </div>
           </div>
         </a>
