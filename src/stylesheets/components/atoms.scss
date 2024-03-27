@@ -108,6 +108,8 @@ body.tests {
     border: solid 0.1vw var(--Fox);
     border-radius: 1.17vw;
     color: var(--Fox);
+    width: 100%;
+    padding: 1vw 0;
     background-color: var(--Charcoal);
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     &:hover {
@@ -123,21 +125,6 @@ body.tests {
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     background-color: var(--Fox);
     color: var(--Mushy-White);
-}
-body.articles {
-    .A_Filter {
-        padding: 1vw 4.3vw;
-    }
-}
-body.recipes {
-    .A_Filter {
-        padding: 1vw 3.77vw;
-    }
-}
-body.gribwiki {
-    .A_Filter {
-        padding: 1vw 6.47vw;
-    }
 }
 
 // Теги
