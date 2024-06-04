@@ -1,21 +1,20 @@
-menu {
+
     .M_SectionsMenubar {
         display: flex;
         gap: 2vw;
     }
     .M_SearchField {
         width: 24vw;
-        height: 2.8vw;
+        height: 3.2vw;
         padding: 0.8vw;
         border-radius: 1.17vw;
-        border: solid 0.1vw var(--Ashy-Grey);
         display: flex;
         justify-content: space-between;
         align-items: center;
         // overflow: hidden;
         
     }
-}
+
 footer {
     // блок с соц сетями
     .M_Socials {
@@ -160,6 +159,7 @@ body.articles {
     }
 }
 .M_TestInfo {
+    color: var(--Charcoal);
     margin: 2.4vw;
     display: flex;
     flex-direction: column;
@@ -168,6 +168,25 @@ body.articles {
 }
 
 @media only screen and (max-width: 430px) {
+    .M_SectionsMenubar {
+        display: none;
+    }
+    .open .M_SectionsMenubar {
+        display: flex;
+        padding: 10% 0;
+        flex-direction: column;
+    }
+    .M_SearchField {
+        display: none;
+        width: 72vw;
+        height: 3.2vw;
+        padding: 0.8vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-open .M_SearchField {
+        display: flex;
+    }
     .M_LargeRecipeInfo {
         position: relative;
         margin: 4.8vw;

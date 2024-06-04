@@ -29,7 +29,7 @@
 }
 
 // Меню
-#Q_SearchField {
+.Q_SearchField {
     width: 92%;
     height: 3.2vw;
     background-color: var(--Mushy-White) 0%;
@@ -39,6 +39,7 @@
     &::placeholder {
         color: var(--Ashy-Grey);
         font-size: 1vw;
+        font-weight: 500;
     }
     &:hover, &:focus {
         outline: none;
@@ -163,6 +164,11 @@
 #Q_PreviousQuestion, #Q_NextQuestion, #Q_FinishTest {
     background-color: var(--Mushy-White);
     border: none;
+    &:hover {
+        p{
+            color: var(--Sunny);
+        }
+    }
 }
 .Q_TestResultCover {
     position: absolute;
@@ -187,11 +193,40 @@
 
 
 @media only screen and (max-width: 430px) {
+    .Q_SearchIcon {
+        width: 7vw;
+        height: 7vw;
+        background-size: cover;
+        background-image: url("./images/SearchIcon_white.svg");
+    }
     .Q_IndexCover {
         width: 100%;
         height: 36vh;
         border-radius: 3.34vw;
     }
+    .search-open {
+        .Q_LogoIcon{
+            display: none;
+        }
+    }
+    .Q_SearchField {
+        width: 92%;
+        background-color: var(--Mushy-White) 0%;
+        border: none;
+        color: var(--Ashy-Grey);
+        font-size: 3.6vw;
+        &::placeholder {
+            color: var(--Ashy-Grey);
+            font-size: 3.6vw;
+            font-weight: 500;
+        }
+        &:hover, &:focus {
+            outline: none;
+            border: none;
+            color: var(--Mushy-White);
+        }
+    }
+    
 
     .Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
         width: 100%;

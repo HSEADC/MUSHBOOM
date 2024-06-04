@@ -17,6 +17,9 @@
         height: 2.4vw;
     }
 }
+.O_MobileMenubar {
+    display: none;
+}
 .O_MenuMobile {
     display: none;
 }
@@ -303,6 +306,22 @@
 
 
 @media only screen and (max-width: 430px) {
+    .O_MobileMenubar {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        left: 3vw;
+        align-items: center;
+        width: 94%;
+        top: 3vw;
+        padding: 4.5vw 6vw;
+        border-radius: 7vw;
+        background-color:var(--Blacky);
+        z-index: 99;
+    }
+    .O_Menubar {
+        display: none;
+    }
     .O_IndexArticle {
         width: 100%;
         gap: 2.4vw;

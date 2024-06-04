@@ -1,13 +1,10 @@
 {
-  "name": "base",
-  "version": "1.0.0",
+  "name": "MUSHBOOM",
+  "version": "1.0.1",
   "description": "service of materials for first-year students",
-  "author": "Nikolai Supereka, Anastasia Murashkevich, Konstantin Udod",
+  "author": "Irina Apolonnik, Anna Derevyankina, Patimat Imanalieva",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https:///github.com/ZakharDay/static-site-boilerplate"
-  },
+  "repository": "git+https:///github.com/ZakharDay/static-site-boilerplate",
   "bugs": {
     "url": "https://github.com/ZakharDay/static-site-boilerplate/issues"
   },
@@ -50,5 +47,6 @@
     "three": "^0.159.0",
     "three-gltf-loader": "^1.111.0",
     "url-loader": "^4.1.1"
-  }
+  },
+  "main": "index.js"
 }

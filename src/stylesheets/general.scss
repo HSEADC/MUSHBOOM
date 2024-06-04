@@ -15,7 +15,7 @@ body {
     box-sizing: border-box;
 }
 body, a, button {
-    font-family: "TRYGrtsk";
+    font-family: 'Montserrat', sans-serif;
 }
 a {
     text-decoration: none;
@@ -24,24 +24,29 @@ a {
 h1 {
     font-size: 5vw;
     text-transform: uppercase;
+    font-weight: 600;
 }
 h2 {
     font-size: 3.36vw;
     text-transform: uppercase;
+    font-weight: 600;
     line-height: 3.64vw;
 }
 h3 {
     font-size: 2.36vw;
     text-transform: uppercase;
+    font-weight: 600;
 }
 h4 {
     font-size: 1.56vw;
     text-transform: uppercase;
+    font-weight: 500;
     line-height: 1.8vw;
 }
 h5 {
     font-size: 1vw;
     text-transform: uppercase;
+    font-weight: 500;
 }
 h6 {
     font-size: 0.9vw;
@@ -49,7 +54,7 @@ h6 {
 }
 p {
     font-size: 1.2vw;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8vw;
 }
 img {
@@ -75,10 +80,10 @@ body {
 @media only screen and (max-width: 430px) {
     body {
         width: 100vw;
-        padding: 6.4vh 5vh 0vh 5vh;
+        padding: 23.4vw 11vw 0 11vw;
     }
     h1 {
-        font-size: 12vw;
+        font-size: 11vw;
     }
     h2 {
         font-size: 7.6vw;
@@ -103,9 +108,6 @@ body {
     }
     span img {
         height: 10vw;
-    }
-    menu {
-        display: none!important;
     }
     
 }
