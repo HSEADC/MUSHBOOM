@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx'
+    page: './src/index.jsx',
+    searchReact:'./src/searchbar.jsx'
   },
   output: {
     filename: '[name].js',
@@ -112,7 +113,13 @@ module.exports = {
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index', 'searchReact']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'searchReact']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles.html',
@@ -353,6 +360,14 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/analytics.html'),
         location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/menubar.html'),
+        location: 'menubar',
         template_filename: '*',
         priority: 'replace'
       }

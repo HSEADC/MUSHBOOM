@@ -17,11 +17,51 @@
         color: var(--Fox);
     }
 }
-.A_SearchField {
-    width: 92%;
-    height: auto;
+
+.A_SearchInput {
+    border: none;
+    font-family: 'Montserrat';
+    background: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 12vw;
+    font-size:  1.6vw;
+    padding: 0 2.4vw;
+    color: var(--Ashy-Grey);
+    background-color: var(--Blacky);
+    &::placeholder {
+        color: var(--Ashy-Grey);
+        font-size:  1.6vw;
+        font-weight: 500;
+    }
+    &:hover, &:focus {
+        outline: none;
+        border: none;
+        color: var(--Mushy-White);
+    }
+}
+.A_SearchButton {
+    height: 100%;
+    width: 5.8vw;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    border-radius: 12vw;
+    cursor: pointer;
+    background-color: var(--Fox);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    &:hover {
+        transform: scale(0.8);
+        background-color: var(--Sunny);
+    }
+    &.disabled {
+        background-color: var(--Misty-Grey);
+        cursor: default;
+    }
+}
+.A_TextIndexCover {
+    width: 89.5vw;
 }
 body.articles {
     .A_TextMenubar:nth-of-type(1) {
@@ -549,15 +589,6 @@ body.index {
         padding: 2.4vw 1.4vw;
         font-size: 3.6vw;
         color: var(--Mushy-White);
-    }
-    .M_SearchField {
-        display: none;
-    }
-    .search-active {
-        .M_SearchField {
-
-            display: flex;
-        }
     }
     .A_IndexAllButton2 {
         display: flex;

@@ -3,11 +3,13 @@
     background-image: url("./images/Logoicon_white.svg");
     background-size: cover;
 }
-.Q_SearchIcon {
-    background-image: url("./images/Searchicon.svg");
-    background-size: cover;
-    width: 1.2vw;
-    height: 1.2vw;
+.O_Search {
+    .Q_SearchIcon {
+        background-image: url("./images/Searchicon.svg");
+        background-size: cover;
+        width: 2vw;
+        height: 2vw;
+    }
 }
 .Q_ClockIcon {
     width: auto;
@@ -29,24 +31,7 @@
 }
 
 // Меню
-.Q_SearchField {
-    width: 92%;
-    height: 3.2vw;
-    background-color: var(--Mushy-White) 0%;
-    border: none;
-    color: var(--Ashy-Grey);
-    font-size: 1vw;
-    &::placeholder {
-        color: var(--Ashy-Grey);
-        font-size: 1vw;
-        font-weight: 500;
-    }
-    &:hover, &:focus {
-        outline: none;
-        border: none;
-        color: var(--Mushy-White);
-    }
-}
+
 
 
 .Q_ReccomendationsHeader {

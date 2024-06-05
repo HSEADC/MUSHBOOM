@@ -1,7 +1,6 @@
 // Меню
 .O_Menubar {
     position: fixed;
-    left: 3vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,16 +19,12 @@
 .O_MobileMenubar {
     display: none;
 }
-.O_MenuMobile {
-    display: none;
-}
 // Подвал
 .O_Footer {
     margin-top: 1.2vw;
     float: bottom;
     width: 94vw;
     height: 16vw;
-    margin-left: -2vw;
     border-radius: 2vw 2vw 0px 0px;
     background: var(--Blacky);
     padding: 3vw;
@@ -40,6 +35,14 @@
       width: 7vw;
       height: 7vw;
     }
+}
+.O_Search {
+    width: 58.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.2vw;
+    gap: 1.2vw;
 }
 // Главная
 .O_IndexArticle {
@@ -310,7 +313,6 @@
         display: flex;
         position: fixed;
         flex-direction: column;
-        left: 3vw;
         align-items: center;
         width: 94%;
         top: 3vw;
@@ -318,6 +320,7 @@
         border-radius: 7vw;
         background-color:var(--Blacky);
         z-index: 99;
+        transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     }
     .O_Menubar {
         display: none;
@@ -366,7 +369,6 @@
         margin-top: 2.4vw;
         width: 120%;
         height: auto;
-        margin-left: -10%;
         border-radius: 3.34vw 3.34vw 0px 0px;
         padding: 4.8vw;
         display: flex;

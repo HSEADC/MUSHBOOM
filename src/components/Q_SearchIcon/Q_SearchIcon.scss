@@ -1,0 +1,11 @@
+.Q_SearchIcon {
+    background-image: url("../../images/Searchicon.svg");
+    background-size: cover;
+    width: 1.2vw;
+    height: 1.2vw;
+    cursor: pointer;
+    &.disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+}

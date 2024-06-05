@@ -1,0 +1,34 @@
+.O_SearchBar {
+    width: 24vw;
+    height: 3.2vw;
+    padding: 0.8vw;
+    border-radius: 1.17vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // overflow: hidden;
+    .C_PostTeasers {
+        width: 21.4vw;
+        margin-top: 2.4vw;
+        flex-direction: column;
+        position: absolute;
+        gap: 0vw;
+        overflow-y: scroll;
+        background-color: var(--Blacky);
+        max-height: 5vw;
+        overflow-x: hidden;
+        border-radius: 0 0 1.17vw 1.17vw ;
+        a {
+            font-weight: 300;
+            transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+            color: var(--Ashy-Grey);
+            padding: 0.7vw;
+            width: 21.4vw;
+            font-size: 0.9vw;
+            &:hover {
+                color: var(--Mushy-White);
+            }
+        }
+    }
+    
+}
