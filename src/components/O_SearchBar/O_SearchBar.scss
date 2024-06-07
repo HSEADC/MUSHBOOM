@@ -1,10 +1,9 @@
 .O_SearchBar {
-    width: 24vw;
+    width: 21vw;
     height: 3.2vw;
     padding: 0.8vw;
     border-radius: 1.17vw;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     // overflow: hidden;
     .C_PostTeasers {
@@ -31,4 +30,10 @@
         }
     }
     
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .O_SearchBar {
+        width: auto;
+    }
 }

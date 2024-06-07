@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     page: './src/index.jsx',
-    searchReact:'./src/searchbar.jsx'
+    searchBar: './src/searchbar.jsx',
+    search: './src/search.js'
   },
   output: {
     filename: '[name].js',
@@ -114,12 +115,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'searchReact']
+      chunks: ['search', 'searchBar', 'index']
     }),
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['index', 'searchReact']
+      chunks: ['search', 'searchBar', 'index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles.html',

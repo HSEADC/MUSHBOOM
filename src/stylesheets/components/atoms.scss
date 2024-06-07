@@ -17,7 +17,6 @@
         color: var(--Fox);
     }
 }
-
 .A_SearchInput {
     border: none;
     font-family: 'Montserrat';
@@ -50,7 +49,6 @@
     border-radius: 12vw;
     cursor: pointer;
     background-color: var(--Fox);
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     &:hover {
         transform: scale(0.8);
         background-color: var(--Sunny);
@@ -111,10 +109,10 @@ body.recipes {
     color: var(--Ashy-Grey);
 }
 .A_TextFooter {
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     font-size: 0.9vw;
     font-weight: 200;
     color: var(--Mushy-White);
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     margin: 0.8vw 0vw;
     &:hover {
         color: var(--Fox);
@@ -131,8 +129,6 @@ body.recipes {
     height: 3vw;
     border-radius: 3vw;
     background-color: var(--Fox);
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-    border: solid 0.1vw var(--Fox);
     img {
         width: 2vw;
         height: 2vw;
@@ -142,7 +138,6 @@ body.recipes {
     }
     &:active {
         transform: scale(0.95);
-        border: solid 0.1vw var(--Sunny);
     }
 }
 
@@ -165,7 +160,6 @@ body.recipes {
     }
 }
 .A_Filter.active {
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     background-color: var(--Fox);
     color: var(--Mushy-White);
 }
@@ -213,7 +207,7 @@ body.recipes {
 .O_IndexArticle {
     .A_Tag {
         background-color: var(--Charcoal);
-        color: var(--Mushy-White);
+        color: var(--Fox);
     }
 }
 .O_CardLargeGrib {
@@ -252,15 +246,12 @@ body.recipes {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 0.1vw var(--Fox);
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     &:hover {
         background-color: var(--Sunny);
-        border: solid 0.1vw var(--Sunny);
     }
     &:active {
         transform: scale(0.95);
-        border: solid 0.1vw var(--Sunny);
     }
 }
 .A_ArrowIcon {
@@ -306,6 +297,7 @@ body.recipes {
     display: flex;
     gap: 1.2vw;
     align-items: center;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     p {
         transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
         color: var(--Fox);
@@ -349,7 +341,8 @@ body.recipes {
 body.index {
     .A_TextArticle {
         h4 {
-            color: var(--Mushy-White);      
+            color: var(--Mushy-White);  
+            font-weight: 500;    
         }
 
     }
@@ -383,8 +376,8 @@ body.index {
     outline: none;
     color: var(--Mushy-White);
     background: var(--Fox);
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     &:hover {
         box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
     }
@@ -454,6 +447,7 @@ body.index {
 .A_CoverRecipe {
     width: 100%;
     height: auto;
+    border-radius: 1.17vw 1.17vw 0 0;
 }
 
 
@@ -478,6 +472,7 @@ body.index {
     align-items: center;
     margin-top: 1.6vw;
     h3 {
+        text-align: center;
         margin-bottom: 0.4vw;
     }
 }
@@ -492,7 +487,7 @@ body.index {
     border: none;
     border-radius: 5vw;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     img {
       position: relative;
       width: auto;
@@ -517,7 +512,7 @@ body.index {
     border-radius: 1.2vw;
     padding: 0 2vw;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     p {
       position: relative;
       color: var(--Charcoal);
@@ -534,7 +529,7 @@ body.index {
     &:active {
         background-color: var(--Ashy-Grey);
     }
-  }
+}
 
 //Gribwiki
 .A_GribwikiPageAttention {
@@ -553,7 +548,6 @@ body.index {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
     &.red {
         background-color: #DB6666;
         .Q_AnswerLetter {
@@ -572,6 +566,162 @@ body.index {
 
 
 
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .A_TextIndexCover {
+        h1 {
+            margin-bottom: 0.3vw;
+        }
+    }
+    .A_MemoMore {
+        border-radius: 2.17vw;
+        p {
+          position: relative;
+          color: var(--Charcoal);
+          font-size: 1.56vw;
+        }
+    }
+    .A_TextMemo {
+        p {
+            display: none;
+        }
+    }
+    .A_TextMenubar {
+        width: 100%;
+        padding: 2.4vw 1.4vw;
+        font-size: 2vw;
+    }
+    .A_IndexAllButton2 {
+        width: 100%;
+        display: flex;
+        gap: 4.8vw;
+        align-items: center;
+        p {
+            color: var(--Fox);
+        }
+        .A_ArrowIcon {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        &:hover {
+            p {
+                color: var(--Sunny);
+            }
+            .A_ArrowIcon {
+                border: solid 0.1vw var(--Sunny); 
+                background-color: var(--Sunny);
+            }
+        }
+    }
+    .A_IndexAllButton {
+        display: none;
+    }
+    body.tests {
+        .A_IndexAllButton {
+            display: inherit;
+            .A_ArrowIcon {
+                width: 5vw;
+                height: 4vw;
+            }
+        }
+    }
+    // Кнопки в единичных страницах
+    .M_PageBottom {
+        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+            img {
+                width: 64%;
+                height: 64%;
+            }
+        }
+    }
+    .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 9vw;
+    }
+    .M_TestCard {
+        .A_ArrowIcon {
+            top: 4.8vw;
+            right: 4.8vw;
+        }
+    }
+    .A_IndexPhotoArticle {
+        height: 18vw;
+        border-radius: 2.17vw;
+    }
+    .A_TextArticle {
+        h4 {
+            margin-bottom: 1.2vw;
+            font-weight: 500;
+        }
+        p {
+            line-height: 3.2vw;
+            font-size: 2vw;
+            max-height: 7vw;
+            overflow: hidden;
+        }
+    }
+    .A_Tag {
+        padding: 1.2vw 3.6vw;
+        border-radius: 10vw;
+        border: solid var(--Fox) 0.2vw;
+    } 
+    .A_MemoDownload {
+        border-radius: 16vw;
+    }
+    .A_IndexFormCover {
+        width: 100%;
+        height: 56vw;
+        border-radius: 3.34vw;
+        h3 {
+            margin: 4.8vw;
+        }
+    }
+    #A_IndexFormButton {
+        font-size: 2.8vw;
+        padding: 3.6vw;
+        border-radius: 2vw;
+    }
+    .A_HeaderFooter {
+        font-size: 2.4vw;
+        margin-bottom: 2.4vw;
+    }
+    .A_TextFooter {
+        font-size: 1.6vw;
+        margin: 1.6vw 0vw;
+    }
+    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+        width: 4.8vw;
+        height: 4.8vw;
+        border-radius: 12vw;
+        img {
+            width: 66%;
+            height: 66%;
+        }
+    }
+    .A_PhotoMainCardArticle{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        border-radius: 2.17vw;
+    }
+    .A_PhotoArticle {
+        border-radius: 2.17vw;
+    }
+    .A_TagUnoArticle {
+        padding: 1.2vw 3.6vw;
+        border-radius: 12vw;
+        border: solid var(--Fox) 0.2vw;
+    }
+    .A_TestAnswer {
+        width: 100%;
+        padding: 4.8vw;
+        border-radius: 3.34vw;
+    }
+    .A_CoverRecipe {
+        height: 28vw;
+    }
+}
 
 @media only screen and (max-width: 430px) {
     .A_MobileMenubar {
@@ -583,9 +733,6 @@ body.index {
     }
     .A_TextMenubar {
         width: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
         padding: 2.4vw 1.4vw;
         font-size: 3.6vw;
         color: var(--Mushy-White);
@@ -595,7 +742,6 @@ body.index {
         gap: 4.8vw;
         align-items: center;
         p {
-            transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
             color: var(--Fox);
         }
         .A_ArrowIcon {
@@ -726,3 +872,4 @@ body.index {
         height: 56vw;
     }
 }
+

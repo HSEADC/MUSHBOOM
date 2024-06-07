@@ -1,8 +1,8 @@
 import './O_SearchBar.scss'
 import React from 'react'
-import { getPostTeasers } from '../../index.js'
+import { getPostTeasers } from '../../search_data.js'
 
-import A_SearchField from '../A_SearchField/A_SearchField.jsx'
+import M_SearchForm from '../M_SearchForm/M_SearchForm.jsx'
 import M_PostSuggestion from '../M_PostSuggestion/M_PostSuggestion.jsx'
 
 export default class O_SearchBar extends React.Component {
@@ -98,7 +98,7 @@ export default class O_SearchBar extends React.Component {
 
     return (
       <div className="O_SearchBar">
-        <A_SearchField
+        <M_SearchForm
           isSearchButtonDisabled={isSearchButtonDisabled}
           searchInputValue={searchInputValue}
           handleSearchInput={this.handleSearchInput}

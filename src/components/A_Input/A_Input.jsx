@@ -1,7 +1,7 @@
-import './Q_SearchField.scss'
+import './A_Input.scss'
 import React from 'react'
 
-export default class Q_SearchField extends React.Component {
+export default class A_Input extends React.Component {
   constructor(props) {
     super(props)
     this.input = React.createRef()
@@ -14,14 +14,14 @@ export default class Q_SearchField extends React.Component {
   }
 
   render() {
-    const { value, handleSubmit, placeholder } = this.props
+    const { value, placeholder, handleSubmit } = this.props
 
     return (
       <input
-        className="Q_SearchField"
-        placeholder={placeholder}
+        className="A_Input"
         ref={this.input}
         value={value}
+        placeholder={placeholder}
         onInput={this.handleInput}
         onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
       />

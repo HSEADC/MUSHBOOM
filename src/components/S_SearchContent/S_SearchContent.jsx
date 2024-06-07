@@ -1,6 +1,6 @@
 import './S_SearchContent.scss'
 import React from 'react'
-import { getPostTeasers } from '../../index.js'
+import { getPostTeasers } from '../../search_data.js'
 
 import M_PostTeaser from '../M_PostTeaser/M_PostTeaser.jsx'
 

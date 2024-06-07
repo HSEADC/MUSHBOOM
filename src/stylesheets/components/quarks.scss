@@ -5,7 +5,7 @@
 }
 .O_Search {
     .Q_SearchIcon {
-        background-image: url("./images/Searchicon.svg");
+        background-image: url("./images/SearchIcon.svg");
         background-size: cover;
         width: 2vw;
         height: 2vw;
@@ -176,6 +176,33 @@
     color: var(--Misty-Grey);
 }
 
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .Q_IndexCover {
+        border-radius: 2vw;
+    }
+    .Q_IndexText {
+        width: 52vw;
+        margin-left: 36vw;
+    }
+    .Q_LargeRecipeCover {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .O_Footer {
+        .Q_LogoIcon {
+            position: absolute;
+            left: 9.4vw;
+            width: 3.6vw;
+            height: 3.6vw
+
+        }
+    }
+    .Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
+        width: 52vw;
+        margin-left: 36vw;
+    }
+}
 
 @media only screen and (max-width: 430px) {
     .Q_SearchIcon {

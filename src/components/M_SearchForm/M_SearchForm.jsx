@@ -1,10 +1,10 @@
-import './A_SearchField.scss'
+import './M_SearchForm.scss'
 import React from 'react'
 
-import Q_SearchField from '../Q_SearchField/Q_SearchField.jsx'
-import Q_SearchIcon from '../Q_SearchIcon/Q_SearchIcon.jsx'
+import A_Input from '../A_Input/A_Input.jsx'
+import A_Button from '../A_Button/A_Button.jsx'
 
-export default class A_SearchField extends React.Component {
+export default class M_SearchForm extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -12,7 +12,8 @@ export default class A_SearchField extends React.Component {
   renderResetButton = () => {
     const { handleSearchInput } = this.props
     return (
-      <Q_SearchIcon
+      <A_Button
+        text="X"
         type="resetField"
         disabled={false}
         handleClick={() => handleSearchInput('')}
@@ -29,8 +30,14 @@ export default class A_SearchField extends React.Component {
     } = this.props
 
     return (
-      <div className="A_SearchField">
-        <Q_SearchField
+      <div className="M_SearchForm">
+        <A_Button
+          type="primary"
+          disabled={isSearchButtonDisabled}
+          handleClick={handleSearchSubmit}
+        />
+
+        <A_Input
           value={searchInputValue}
           placeholder="Поиск"
           handleInput={handleSearchInput}
@@ -38,12 +45,6 @@ export default class A_SearchField extends React.Component {
         />
 
         {searchInputValue != '' && this.renderResetButton()}
-
-        <Q_SearchIcon
-          type="primary"
-          disabled={isSearchButtonDisabled}
-          handleClick={handleSearchSubmit}
-        />
       </div>
     )
   }

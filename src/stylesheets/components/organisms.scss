@@ -84,7 +84,6 @@
     &:hover {
         box-shadow: 0px 0px 0px 0.5vw var(--Charcoal), 0px 0px 0px 0.6vw #ffffff3a;
     }
-
 }
 
 // Рецепты
@@ -281,7 +280,7 @@
 .O_TestQuestion {
     background-color: var(--Mushy-White);
     display: none;
-    width: 100%;
+    width: 89.5vw;
     border-radius: 1.17vw;
     overflow: hidden;
     height: 36vw;
@@ -298,7 +297,7 @@
     position: relative;
     background-color: var(--Mushy-White);
     display: none;
-    width: 100%;
+    width: 89.5vw;
     border-radius: 1.17vw;
     overflow: hidden;
     height: 36vw;
@@ -306,7 +305,91 @@
     justify-content: center;
     align-items: center;
 }
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .O_Menubar {
+        top: 2vw;
+        height: 6.4vw;
+    }
+    .O_CardLargeRecipe {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        border-radius: 2vw;
+    }
+    .O_CardMemo {
+        border-radius: 2vw;
+    }
+    .O_TestsCards {
+        height: auto;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .O_CardGrib, .O_Dvoiniki {
+        border-radius: 2vw;
+    }
+    body.gribwiki {
+        .O_CardGrib, .O_Dvoiniki, .O_CardLargeGrib {
+            width: 29vw;
+            height: 26vw;
+        }
+    }
+    .C_Reccomendations {
+        .O_CardGrib:last-of-type {
+            display: none!important;
+        }
+    }
 
+    #O_IndexForm {
+        width: 100%;
+        border-radius: 2vw;
+    }
+    .O_Footer {
+        height: auto;
+        border-radius: 2vw 2vw 0 0;
+        padding: 5.6vw 5.6vw 5.6vw 40vw;
+        flex-direction: column;
+        gap: 3.6vw;
+        .Q_LogoIcon {
+          width: 8vw;
+          height: 8vw;
+        }
+    }
+    .O_MainCardArticle {
+        display: flex;
+        flex-direction: column;
+        width: 72vw;
+        height: auto;
+        gap: 2.4vw;
+    }
+    .O_CardArticle {
+        width: 29vw;
+        padding: 1.2vw;
+        border-radius: 2vw;
+    }
+    .O_CardPageRecipe {
+        height: auto;
+        padding: 3.6vw 5.6vw;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3.6vw;
+
+    }
+    .O_CardTest {
+        width: 89.5vw;
+        height: 48vw;
+    }
+    .O_TestQuestion {
+        border-radius: 2vw;
+        height: auto;
+        flex-direction: column;
+        margin-top: 1.2vw;
+        img {
+            height: 32vw;
+            width: 100%;
+        }
+    }
+    
+}
 
 @media only screen and (max-width: 430px) {
     .O_MobileMenubar {
@@ -432,6 +515,7 @@
         }
     }
     .O_TestQuestion {
+        width: 100%;
         flex-direction: column;
         border-radius: 3.34vw;
         height: auto;

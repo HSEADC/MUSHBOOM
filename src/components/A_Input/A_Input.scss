@@ -1,0 +1,35 @@
+.A_Input {
+    width: 100%;
+    margin-left: 0.7vw;
+    height: 2.4vw;
+    background-color: var(--Mushy-White) 0%;
+    border: none;
+    border: 0.1vw solid var(--Blacky);
+    font-size: 1vw;
+    font-family: 'Montserrat';
+    border-radius: 4vw;
+    padding: 0 1vw;
+    outline: none;
+    color: var(--Ashy-Grey);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+
+    &::placeholder {
+        color: var(--Ashy-Grey);
+        font-size: 1vw;
+        font-weight: 500;
+    }
+    &:hover {
+        border: 0.1vw solid var(--Ashy-Grey);
+        color: var(--Mushy-White);
+    }
+    &:focus, &:active {
+        color: var(--Mushy-White);
+        border: 0.1vw solid var(--Mushy-White);
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .A_Input {
+        display: none;
+    }
+}

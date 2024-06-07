@@ -171,6 +171,49 @@
     }
 }
 
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .W_IndexForm {
+        border-radius: 2vw;
+        padding: 4.8vw 12.6vw;
+        gap: 2.4vw;
+        .input-field {
+            .input {
+                border-radius: 2.17vw;
+                height: 8vw;
+                border: 0.2vw solid var(--Ashy-Grey);
+                padding-left: 2vw;
+                font-size: 2.4vw;
+                &:focus {
+                    border: 0.2vw solid var(--Fox);
+                }
+            }
+        }
+        
+        .input-field .label {
+            top: 3vw;
+            left: 1.8vw;
+            font-size: 2.4vw;
+        }
+            .input-field .input:focus ~ .label,
+            .input-field .input:valid ~ .label {
+              font-size: 2.4vw;
+            }
+    }
+    .W_TextIngredients {
+        width: 42vw;
+        div:first-of-type {
+            p {
+                width: 26vw;
+            }
+        }
+        div:last-of-type {
+            p {
+                width: 10vw;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 430px) {
     .W_TextGribwiki {
         width: 90%;
@@ -179,6 +222,7 @@
         h3 {
             font-size: 6.4vw;
             margin-bottom: 2.4vw;
+            line-height: 7.2vw;
         }
     }
     .W_IndexForm{
