@@ -9,10 +9,11 @@
     display: flex;
     flex-direction: column;
     gap: 2.4vw;
+    width: 89.5vw;
     align-items: flex-end;
 }
 .S_IndexForm {
-    width: 100%;
+    width: 89.5vw;
     margin-top: 4.8vw;
     display: flex;
     gap: 1.2vw;
@@ -25,7 +26,7 @@
     justify-content: space-between;
     padding: 2.4vw;
     margin-bottom: 1.2vw;
-    width: 100%;
+    width: 89.5vw;
     height: 30vw;
     border-radius: 1.17vw;
     background-color: var(--Mushy-White);
@@ -37,7 +38,7 @@
 }
 .S_CardsArticle {
     margin-bottom: 1.2vw;
-    max-width: 100%;
+    width: 89.5vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +48,7 @@
 }
 // Страницы единичных статей
 .S_CoverUnoArticle, .S_ChapterUnoArticle {
-    width: 100%;
+    width: 89.5vw;
     margin-bottom: 6.4vw;
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
 
 // Страница с рецептами
 .S_CardsRecipe {
-    width: 100%;
+    width: 89.5vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -78,9 +79,6 @@
     // overflow: hidden;
     border-radius: 1.17vw;
     background-color: var(--Mushy-White);
-    .A_CoverRecipe {
-        border-radius: 1.17vw 1.17vw 0 0;
-    }
 }
 .S_PageRecipeBody {
     margin: 4vw 0;
@@ -112,6 +110,7 @@
     flex-direction: column;
 }
 .S_Dvoiniki {
+    width: 89.5vw;
     h3 {
         color: var(--Mushy-White);
     }
@@ -123,7 +122,7 @@
     justify-content: space-between;
     padding: 2.4vw;
     margin-bottom: 1.2vw;
-    width: 100%;
+    width: 89.5vw;
     height: 30vw;
     border-radius: 1.17vw;
     background-color: var(--Mushy-White);
@@ -167,11 +166,35 @@
     margin-top: -2.4vw;
     gap: 3.6vw;
 }
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .S_IndexForm {
+        flex-direction: column;
+    }
+    .S_MainCardArticle {
+        flex-direction: column;
+        height: auto;
+        border-radius: 2vw;
+        gap: 3.6vw;
+    }
+    .S_CoverRecipe {
+        height: auto;
+        border-radius: 2vw;
+    }
+    .S_CardsArticle {
+        max-height: 150vw;
+    }
+}
+
 @media only screen and (max-width: 430px) {
     .S_IndexCover {
         gap: 5.2vw;
     }
+    .S_IndexCover {
+        width: 100%;
+    }
     .S_IndexSection {
+        width: 100%;
         margin-top: 12.4vw;
         gap: 5.2vw;
         align-items: flex-start;
@@ -183,18 +206,18 @@
         gap: 5.2vw;
     }
     .S_MainCardArticle {
+        width: 100%;
         flex-direction: column;
         gap: 5.2vw;
         padding: 4.8vw;
         margin-bottom: 5.2vw;
-        width: 100%;
         height: auto;
         border-radius: 3.34vw;
     }
     .S_CardsArticle {
+        width: 100%;
         margin-bottom: 5.2vw;
         max-width: none;
-        width: 100%;
         max-height: none;
         gap: 5.2vw;
     }
@@ -202,8 +225,8 @@
         flex-direction: column;
         gap: 5.2vw;
         padding: 4.8vw;
+        width: 78.5vw;
         margin-bottom: 5.2vw;
-        width: 100%;
         height: auto;
         border-radius: 3.34vw;
     }
@@ -217,6 +240,7 @@
         gap: 5.2vw;
     }
     .S_CardsRecipe {
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -227,6 +251,7 @@
         margin-bottom: 12vw;
     }
     .S_CoverUnoArticle, .S_ChapterUnoArticle {
+        width: 100%;
         margin-bottom: 12vw;
         gap: 5.2vw;
     }
@@ -243,5 +268,8 @@
 
         padding: 0;
         gap: 12vw;
+    }
+    .S_UnoTest {
+        width: 100%;
     }
 }

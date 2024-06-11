@@ -1,0 +1,26 @@
+.A_Button {
+    position: relative;
+    background-image: url("../../images/SearchIcon.svg");
+    background-size: cover;
+    width: 1.6vw;
+    height: 1.6vw;
+    cursor: pointer;
+    &.disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+    &.resetField {
+        position: absolute;
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-left: 17.5vw;
+        background-image: url("../../images/CrossIcon.svg");
+      }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .A_Button {
+        width: 3.6vw;
+        height: 3.6vw;
+    }
+}

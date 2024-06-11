@@ -1,21 +1,10 @@
-menu {
+
     .M_SectionsMenubar {
         display: flex;
         gap: 2vw;
     }
-    .M_SearchField {
-        width: 24vw;
-        height: 2.8vw;
-        padding: 0.8vw;
-        border-radius: 1.17vw;
-        border: solid 0.1vw var(--Ashy-Grey);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        // overflow: hidden;
-        
-    }
-}
+
+
 footer {
     // блок с соц сетями
     .M_Socials {
@@ -81,7 +70,7 @@ body.articles {
 // Рецепты
 .M_LargeRecipeInfo {
     position: absolute;
-    top: 1.2vw;
+    top: 2.4vw;
     right: 1.2vw;
     width: 28vw;
     h3 {
@@ -124,6 +113,7 @@ body.articles {
 
 //Грибвики
 .M_Navigation {
+    width: 89.5vw;
     color: var(--Ashy-Grey);
     font-weight: 250;
     margin-bottom: 1.2vw;
@@ -160,6 +150,7 @@ body.articles {
     }
 }
 .M_TestInfo {
+    color: var(--Charcoal);
     margin: 2.4vw;
     display: flex;
     flex-direction: column;
@@ -167,7 +158,56 @@ body.articles {
     width: 36vw;
 }
 
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .M_LargeRecipeInfo {
+        position: relative;
+        margin: 0 4.8vw 4.8vw 4.8vw;
+        width: 100%;
+        h3 {
+            margin-bottom: 2.4vw;
+        }
+    }
+    .M_TestCard {
+        border-radius: 2.17vw;
+        padding: 2.4vw;
+        overflow: hidden;
+        width: 41.2vw;
+        height: 31vw;
+        background-color: #F7F7F7;
+        background-color: var(--Mushy-White);
+        transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    }
+    .M_TestInfo {
+        p {
+            width: 40vw;
+        }
+    }
+}
+
 @media only screen and (max-width: 430px) {
+    .M_Navigation {
+        width: 100%;
+    }
+    .M_SectionsMenubar {
+        display: none;
+    }
+    .open .M_SectionsMenubar {
+        display: flex;
+        padding: 10% 0;
+        flex-direction: column;
+    }
+    .M_SearchField {
+        display: none;
+        width: 72vw;
+        height: 3.2vw;
+        padding: 0.8vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-open .M_SearchField {
+        display: flex;
+    }
     .M_LargeRecipeInfo {
         position: relative;
         margin: 4.8vw;

@@ -1,5 +1,5 @@
 
-#C_SearchResults {
+.C_SearchResults {
     width: 21.4vw;
     margin-top: 2.4vw;
     flex-direction: column;
@@ -68,6 +68,7 @@
     gap: 0.2vw;
 }
 .C_Reccomendations {
+    width: 89.5vw;
     display: flex;
     justify-content: space-between;
 }
@@ -78,7 +79,6 @@
     flex-wrap: wrap;
     gap:1.2vw;
     width: 58.7vw;
-    align-items: flex-end;
     
 }
 .C_IndexTagsArticle {
@@ -112,8 +112,6 @@
     gap: 0.7vw 1.2vw;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    justify-content: flex-end;
 }
 .C_CardsArticle {
     display: flex;
@@ -156,7 +154,7 @@
     }
 }
 .C_CardArticles {
-    width: 100%;
+    width: 89.5vw;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -194,7 +192,7 @@
     gap: 2.4vw;
 }
 .C_CardRecipes {
-    width: 100%;
+    width: 89.5vw;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -267,12 +265,28 @@
     }
 }
 
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .C_TestsCards {
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+    .C_Ingredients {
+        gap: 0;
+        flex-direction: column;
+
+    }
+}
+
 @media only screen and (max-width: 430px) {
     .C_IndexArticles {
         flex-wrap: nowrap;
         flex-direction: column;
         gap:6.4vw;
         width: 100%;
+    }
+    .C_TagsArticle {
+        margin-top: 2.4vw;
+        gap: 2.4vw;
     }
     .C_IndexMemos {
         width: 100%;
@@ -357,6 +371,7 @@
         gap: 4.8vw;
     }
     .C_CardRecipes {
+        width: 100%;
         flex-direction: column;
         row-gap: 5.6vw;
         margin-bottom: 5.6vw;

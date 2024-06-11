@@ -44,25 +44,31 @@
   </head>
   <body class="recipes">
     <!-- Менюшка -->
-    <menu class="O_Menubar">
-      <!-- Кнопки для разделов -->
-      <div class="M_SectionsMenubar">
-       <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
-       <a class="A_TextMenubar" href="memos.html">Памятки</a>
-       <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
-       <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
-       <a class="A_TextMenubar" href="tests.html">Тесты</a>
-      </div>
-
-      <div class="M_SearchField">
-        <div class="Q_SearchIcon"></div>
-        <div class="A_SearchField">
-          <input id="Q_SearchField" type="text" id="searchInput" placeholder="Я ищу..."/>
-          <div id="C_SearchResults"></div>
+    <menubar></menubar>
+    
+    <!-- Мобилка Менюшка -->
+    <menu class="O_MobileMenubar">
+      <div class="A_MobileMenubar">
+        <!-- Иконка лупы -->
+        <div class="Q_SearchIcon search-toggle"></div>
+        <!-- Логотипчег -->
+        <div class="Q_LogoIcon menu-toggle" ></div>
+        <!-- Поиск -->
+        <div class="M_SearchField">
+          <div class="A_SearchField">
+            <input class="Q_SearchField" type="text" placeholder="Поиск"/>
+            <div class="C_SearchResults"></div>
+          </div>
         </div>
-    </div>
-      <!-- Логотипчег -->
-      <a class="Q_LogoIcon" href="index.html"></a>
+      </div>
+      <!-- Открывающаяся менюшка -->
+      <nav class="M_SectionsMenubar">
+          <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
+          <a class="A_TextMenubar" href="memos.html">Памятки</a>
+          <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
+          <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
+          <a class="A_TextMenubar" href="tests.html">Тесты</a>
+      </nav>
     </menu>
 
 
@@ -86,7 +92,6 @@
           <div class="C_TagsRecipe">
             <h5 class="A_Tag">Варёное</h5>
             <h5 class="A_Tag">Жареное</h5>
-            <h5 class="A_Tag">4 ПОРЦИИ</h5>
             <h5 class="A_Tag">1 час</h5>
           </div>
         </a>
@@ -100,7 +105,6 @@
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Жареное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">30 минут</h5>
             </div>
         </a>
@@ -115,7 +119,6 @@
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Жареное</h5>
                 <h5 class="A_Tag">Варёное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">40 минут</h5>
             </div>
         </a>
@@ -131,7 +134,6 @@
             <div class="C_Tags">
                 <h5 class="A_Tag">Выбор пользователей</h5>
                 <h5 class="A_Tag">Жареное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">20 минут</h5>
             </div>
           </div>
@@ -146,7 +148,6 @@
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
               <h5 class="A_Tag">варёное</h5>
-              <h5 class="A_Tag">4 ПОРЦИИ</h5>
               <h5 class="A_Tag">40 минут</h5>
             </div>
         </a>
@@ -160,7 +161,6 @@
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Копчёное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">40 минут</h5>
             </div>
         </a>
@@ -175,7 +175,6 @@
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Запечённое</h5>
                 <h5 class="A_Tag">Варёное</h5>
-                <h5 class="A_Tag">6-8 ПОРЦИй</h5>
                 <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
@@ -189,7 +188,6 @@
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Запечённое</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">1 час</h5>
             </div>
         </a>
@@ -203,7 +201,6 @@
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Тушёное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">1,5 часа</h5>
             </div>
         </a>
@@ -217,7 +214,6 @@
             <!-- Теги блюда (инфа) -->
             <div class="C_TagsRecipe">
                 <h5 class="A_Tag">Тушёное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">40 минут</h5>
             </div>
         </a>
@@ -233,7 +229,6 @@
             <div class="C_Tags">
                 <h5 class="A_Tag">Выбор пользователей</h5>
                 <h5 class="A_Tag">Жареное</h5>
-                <h5 class="A_Tag">4 ПОРЦИИ</h5>
                 <h5 class="A_Tag">20 минут</h5>
             </div>
           </div>
