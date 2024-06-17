@@ -256,7 +256,7 @@
 // Тесты
 .O_TestsCards {
     position: relative;
-    width: 100%;
+    width: 89.5vw;
     height: 36vw;
     border-radius: 1.17vw;
     display: flex;
@@ -265,7 +265,7 @@
 }
 .O_CardTest {
     position: relative;
-    width: 100%;
+    width: 89.5vw;
     height: 28vw;
     border-radius: 1.17vw;
     overflow: hidden;
@@ -306,6 +306,10 @@
     align-items: center;
 }
 @media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .O_Search {
+        width: 89.5vw;
+        height: 7.8vw;
+    }
     .O_Menubar {
         top: 2vw;
         height: 6.4vw;
@@ -392,6 +396,10 @@
 }
 
 @media only screen and (max-width: 430px) {
+    .O_Search {
+        width: 89.5vw;
+        height: 10.8vw;
+    }
     .O_MobileMenubar {
         display: flex;
         position: fixed;
@@ -417,7 +425,7 @@
     .O_CardMemo {
         flex-direction: column;
         width: 100%;
-        height: 96vw;
+        height: 104vw;
         border-radius: 3.34vw;
     }
     .O_CardLargeRecipe {
@@ -515,7 +523,6 @@
         }
     }
     .O_TestQuestion {
-        width: 100%;
         flex-direction: column;
         border-radius: 3.34vw;
         height: auto;
@@ -525,7 +532,6 @@
         }
     }
     .O_TestResults {
-        width: 100%;
         border-radius: 3.34vw;
         height: auto;
     }
@@ -543,7 +549,7 @@
     }
     .O_ProcessServing {
         p {
-            width: 100%;
+            width: 94%;
         }
     }
 }

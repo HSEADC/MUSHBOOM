@@ -5,7 +5,7 @@ import A_Text from '../A_Text/A_Text.jsx'
 
 export default class M_PostTeaser extends React.Component {
   render() {
-    const { title, description, url, image, tags } = this.props
+    const { title, description, url, tags } = this.props
 
     const tagElements = []
     tags.forEach((tag, i) => {

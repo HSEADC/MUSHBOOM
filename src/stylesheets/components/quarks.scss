@@ -2,15 +2,9 @@
 .Q_LogoIcon {
     background-image: url("./images/Logoicon_white.svg");
     background-size: cover;
+    cursor: pointer;
 }
-.O_Search {
-    .Q_SearchIcon {
-        background-image: url("./images/SearchIcon.svg");
-        background-size: cover;
-        width: 2vw;
-        height: 2vw;
-    }
-}
+
 .Q_ClockIcon {
     width: auto;
     height: 1.6vw;
@@ -26,13 +20,18 @@
     height: 1.6vw;
     margin-bottom: 0.7vw;
 }
-.Q_MushIcon {
-    height: 4vw;
-}
 
 // Меню
 
-
+.Q_SearchIcon {
+    background-image: url("./images/SearchIcon.svg");
+    background-size: cover;
+    width: 3vw;
+    height: 3vw;
+}
+.Q_SearchButton {
+    display: none;
+}
 
 .Q_ReccomendationsHeader {
     color: var(--Mushy-White);
@@ -177,6 +176,17 @@
 }
 
 @media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .Q_SearchButton {
+        display: block;
+        background-image: url("./images/SearchIcon.svg");
+        background-size: cover;
+        width: 3vw;
+        height: 3vw;
+    }
+    .Q_SearchIcon {
+        width: 4vw;
+        height: 4vw;
+    }
     .Q_IndexCover {
         border-radius: 2vw;
     }
@@ -205,41 +215,18 @@
 }
 
 @media only screen and (max-width: 430px) {
-    .Q_SearchIcon {
+    .Q_SearchButton {
+        display: block;
+        background-image: url("./images/SearchIcon.svg");
+        background-size: cover;
         width: 7vw;
         height: 7vw;
-        background-size: cover;
-        background-image: url("./images/SearchIcon_white.svg");
     }
     .Q_IndexCover {
         width: 100%;
         height: 36vh;
         border-radius: 3.34vw;
     }
-    .search-open {
-        .Q_LogoIcon{
-            display: none;
-        }
-    }
-    .Q_SearchField {
-        width: 92%;
-        background-color: var(--Mushy-White) 0%;
-        border: none;
-        color: var(--Ashy-Grey);
-        font-size: 3.6vw;
-        &::placeholder {
-            color: var(--Ashy-Grey);
-            font-size: 3.6vw;
-            font-weight: 500;
-        }
-        &:hover, &:focus {
-            outline: none;
-            border: none;
-            color: var(--Mushy-White);
-        }
-    }
-    
-
     .Q_TextUnoMemo, .Q_IndexText, .Q_TextUnoArticle {
         width: 100%;
         margin-left: 0vw;

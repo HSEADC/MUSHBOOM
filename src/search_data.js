@@ -14,7 +14,7 @@ function getPostTeasers() {
     return new Promise((resolve, reject) => {
         const content = []
 
-        base('Post Teasers')
+        base('Search')
             .select({ maxRecords: 100 })
             .firstPage()
             .then((result) => {
@@ -24,7 +24,7 @@ function getPostTeasers() {
                         tags: record.fields['Tags'],
                         title: record.fields['Title'],
                         category: record.fields['Category'],
-                        link: record.fields['Link'],
+                        url: record.fields['Url'],
                         description: record.fields['Description']
                     })
                 })

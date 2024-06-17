@@ -1,3 +1,4 @@
+
 // Главная
 .S_IndexCover {
     display: flex;
@@ -72,7 +73,7 @@
 }
 // Страница единичного рецепта
 .S_CoverRecipe {
-    width: 100%;
+    width: 89.5vw;
     height: 48vw;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@
 }
 .S_PageRecipeBody {
     margin: 4vw 0;
-    width: 100%;
+    width: 89.5vw;
     height: auto;
     padding: 0 4vw;
     display: flex;
@@ -90,6 +91,7 @@
     gap: 4.8vw;
 }
 .S_RecommendationsRecipes {
+    width: 89.5vw;
     .M_TextRecommendation {
         color: var(--Mushy-White);
         margin: 4vw 0 2.4vw 0;
@@ -98,14 +100,14 @@
 
 //Грибвики
 .S_CardsGribwiki {
-    width: 100%;
+    width: 89.5vw;
     display: flex;
     gap: 1.2vw;
     // justify-content: space-between;
     flex-wrap: wrap;
 }
 .S_GribwikiPage {
-    width: 100%;
+    width: 89.5vw;
     display: flex;
     flex-direction: column;
 }
@@ -138,7 +140,7 @@
     }
 }
 .S_CardsMemos {
-    width: 100%;
+    width: 89.5vw;
     display: flex;
     gap: 1.2vw;
     justify-content: space-between;
@@ -146,7 +148,7 @@
 }
 
 .S_ChapterUnoMemo {
-    width: 100%;
+    width: 89.5vw;
     display: flex;
     flex-direction: column;
     gap: 2.4vw;
@@ -190,11 +192,7 @@
     .S_IndexCover {
         gap: 5.2vw;
     }
-    .S_IndexCover {
-        width: 100%;
-    }
     .S_IndexSection {
-        width: 100%;
         margin-top: 12.4vw;
         gap: 5.2vw;
         align-items: flex-start;
@@ -206,7 +204,6 @@
         gap: 5.2vw;
     }
     .S_MainCardArticle {
-        width: 100%;
         flex-direction: column;
         gap: 5.2vw;
         padding: 4.8vw;
@@ -215,7 +212,6 @@
         border-radius: 3.34vw;
     }
     .S_CardsArticle {
-        width: 100%;
         margin-bottom: 5.2vw;
         max-width: none;
         max-height: none;
@@ -225,7 +221,6 @@
         flex-direction: column;
         gap: 5.2vw;
         padding: 4.8vw;
-        width: 78.5vw;
         margin-bottom: 5.2vw;
         height: auto;
         border-radius: 3.34vw;
@@ -240,7 +235,6 @@
         gap: 5.2vw;
     }
     .S_CardsRecipe {
-        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -251,7 +245,6 @@
         margin-bottom: 12vw;
     }
     .S_CoverUnoArticle, .S_ChapterUnoArticle {
-        width: 100%;
         margin-bottom: 12vw;
         gap: 5.2vw;
     }
@@ -264,12 +257,7 @@
     }
     .S_PageRecipeBody {
         margin: 5.2vw 0;
-        width: 100%;
-
         padding: 0;
         gap: 12vw;
-    }
-    .S_UnoTest {
-        width: 100%;
     }
 }

@@ -1,9 +1,10 @@
 .O_SearchBar {
     width: 21vw;
     height: 3.2vw;
-    padding: 0.8vw;
+    padding: 0.4vw 0.8vw;
     border-radius: 1.17vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     // overflow: hidden;
     .C_PostTeasers {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MushBoom | Тесты</title>
     <link rel="icon" type="image/x-icon" href="images/LogoIcon.ico" />
-    <analitics></analitics>
+    <analytics></analytics>
     <!-- Primary Meta Tags -->
     <meta
     name="title"
@@ -45,34 +45,26 @@
   <body class="tests">
     <!-- Менюшка -->
     <menubar></menubar>
-    
     <!-- Мобилка Менюшка -->
     <menu class="O_MobileMenubar">
       <div class="A_MobileMenubar">
         <!-- Иконка лупы -->
-        <div class="Q_SearchIcon search-toggle"></div>
+        <a class="Q_SearchButton" href="search.html"></a>
         <!-- Логотипчег -->
         <div class="Q_LogoIcon menu-toggle" ></div>
-        <!-- Поиск -->
-        <div class="M_SearchField">
-          <div class="A_SearchField">
-            <input class="Q_SearchField" type="text" placeholder="Поиск"/>
-            <div class="C_SearchResults"></div>
-          </div>
-        </div>
       </div>
       <!-- Открывающаяся менюшка -->
       <nav class="M_SectionsMenubar">
-          <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
-          <a class="A_TextMenubar" href="memos.html">Памятки</a>
-          <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
-          <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
-          <a class="A_TextMenubar" href="tests.html">Тесты</a>
+        <a class="A_TextMenubar" href="index.html">Главная</a>
+        <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
+        <a class="A_TextMenubar" href="memos.html">Памятки</a>
+        <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
+        <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
+        <a class="A_TextMenubar" href="tests.html">Тесты</a>
       </nav>
     </menu>
 
     <section class="S_CardsTests">
- 
         <!-- Большая карточка единичного теста -->
         <a class="O_CardTest" href="tests/kalendar.html">
           <div class="M_TestInfo">
@@ -147,6 +139,80 @@
           <!-- Обложка теста -->
           <img class="Q_TestCover" src="images/Tests/GribnayaBezopasnost.webp" alt="">
         </a>
+    
+        <!-- Большая карточка единичного теста -->
+        <a class="O_CardTest" href="tests/gribie_nasledie.html">
+          <div class="M_TestInfo">
+            <!-- Название теста -->
+            <h2>
+              Грибы: наследие
+            </h2>
+            <!-- Теги теста (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">6 вопросов</h5>
+                <h5 class="A_Tag">2 минуты</h5>
+            </div>
+            <p>Проверьте свои знания о символике грибов в культуре разных народов.</p>
+            <!-- Кнопка пройти тест -->
+            <div class="A_IndexAllButton">
+              <p>Пройти тест</p>
+              <div class="A_ArrowIcon">
+                <img src="images/ArrowIcon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Обложка теста -->
+          <img class="Q_TestCover" src="images/Tests/GribieNasledie.webp" alt="">
+        </a>
+        <!-- Большая карточка единичного теста -->
+        <a class="O_CardTest" href="tests/gribnoy_delicates.html">
+          <div class="M_TestInfo">
+            <!-- Название теста -->
+            <h2>
+              Грибной деликатес
+            </h2>
+            <!-- Теги теста (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">4 вопроса</h5>
+                <h5 class="A_Tag">1 минута</h5>
+            </div>
+            <p>Оцените свои знания о редких грибах, которые используются в высокой кухне и гастрономии.</p>
+            <!-- Кнопка пройти тест -->
+            <div class="A_IndexAllButton">
+              <p>Пройти тест</p>
+              <div class="A_ArrowIcon">
+                <img src="images/ArrowIcon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Обложка теста -->
+          <img class="Q_TestCover" src="images/Tests/GribnoiDelicates.webp" alt="">
+        </a>
+
+        <!-- Большая карточка единичного теста -->
+        <a class="O_CardTest" href="tests/lechebnie_gribie.html">
+          <div class="M_TestInfo">
+            <!-- Название теста -->
+            <h2>
+              Лечебные грибы
+            </h2>
+            <!-- Теги теста (инфа) -->
+            <div class="C_Tags">
+                <h5 class="A_Tag">9 вопросов</h5>
+                <h5 class="A_Tag">5 минут</h5>
+            </div>
+            <p>Пройдите тест о лечебных свойствах грибов и узнайте свой уровень знаний!</p>
+            <!-- Кнопка пройти тест -->
+            <div class="A_IndexAllButton">
+              <p>Пройти тест</p>
+              <div class="A_ArrowIcon">
+                <img src="images/ArrowIcon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Обложка теста -->
+          <img class="Q_TestCover" src="images/Tests/LechebnieGribie.webp" alt="">
+        </a>
 
     </section>
 
@@ -155,7 +221,7 @@
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
       <!-- Логотип -->
-     <div class="Q_LogoIcon"></div>
+     <a class="Q_LogoIcon" href="index.html"></a>
      <div class="W_Authors">
       <h5 class="A_HeaderFooter">HSE ADC</h5>
       <div class="C_Authors">
@@ -178,7 +244,6 @@
         <h5 class="A_HeaderFooter">О нас</h5>
         <h6 class="A_TextFooter"><a href="contacts.html">Контакты</a></h6>
         <h6 class="A_TextFooter"><a href="connection.html">Обратная связь</a></h6>
-        <h6 class="A_TextFooter"><a href="styleguide.html">Styleguide</a></h6>
      </div>
      <!-- Информация по разделам -->
       <div class="W_TextFooter">
@@ -198,13 +263,13 @@
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">
           </a>
-          <!-- Яндекс.Дзен -->
-          <a href="https://dzen.ru/id/653d452bbcb41328c6d6bab5?share_to=link" class="A_DzenIcon"> 
-            <img src="images/Dzenicon_black.svg" alt="Иконка Дзен">
+          <!-- ВКонтакте -->
+          <a href="https://vk.com/club225967907" class="A_VKIcon"> 
+            <img src="images/VKIcon.png" alt="Иконка ВК">
           </a>
         </div>
       </div>
      </div>
-    </footer>  
+    </footer>
   </body>
 </html>

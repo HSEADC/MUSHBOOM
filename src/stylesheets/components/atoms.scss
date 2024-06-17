@@ -39,7 +39,8 @@
         color: var(--Mushy-White);
     }
 }
-.A_SearchButton {
+
+.A_SearchButton  {
     height: 100%;
     width: 5.8vw;
     display: flex;
@@ -48,58 +49,24 @@
     overflow: visible;
     border-radius: 12vw;
     cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     background-color: var(--Fox);
     &:hover {
-        transform: scale(0.8);
+        transform: scale(0.9);
         background-color: var(--Sunny);
     }
     &.disabled {
-        background-color: var(--Misty-Grey);
+        background-color: var(--Ashy-Grey);
         cursor: default;
+        &:hover {
+            transform: inherit;
+            background-color: var(--Ashy-Grey);
+        }
     }
 }
+
 .A_TextIndexCover {
     width: 89.5vw;
-}
-body.articles {
-    .A_TextMenubar:nth-of-type(1) {
-        color: var(--Fox);
-            &:active {
-                color: var(--Sunny);
-            }
-    }
-}
-body.memos {
-    .A_TextMenubar:nth-of-type(2) {
-        color: var(--Fox);
-        &:active {
-            color: var(--Sunny);
-        }
-    }
-}
-body.gribwiki {
-    .A_TextMenubar:nth-of-type(4) {
-        color: var(--Fox);
-        &:active {
-            color: var(--Sunny);
-        }
-    }
-}
-body.tests {
-    .A_TextMenubar:nth-of-type(5) {
-        color: var(--Fox);
-        &:active {
-            color: var(--Sunny);
-        }
-    }
-}
-body.recipes {
-    .A_TextMenubar:nth-of-type(3) {
-        color: var(--Fox);
-        &:active {
-            color: var(--Sunny);
-        }
-    }
 }
 
 // Подвал
@@ -121,7 +88,7 @@ body.recipes {
         color: var(--Sunny);
     }
 }
-.A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+.A_InstIcon, .A_TelegaIcon, .A_DzenIcon, .A_VKIcon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,6 +142,13 @@ body.recipes {
     color: var(--Fox);
     background-color: var(--Mushy-White) ;
 } 
+.C_TagsUnoArticle {
+    .A_Tag {
+        border: solid var(--Fox) 0.1vw;
+        color: var(--Fox);
+        background-color: var(--Charcoal) ;
+    }
+}
 .S_CoverUnoMemo {
     .A_Tag {
         color: var(--Mushy-White);
@@ -231,14 +205,14 @@ body.recipes {
 
 // Кнопки в единичных страницах
 .M_PageBottom {
-    .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+    .A_InstIcon, .A_DzenIcon, .A_TelegaIcon, .A_VKIcon {
         img {
             width: 64%;
             height: 64%;
         }
     }
 }
-.A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+.A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon, .A_VKIcon {
     width: 3vw;
     height: 3vw;
     border-radius: 4vw;
@@ -394,16 +368,6 @@ body.index {
     margin: -1.2vw -1.2vw 0 -1.2vw;
     border-radius: 1.17vw;
    
-}
-.A_TagUnoArticle {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    padding: 0.7vw 1.6vw;
-    border-radius: 4vw;
-    border: solid var(--Fox) 0.1vw;
-    color: var(--Fox);
-    background-color: var(--Charcoal) ;
 }
 .A_PhotoArticle {
     width: 100%;
@@ -564,9 +528,60 @@ body.index {
     }
 }
 
-
+@media only screen and (min-width: 431px) {
+    body.articles {
+        .A_TextMenubar:nth-of-type(1) {
+            color: var(--Fox);
+                &:active {
+                    color: var(--Sunny);
+                }
+        }
+    }
+    body.memos {
+        .A_TextMenubar:nth-of-type(2) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+    body.gribwiki {
+        .A_TextMenubar:nth-of-type(4) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+    body.tests {
+        .A_TextMenubar:nth-of-type(5) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+    body.recipes {
+        .A_TextMenubar:nth-of-type(3) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .A_SearchInput {
+        font-size:  2.3vw;
+        padding: 0 3.6vw;
+        &::placeholder {
+            font-size:  2.3vw;
+        }
+    }
+    .A_SearchButton  {
+        width: 8.8vw;
+    }
     .A_TextIndexCover {
         h1 {
             margin-bottom: 0.3vw;
@@ -627,14 +642,14 @@ body.index {
     }
     // Кнопки в единичных страницах
     .M_PageBottom {
-        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon, .A_VKIcon {
             img {
                 width: 64%;
                 height: 64%;
             }
         }
     }
-    .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+    .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon, .A_VKIcon {
         width: 4vw;
         height: 4vw;
         border-radius: 9vw;
@@ -690,7 +705,7 @@ body.index {
         font-size: 1.6vw;
         margin: 1.6vw 0vw;
     }
-    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon, .A_VKIcon {
         width: 4.8vw;
         height: 4.8vw;
         border-radius: 12vw;
@@ -708,11 +723,6 @@ body.index {
     .A_PhotoArticle {
         border-radius: 2.17vw;
     }
-    .A_TagUnoArticle {
-        padding: 1.2vw 3.6vw;
-        border-radius: 12vw;
-        border: solid var(--Fox) 0.2vw;
-    }
     .A_TestAnswer {
         width: 100%;
         padding: 4.8vw;
@@ -724,6 +734,16 @@ body.index {
 }
 
 @media only screen and (max-width: 430px) {
+    .A_SearchButton  {
+        width: 12.8vw;
+    }
+    .A_SearchInput {
+        font-size:  3.6vw;
+        padding: 0 4.8vw;
+        &::placeholder {
+            font-size:  3.6vw;
+        }
+    }
     .A_MobileMenubar {
         display: flex;
         flex-direction: row;
@@ -735,7 +755,57 @@ body.index {
         width: 100%;
         padding: 2.4vw 1.4vw;
         font-size: 3.6vw;
+        display: flex;
+        justify-content: center;
         color: var(--Mushy-White);
+    }
+    body.index {
+        .A_TextMenubar:nth-of-type(1) {
+            color: var(--Fox);
+                &:active {
+                    color: var(--Sunny);
+                }
+        }
+    }
+    body.articles {
+        .A_TextMenubar:nth-of-type(2) {
+            color: var(--Fox);
+                &:active {
+                    color: var(--Sunny);
+                }
+        }
+    }
+    body.memos {
+        .A_TextMenubar:nth-of-type(3) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+    body.gribwiki {
+        .A_TextMenubar:nth-of-type(5) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+    body.tests {
+        .A_TextMenubar:nth-of-type(6) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
+    }
+    body.recipes {
+        .A_TextMenubar:nth-of-type(4) {
+            color: var(--Fox);
+            &:active {
+                color: var(--Sunny);
+            }
+        }
     }
     .A_IndexAllButton2 {
         display: flex;
@@ -765,14 +835,14 @@ body.index {
     }
     // Кнопки в единичных страницах
     .M_PageBottom {
-        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+        .A_InstIcon, .A_DzenIcon, .A_TelegaIcon, .A_VKIcon {
             img {
                 width: 64%;
                 height: 64%;
             }
         }
     }
-    .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon {
+    .A_ArrowIcon, .A_InstIcon, .A_DzenIcon, .A_TelegaIcon, .A_VKIcon {
         width: 9vw;
         height: 9vw;
         border-radius: 9vw;
@@ -840,7 +910,7 @@ body.index {
         margin: 1.6vw 0vw;
         text-align: center;
     }
-    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon {
+    .A_InstIcon, .A_TelegaIcon, .A_DzenIcon, .A_VKIcon {
         width: 9.6vw;
         height: 9.6vw;
         border-radius: 12vw;
@@ -857,11 +927,6 @@ body.index {
     }
     .A_PhotoArticle {
         border-radius: 3.34vw;
-    }
-    .A_TagUnoArticle {
-        padding: 2.4vw 5.6vw;
-        border-radius: 12vw;
-        border: solid var(--Fox) 0.2vw;
     }
     .A_TestAnswer {
         width: 100%;

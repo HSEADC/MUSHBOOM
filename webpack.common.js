@@ -11,7 +11,8 @@ module.exports = {
     index: './src/index.js',
     page: './src/index.jsx',
     searchBar: './src/searchbar.jsx',
-    search: './src/search.js'
+    searchVanilla: './src/search.js',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].js',
@@ -102,6 +103,14 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/share/'),
           to: path.resolve(__dirname, 'docs/share/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/memo_download/'),
+          to: path.resolve(__dirname, 'dev_build/memo_download/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/memo_download/'),
+          to: path.resolve(__dirname, 'docs/memo_download/')
         }
       ]
     }),
@@ -115,12 +124,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['search', 'searchBar', 'index']
+      
     }),
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['search', 'searchBar', 'index']
+      
     }),
     new HtmlWebpackPlugin({
       template: './src/articles.html',
@@ -334,6 +343,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tests/gribnaya_bezopasnost.html',
       filename: './tests/gribnaya_bezopasnost.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/gribie_nasledie.html',
+      filename: './tests/gribie_nasledie.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/gribnoy_delicates.html',
+      filename: './tests/gribnoy_delicates.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/lechebnie_gribie.html',
+      filename: './tests/lechebnie_gribie.html'
     }),
 
     // Styleguide
