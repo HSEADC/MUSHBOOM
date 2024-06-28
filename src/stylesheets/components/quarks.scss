@@ -3,6 +3,9 @@
     background-image: url("./images/Logoicon_white.svg");
     background-size: cover;
     cursor: pointer;
+    &.menu-toggle {
+        background-image: url("./images/BurgerIcon.svg");
+    }
 }
 
 .Q_ClockIcon {
