@@ -67,6 +67,7 @@ export default class S_SearchContent extends React.Component {
   }
 
   render() {
+    console.log("Rendering SearchContent with state:", this.state);
     return <div className="S_SearchContent">{this.renderPostTeasers()}</div>
   }
 }

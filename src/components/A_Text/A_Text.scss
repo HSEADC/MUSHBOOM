@@ -1,0 +1,76 @@
+.A_Text.text{
+    font-weight: 400;
+    transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
+    color: var(--Ashy-Grey);
+    padding: 0.7vw 0vw 0vw 1.2vw;
+    width: 21.4vw;
+    font-size: 0.9vw;
+    &:hover {
+        color: var(--Mushy-White);
+    }
+}
+.A_Text.h3{
+    color: var(--Mushy-White);
+    width: 100%;
+    font-size: 2.3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 2.8vw;
+}
+.A_Text.tag {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.7vw 1.6vw;
+    border-radius: 4vw;
+    border: solid var(--Fox) 0.1vw;
+    color: var(--Fox);
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.A_Text.p {
+    color: var(--Mushy-White);
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 1.8vw;
+    max-width: 48vw;
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .A_Text.h3{
+        font-size: 3.6vw;
+        line-height: 4.2vw;
+        font-weight: 600;
+    }
+    .A_Text.p {
+        font-size: 2.3vw;
+        line-height: 3.2vw;
+        max-width: 72vw;
+    }
+    .A_Text.tag {
+        padding: 1.2vw 3.6vw;
+        border-radius: 10vw;
+        border: solid var(--Fox) 0.2vw;
+        font-size: 1.6vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .A_Text.h3{
+        font-size: 6.4vw;
+        line-height: 7.2vw;
+        font-weight: 600;
+    }
+    .A_Text.p {
+        font-size: 3.6vw;
+        line-height: 5.6vw;
+        max-width: 100%;
+    }
+    .A_Text.tag {
+        padding: 2.4vw 5.6vw;
+        border-radius: 10vw;
+        border: solid var(--Fox) 0.36vw;
+        font-size: 2.4vw;
+    }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MushBoom | Путь грибника</title>
     <link rel="icon" type="image/x-icon" href="../images/LogoIcon.ico" />
-    <analitics></analitics>
+    <analytics></analytics>
     <!-- Primary Meta Tags -->
     <meta
     name="title"
@@ -44,25 +44,24 @@
   </head>
   <body class="memos">
     <!-- Менюшка -->
-    <menu class="O_Menubar">
-      <!-- Кнопки для разделов -->
-      <div class="M_SectionsMenubar">
-       <a class="A_TextMenubar" href="../articles.html">Cтатьи</a>
-       <a class="A_TextMenubar" href="../memos.html">Памятки</a>
-       <a class="A_TextMenubar" href="../recipes.html">Рецепты</a>
-       <a class="A_TextMenubar" href="../gribwiki.html">Грибвики</a>
-       <a class="A_TextMenubar" href="../tests.html">Тесты</a>
+    <menubar></menubar>
+    <!-- Мобилка Менюшка -->
+    <menu class="O_MobileMenubar">
+      <div class="A_MobileMenubar">
+        <!-- Иконка лупы -->
+        <a class="Q_SearchButton" href="../search.html"></a>
+        <!-- Логотипчег -->
+        <div class="Q_LogoIcon menu-toggle" ></div>
       </div>
-      <!-- Поиск -->
-      <div class="M_SearchField">
-        <div class="Q_SearchIcon"></div>
-        <div class="A_SearchField">
-          <input id="Q_SearchField" type="text" id="searchInput" placeholder="Поиск"/>
-          <div id="C_SearchResults"></div>
-        </div>
-      </div>
-      <!-- Логотипчег -->
-      <a class="Q_LogoIcon" href="../index.html"></a>
+      <!-- Открывающаяся менюшка -->
+      <nav class="M_SectionsMenubar">
+        <a class="A_TextMenubar" href="../index.html">Главная</a>
+        <a class="A_TextMenubar" href="../articles.html">Cтатьи</a>
+        <a class="A_TextMenubar" href="../memos.html">Памятки</a>
+        <a class="A_TextMenubar" href="../recipes.html">Рецепты</a>
+        <a class="A_TextMenubar" href="../gribwiki.html">Грибвики</a>
+        <a class="A_TextMenubar" href="../tests.html">Тесты</a>
+      </nav>
     </menu>
     <!-- Хлебные крошки -->
     <p class="M_Navigation">Памятки <span><img src="../images/ArrowIconNavigationIcon.svg" alt=""></span> <span>Путь грибника</span></p>
@@ -166,17 +165,17 @@
       </a>
       <!-- Кнопка поделиться -->
       <div class="M_PageBottom">
-          <p>Поделиться</p>
-          <div class="C_PageSocials">
-            <!-- Телеграм -->
-            <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
-              <img src="../images/Telegramicon_black.svg" alt="Иконка Телеграм">
-            </a>
-            <!-- Яндекс.Дзен -->
-            <a href="https://dzen.ru/id/653d452bbcb41328c6d6bab5?share_to=link" class="A_DzenIcon"> 
-              <img src="../images/Dzenicon_black.svg" alt="Иконка Дзен">
-            </a>
-          </div>
+        <p>Поделиться</p>
+        <div class="C_PageSocials">
+          <!-- Телеграм -->
+          <a class="A_TelegaIcon shareTelegram"> 
+            <img src="../images/Telegramicon_black.svg" alt="Иконка Телеграм">
+          </a>
+          <!-- Вконтакте -->
+          <a class="A_VKIcon shareVK"> 
+            <img src="../images/VKIcon.png" alt="Иконка ВК">
+          </a>
+        </div>
       </div>
     </div>
 
@@ -228,9 +227,9 @@
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="../images/Telegramicon_black.svg" alt="Иконка Телеграм">
           </a>
-          <!-- Яндекс.Дзен -->
-          <a href="https://dzen.ru/id/653d452bbcb41328c6d6bab5?share_to=link" class="A_DzenIcon"> 
-            <img src="../images/Dzenicon_black.svg" alt="Иконка Дзен">
+          <!-- ВКонтакте -->
+          <a href="https://vk.com/club225967907" class="A_VKIcon"> 
+            <img src="../images/VKIcon.png" alt="Иконка ВК">
           </a>
         </div>
       </div>

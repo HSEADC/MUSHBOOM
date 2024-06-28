@@ -3,15 +3,81 @@ const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 const webpack = require('webpack')
 const path = require('path')
-
+const paths = [
+  '/',
+  // Тесты
+  '/tests.html/',
+  '/tests/gribie_nasledie.html/',
+  '/tests/gribnaya_bezopasnost.html/',
+  '/tests/gribnoy_delicates.html/',
+  '/tests/kalendar.html/',
+  '/tests/lechebnie_gribie.html/',
+  '/tests/sedobnie_ili_yadovitie.html/',
+  // Рецепты
+  '/recipes.html/',
+  '/recipes/fettuchini.html/',
+  '/recipes/golubci.html/',
+  '/recipes/gribnoi_otvar.html/',
+  '/recipes/humus.html/',
+  '/recipes/kitaiskie_brokkoli.html/',
+  '/recipes/lazania.html/',
+  '/recipes/ovoshnoe_ragu.html/',
+  '/recipes/palenta.html/',
+  '/recipes/skumbria.html/',
+  '/recipes/zharenie_shampinioni.html/',
+  '/recipes/zhulien.html/',
+  // Памятки
+  '/memos.html/',
+  '/memos/gribnoi_strah.html/',
+  '/memos/mokriy_sled.html/',
+  '/memos/navigacia_ohoti.html/',
+  '/memos/odezhda_gribnika.html/',
+  '/memos/puti_gribnika.html/',
+  '/memos/toxic_mush.html/',
+  '/memos/tropa_spasenia.html/',
+  // Грибвики
+  '/gribwiki.html/',
+  '/gribwiki/beliy_grib.html/',
+  '/gribwiki/blednaya_poganka.html/',
+  '/gribwiki/gruzd.html/',
+  '/gribwiki/galerina_okaymlennaya.html/',
+  '/gribwiki/lozhnaya_lisichka.html/',
+  '/gribwiki/lozhniy_borovik.html/',
+  '/gribwiki/lozhniy_openok.html/',
+  '/gribwiki/lozhniy_podberezovik.html/',
+  '/gribwiki/maslenok.html/',
+  '/gribwiki/muhomor.html/',
+  '/gribwiki/openok.html',
+  '/gribwiki/podberezovik.html/',
+  '/gribwiki/podosinovik.html/',
+  '/gribwiki/rizhik.html/',
+  '/gribwiki/shampinion.html/',
+  '/gribwiki/smorchok.html/',
+  '/gribwiki/svinushka.html/',
+  '/gribwiki/volnushka.html/',
+  '/gribwiki/zolotie_lisichki.html/',
+  '/gribwiki/lozhniy_podosinovik.html/',
+  // Статьи
+  '/articles.html/',
+  '/articles/angels_wings.html/',
+  '/articles/deti_i_pohodi.html/',
+  '/articles/dozhdeviki.html/',
+  '/articles/ekipirovka.html/',
+  '/articles/gribi_v_iskusstve.html/',
+  '/articles/pink_oyster.html/',
+  '/articles/tihaya_ohota.html/',
+  '/articles/timberland.html/'
+]
 module.exports = {
   entry: {
     index: './src/index.js',
     page: './src/index.jsx',
     searchBar: './src/searchbar.jsx',
-    search: './src/search.js'
+    searchVanilla: './src/search.js',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].js',
@@ -93,6 +159,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new SitemapPlugin({ base: 'https://hseadc.github.io/MUSHBOOM/', paths}),
     new CopyPlugin({
       patterns: [
         {
@@ -102,6 +169,14 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/share/'),
           to: path.resolve(__dirname, 'docs/share/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/memo_download/'),
+          to: path.resolve(__dirname, 'dev_build/memo_download/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/memo_download/'),
+          to: path.resolve(__dirname, 'docs/memo_download/')
         }
       ]
     }),
@@ -115,12 +190,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['search', 'searchBar', 'index']
+      
     }),
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['search', 'searchBar', 'index']
+      
     }),
     new HtmlWebpackPlugin({
       template: './src/articles.html',
@@ -141,6 +216,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/landing.html',
+      filename: './landing.html'
     }),
 
     // Article Pages
@@ -194,6 +273,19 @@ module.exports = {
       template: './src/memos/toxic_mush.html',
       filename: './memos/toxic_mush.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/tropa_spasenia.html',
+      filename: './memos/tropa_spasenia.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/navigacia_ohoti.html',
+      filename: './memos/navigacia_ohoti.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/memos/mokriy_sled.html',
+      filename: './memos/mokriy_sled.html'
+    }),
+
     // Recipe Pages
     new HtmlWebpackPlugin({
       template: './src/recipes/fettuchini.html',
@@ -334,6 +426,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tests/gribnaya_bezopasnost.html',
       filename: './tests/gribnaya_bezopasnost.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/gribie_nasledie.html',
+      filename: './tests/gribie_nasledie.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/gribnoy_delicates.html',
+      filename: './tests/gribnoy_delicates.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/lechebnie_gribie.html',
+      filename: './tests/lechebnie_gribie.html'
     }),
 
     // Styleguide

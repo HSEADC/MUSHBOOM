@@ -1,0 +1,15 @@
+.S_SearchContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+}
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .S_SearchContent {
+        gap: 4.8vw;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .S_SearchContent {
+        gap: 3.6vw;
+    }
+}

@@ -4,11 +4,11 @@
   "description": "service of materials for first-year students",
   "author": "Irina Apolonnik, Anna Derevyankina, Patimat Imanalieva",
   "license": "MIT",
-  "repository": "git+https:///github.com/ZakharDay/static-site-boilerplate",
+  "repository": "git@github.com:HSEADC/MUSHBOOM.git",
   "bugs": {
-    "url": "https://github.com/ZakharDay/static-site-boilerplate/issues"
+    "url": "https://github.com/HSEADC/MUSHBOOM/issues"
   },
-  "homepage": "https://github.com/ZakharDay/static-site-boilerplate#readme",
+  "homepage": "https://github.com/HSEADC/MUSHBOOM#readme",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",
@@ -35,6 +35,7 @@
     "postcss-preset-env": "^7.7.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
+    "sitemap-webpack-plugin": "^1.1.1",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^4.11.0",

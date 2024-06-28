@@ -6,6 +6,10 @@
     gap: 5.6vw;
 }
 
+.W_ContentReactModule {
+    width: 58.7vw;
+    padding: 2.4vw; 
+}
 
 
 .W_IndexForm {
@@ -172,6 +176,13 @@
 }
 
 @media only screen and (min-width: 431px) and (max-width: 1024px) {
+    .W_Search {
+        display: none;
+    }
+    .W_ContentReactModule {
+        width: 89.5vw;
+        padding: 3.6vw; 
+    }
     .W_IndexForm {
         border-radius: 2vw;
         padding: 4.8vw 12.6vw;
@@ -215,6 +226,10 @@
 }
 
 @media only screen and (max-width: 430px) {
+    .W_ContentReactModule {
+        width: 89.5vw;
+        padding: 2.4vw 0vw; 
+    }
     .W_TextGribwiki {
         width: 90%;
         bottom: 4.8vw;

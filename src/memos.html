@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MushBoom | Памятки </title>
     <link rel="icon" type="image/x-icon" href="images/LogoIcon.ico" />
-    <analitics></analitics>
+    <analytics></analytics>
     <!-- Primary Meta Tags -->
     <meta
     name="title"
@@ -45,29 +45,22 @@
   <body class="memos">
     <!-- Менюшка -->
     <menubar></menubar>
-    
     <!-- Мобилка Менюшка -->
     <menu class="O_MobileMenubar">
       <div class="A_MobileMenubar">
         <!-- Иконка лупы -->
-        <div class="Q_SearchIcon search-toggle"></div>
+        <a class="Q_SearchButton" href="search.html"></a>
         <!-- Логотипчег -->
         <div class="Q_LogoIcon menu-toggle" ></div>
-        <!-- Поиск -->
-        <div class="M_SearchField">
-          <div class="A_SearchField">
-            <input class="Q_SearchField" type="text" placeholder="Поиск"/>
-            <div class="C_SearchResults"></div>
-          </div>
-        </div>
       </div>
       <!-- Открывающаяся менюшка -->
       <nav class="M_SectionsMenubar">
-          <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
-          <a class="A_TextMenubar" href="memos.html">Памятки</a>
-          <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
-          <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
-          <a class="A_TextMenubar" href="tests.html">Тесты</a>
+        <a class="A_TextMenubar" href="index.html">Главная</a>
+        <a class="A_TextMenubar" href="articles.html">Cтатьи</a>
+        <a class="A_TextMenubar" href="memos.html">Памятки</a>
+        <a class="A_TextMenubar" href="recipes.html">Рецепты</a>
+        <a class="A_TextMenubar" href="gribwiki.html">Грибвики</a>
+        <a class="A_TextMenubar" href="tests.html">Тесты</a>
       </nav>
     </menu>
 
@@ -165,6 +158,78 @@
             </a>
           </div>
         </div>
+
+        <!-- Карточка отдельной памятки -->
+        <div class="O_CardMemo">
+          <!-- Обложка (картинка) памятки -->
+          <img class="A_PhotoMemo" src="images/Memos/MokriySled.webp"></img>
+          <!-- Заголовок и начало памятки -->
+          <div class="A_TextMemo">
+            <h3>Мокрый след</h3>
+            <p>Cоветы по дождливой охоте</p>
+          </div>
+          <!-- Кнопка для скачивания памятки -->
+          <div class="C_MemoButtons">    
+            <!-- Кнопка для перехода на страницу памятки -->
+            <a href="memos/mokriy_sled.html" class="A_MemoMore">
+              <!-- Наполнение кнопки -->
+              <p>Подробнее</p>
+              <img src="images/ArrowIcon.svg" alt="стрелочка">
+            </a>
+            <!-- Кнопка для скачивания памятки -->
+            <a href="memo_download/Mushroom Fear.pdf" download="Mushroom Fear.pdf" class="A_MemoDownload">
+              <img src="images/download.svg" alt="стрелочка «скачать»">
+            </a>
+          </div>
+        </div>
+
+        <!-- Карточка отдельной памятки -->
+        <div class="O_CardMemo">
+          <!-- Обложка (картинка) памятки -->
+          <img class="A_PhotoMemo" src="images/Memos/TropaSpaseniya.webp"></img>
+          <!-- Заголовок и начало памятки -->
+          <div class="A_TextMemo">
+            <h3>Тропа спасения</h3>
+            <p>Что делать, если заблудился?</p>
+          </div>
+          <!-- Кнопка для скачивания памятки -->
+          <div class="C_MemoButtons">    
+            <!-- Кнопка для перехода на страницу памятки -->
+            <a href="memos/tropa_spasenia.html" class="A_MemoMore">
+              <!-- Наполнение кнопки -->
+              <p>Подробнее</p>
+              <img src="images/ArrowIcon.svg" alt="стрелочка">
+            </a>
+            <!-- Кнопка для скачивания памятки -->
+            <a href="memo_download/Mushroom Fear.pdf" download="Mushroom Fear.pdf" class="A_MemoDownload">
+              <img src="images/download.svg" alt="стрелочка «скачать»">
+            </a>
+          </div>
+        </div>
+
+        <!-- Карточка отдельной памятки -->
+        <div class="O_CardMemo">
+          <!-- Обложка (картинка) памятки -->
+          <img class="A_PhotoMemo" src="images/Memos/NavigaciaOhoti.webp"></img>
+          <!-- Заголовок и начало памятки -->
+          <div class="A_TextMemo">
+            <h3>Навигация охоты</h3>
+            <p>GPS и тихая охота</p>
+          </div>
+          <!-- Кнопка для скачивания памятки -->
+          <div class="C_MemoButtons">    
+            <!-- Кнопка для перехода на страницу памятки -->
+            <a href="memos/navigacia_ohoti.html" class="A_MemoMore">
+              <!-- Наполнение кнопки -->
+              <p>Подробнее</p>
+              <img src="images/ArrowIcon.svg" alt="стрелочка">
+            </a>
+            <!-- Кнопка для скачивания памятки -->
+            <a href="memo_download/Mushroom Fear.pdf" download="Mushroom Fear.pdf" class="A_MemoDownload">
+              <img src="images/download.svg" alt="стрелочка «скачать»">
+            </a>
+          </div>
+        </div>
   
     </section>
 
@@ -173,7 +238,7 @@
     <!-- Подвал со всей полезной информацией -->
     <footer class="O_Footer">
       <!-- Логотип -->
-     <div class="Q_LogoIcon"></div>
+     <a class="Q_LogoIcon" href="index.html"></a>
      <div class="W_Authors">
       <h5 class="A_HeaderFooter">HSE ADC</h5>
       <div class="C_Authors">
@@ -196,7 +261,6 @@
         <h5 class="A_HeaderFooter">О нас</h5>
         <h6 class="A_TextFooter"><a href="contacts.html">Контакты</a></h6>
         <h6 class="A_TextFooter"><a href="connection.html">Обратная связь</a></h6>
-        <h6 class="A_TextFooter"><a href="styleguide.html">Styleguide</a></h6>
      </div>
      <!-- Информация по разделам -->
       <div class="W_TextFooter">
@@ -216,9 +280,9 @@
           <a href="https://t.me/mushboom0" class="A_TelegaIcon"> 
             <img src="images/Telegramicon_black.svg" alt="Иконка Телеграм">
           </a>
-          <!-- Яндекс.Дзен -->
-          <a href="https://dzen.ru/id/653d452bbcb41328c6d6bab5?share_to=link" class="A_DzenIcon"> 
-            <img src="images/Dzenicon_black.svg" alt="Иконка Дзен">
+          <!-- ВКонтакте -->
+          <a href="https://vk.com/club225967907" class="A_VKIcon"> 
+            <img src="images/VKIcon.png" alt="Иконка ВК">
           </a>
         </div>
       </div>
