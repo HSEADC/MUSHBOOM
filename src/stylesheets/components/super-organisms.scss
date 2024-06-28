@@ -125,7 +125,7 @@
     padding: 2.4vw;
     margin-bottom: 1.2vw;
     width: 89.5vw;
-    height: 30vw;
+    height: 24vw;
     border-radius: 1.17vw;
     background-color: var(--Mushy-White);
     transition: all 0.7s cubic-bezier(0.15, 0.83, 0.66, 1);
@@ -182,6 +182,9 @@
     .S_CoverRecipe {
         height: auto;
         border-radius: 2vw;
+    }
+    .S_CoverUnoMemo {
+        height: 36vw;
     }
     .S_CardsArticle {
         max-height: 150vw;
