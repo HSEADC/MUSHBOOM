@@ -237,7 +237,9 @@ body.articles {
         gap: 4.8vw;
         width: 100%;
         height: 100%;
-        background-color: #f7f7f798;
+        p {
+            display: none;
+        }
     }
     .M_PageBottom {
         height: 12vw;
