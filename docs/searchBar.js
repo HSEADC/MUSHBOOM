@@ -4827,8 +4827,9 @@ var O_SearchBar = /*#__PURE__*/function (_React$Component) {
       if (searchInputValue.length >= 3) {
         console.log('Submit'); // const separator = ':8080/'
 
-        var separator = '.adc.ac/';
+        var separator = 'hseadc.github.io/MUSHBOOM/';
         var url = window.location.href.split(separator)[0];
+        console.log(url);
         window.location.href = url + separator + 'search.html?request=' + searchInputValue;
       }
     });
