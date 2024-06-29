@@ -46,11 +46,11 @@ export default class O_SearchBar extends React.Component {
       console.log('Submit')
 
       // const separator = ':8080/'
-      const separator = 'hseadc.github.io/MUSHBOOM/'
-      const url = window.location.href.split(separator)[0]
+      // const separator = 'GitHub/MUSHBOOM/docs/'
+      const url = window.location.href 
       console.log(url)
       window.location.href =
-        url + separator + 'search.html?request=' + searchInputValue
+        url + 'search.html?request=' + searchInputValue
     }
   }
 
