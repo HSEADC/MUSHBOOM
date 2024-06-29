@@ -4826,11 +4826,11 @@ var O_SearchBar = /*#__PURE__*/function (_React$Component) {
 
       if (searchInputValue.length >= 3) {
         console.log('Submit'); // const separator = ':8080/'
+        // const separator = 'GitHub/MUSHBOOM/docs/'
 
-        var separator = 'hseadc.github.io/MUSHBOOM/';
-        var url = window.location.href.split(separator)[0];
+        var url = window.location.href;
         console.log(url);
-        window.location.href = url + separator + 'search.html?request=' + searchInputValue;
+        window.location.href = url + 'search.html?request=' + searchInputValue;
       }
     });
 
