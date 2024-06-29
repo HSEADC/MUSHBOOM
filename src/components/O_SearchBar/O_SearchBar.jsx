@@ -46,8 +46,9 @@ export default class O_SearchBar extends React.Component {
       console.log('Submit')
 
       // const separator = ':8080/'
-      const separator = '.adc.ac/'
+      const separator = 'hseadc.github.io/MUSHBOOM/'
       const url = window.location.href.split(separator)[0]
+      console.log(url)
       window.location.href =
         url + separator + 'search.html?request=' + searchInputValue
     }
